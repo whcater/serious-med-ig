@@ -1,0 +1,13 @@
+{
+  "name" : "hl7.fhir.serious.med.template",
+  "type" : "fhir.template",
+  "license" : "MIT",
+  "description" : "HL7 FHIR Serious Medical Template",
+  "author" : "1010127369@qq.com",
+  "canonical" : "https://whcater.github.io/serious-med-ig/fhir/hl7.fhir.serious.med.template",
+  "base" : "fhir.base.template",
+  "dependencies" : {
+    "fhir.base.template" : "current"
+  },
+  "version" : "1.0.0"
+}

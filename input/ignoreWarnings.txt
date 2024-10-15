@@ -1,0 +1,8 @@
+== Suppressed Messages ==
+
+# Infoway
+Error from server: Unable to provide support for code system http://fhir.infoway-inforoute.ca/CodeSystem/scpqual
+Error from server: Unable to provide support for code system http://fhir.infoway-inforoute.ca/CodeSystem/scptype
+ 
+# Custom
+No types could be determined from the search string, so the types can''t be checked
