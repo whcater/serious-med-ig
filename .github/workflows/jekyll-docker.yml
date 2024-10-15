@@ -21,8 +21,10 @@ jobs:
     - name: Install SUSHI
       run: npm install -g fsh-sushi
 
-    - name: Install Jekyll
-      run: gem install jekyll bundler
+    - name: Install Jekyll and Bundler
+      run: |
+        gem install --user-install bundler jekyll
+        echo 'export PATH=$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH' >> $GITHUB_ENV
 
     - name: Give execute permissions to scripts
       run: chmod +x _updatePublisher.sh _genonce.sh
