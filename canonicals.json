@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "hl7.fhir.serious.med.core",
+    "type" : "ImplementationGuide",
+    "url" : "https://sm-ig.gihub.io/ImplementationGuide/hl7.fhir.serious.med.core",
+    "version" : "1.0.0",
+    "name" : "hl7fhirseriousmedcoreimplementationguide"
+  },
+  {
+    "id" : "sm-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://sm-ig.gihub.io/StructureDefinition/sm-patient",
+    "version" : "1.0.0",
+    "name" : "SmPatientBase"
+  }
+]
