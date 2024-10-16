@@ -31,11 +31,13 @@ jobs:
         export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
         source $GITHUB_ENV
         gem install --user-install bundler jekyll
+        echo $PATH
 
     - name: Determine Jekyll installation path
       run: |
         echo "Jekyll installed at:"
         gem which jekyll
+        echo $PATH
         export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
         jekyll -v || echo "Jekyll is not in the default PATH"
         ls -la ~/.local/share/gem/ruby/3.0.0/bin/
