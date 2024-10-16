@@ -67,6 +67,7 @@ jobs:
       run: |
         cat $GITHUB_ENV
         export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
+        jekyll -v || echo "Jekyll is not in the default PATH"
         ./_genonce.sh
 
     - name: Deploy to GitHub Pages
