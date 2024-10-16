@@ -17,11 +17,6 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'
-
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.3.5' 
         
     - name: Install SUSHI
       run: pwd & npm install -g fsh-sushi
@@ -73,7 +68,7 @@ jobs:
         cat $GITHUB_ENV
         export PATH="~/.local/share/gem/ruby/3.3.5/bin:$PATH"
         jekyll -v || echo "Jekyll is not in the default PATH"
-        ./_genonce.sh
+        ./_genonce.sh || jekyll build --source "./temp/pages" --destination "./output"
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
