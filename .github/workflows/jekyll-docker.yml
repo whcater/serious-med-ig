@@ -33,7 +33,7 @@ jobs:
       run: chmod +x _updatePublisher.sh _genonce.sh
 
     - name: Update IG Publisher
-      run: ./_updatePublisher.sh
+      run: yes | ./_updatePublisher.sh
 
     - name: Run SUSHI to generate FHIR resources
       run: sushi .
