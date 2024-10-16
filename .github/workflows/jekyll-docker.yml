@@ -27,7 +27,7 @@ jobs:
         echo 'export PATH=$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH' >> $GITHUB_ENV
 
     - name: Create input-cache directory
-      run: mkdir -p input-cache
+      run: mkdir -p ./input-cache
       
     - name: Give execute permissions to scripts
       run: chmod +x _updatePublisher.sh _genonce.sh
