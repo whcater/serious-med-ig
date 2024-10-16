@@ -25,6 +25,7 @@ jobs:
       run: |
         gem install --user-install bundler jekyll
         echo 'export PATH=$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH' >> $GITHUB_ENV
+        export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
     - name: Create input-cache directory
       run: pwd & mkdir -p ./input-cache
