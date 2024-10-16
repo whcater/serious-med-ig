@@ -26,9 +26,9 @@ jobs:
 
     - name: Install Jekyll and Bundler
       run: |
-        echo 'export PATH=$HOME/.local/share/gem/ruby/3.3.5/bin/:$PATH' >> $GITHUB_ENV
-        # echo 'export PATH=~/.local/share/gem/ruby/3.3.5/bin/:/var/lib/gems/3.3.5/bin/:/home/runner/.local/share/gem/ruby/3.3.5/bin/:/usr/local/lib/ruby/gems/3.3.5/bin/:/usr/lib/ruby/gems/3.3.5/bin/:/usr/lib/x86_64-linux-gnu/ruby/gems/3.3.5/bin/:/usr/share/rubygems-integration/3.3.5/bin/:/usr/share/rubygems-integration/all/bin/:/usr/lib/x86_64-linux-gnu/rubygems-integration/3.3.5/bin/:$PATH' >> $GITHUB_ENV
-        export PATH="~/.local/share/gem/ruby/3.3.5/bin:$PATH"
+        echo 'export PATH=$HOME/.local/share/gem/ruby/3.0.0/bin/:$PATH' >> $GITHUB_ENV
+        # echo 'export PATH=~/.local/share/gem/ruby/3.0.0/bin/:/var/lib/gems/3.0.0/bin/:/home/runner/.local/share/gem/ruby/3.0.0/bin/:/usr/local/lib/ruby/gems/3.0.0/bin/:/usr/lib/ruby/gems/3.0.0/bin/:/usr/lib/x86_64-linux-gnu/ruby/gems/3.0.0/bin/:/usr/share/rubygems-integration/3.0.0/bin/:/usr/share/rubygems-integration/all/bin/:/usr/lib/x86_64-linux-gnu/rubygems-integration/3.0.0/bin/:$PATH' >> $GITHUB_ENV
+        export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
         source $GITHUB_ENV
         gem install --user-install bundler jekyll jekyll-paginate
         echo $PATH
@@ -39,17 +39,17 @@ jobs:
         echo "Jekyll installed at:"
         gem which jekyll
         echo $PATH
-        export PATH="~/.local/share/gem/ruby/3.3.5/bin:$PATH"
+        export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
         jekyll -v || echo "Jekyll is not in the default PATH"
-        ls -la ~/.local/share/gem/ruby/3.3.5/bin/
-        # ls -la /var/lib/gems/3.3.5/bin/
-        # ls -la /home/runner/.local/share/gem/ruby/3.3.5/bin/
-        # ls -la /usr/local/lib/ruby/gems/3.3.5/bin/
-        # ls -la /usr/lib/ruby/gems/3.3.5/bin/
-        # ls -la /usr/lib/x86_64-linux-gnu/ruby/gems/3.3.5/bin/
-        # ls -la /usr/share/rubygems-integration/3.3.5/bin/
+        ls -la ~/.local/share/gem/ruby/3.0.0/bin/
+        # ls -la /var/lib/gems/3.0.0/bin/
+        # ls -la /home/runner/.local/share/gem/ruby/3.0.0/bin/
+        # ls -la /usr/local/lib/ruby/gems/3.0.0/bin/
+        # ls -la /usr/lib/ruby/gems/3.0.0/bin/
+        # ls -la /usr/lib/x86_64-linux-gnu/ruby/gems/3.0.0/bin/
+        # ls -la /usr/share/rubygems-integration/3.0.0/bin/
         # ls -la /usr/share/rubygems-integration/all/bin/
-        # ls -la /usr/lib/x86_64-linux-gnu/rubygems-integration/3.3.5/bin/
+        # ls -la /usr/lib/x86_64-linux-gnu/rubygems-integration/3.0.0/bin/
 
     - name: Create input-cache directory
       run: pwd & mkdir -p ./input-cache
@@ -66,7 +66,7 @@ jobs:
     - name: Run IG Publisher using _genonce.sh
       run: |
         cat $GITHUB_ENV
-        export PATH="~/.local/share/gem/ruby/3.3.5/bin:$PATH"
+        export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
         jekyll -v || echo "Jekyll is not in the default PATH"
         ./_genonce.sh || jekyll build --source "./temp/pages" --destination "./output"
 
