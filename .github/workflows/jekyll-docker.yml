@@ -32,6 +32,7 @@ jobs:
         source $GITHUB_ENV
         gem install --user-install bundler jekyll
         echo $PATH
+        cat $GITHUB_ENV
 
     - name: Determine Jekyll installation path
       run: |
@@ -63,7 +64,10 @@ jobs:
       run: sushi .
 
     - name: Run IG Publisher using _genonce.sh
-      run: ./_genonce.sh
+      run: |
+        cat $GITHUB_ENV
+        export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
+        ./_genonce.sh
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
