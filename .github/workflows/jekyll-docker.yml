@@ -18,6 +18,11 @@ jobs:
       with:
         node-version: '14'
 
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.3.5'  # 使用合适的 Ruby 版本
+        
     - name: Install SUSHI
       run: pwd & npm install -g fsh-sushi
 
