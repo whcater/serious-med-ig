@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SmPatientBase"] ; # 
   fhir:title [ fhir:v "SmPatient Base"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-16T04:57:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-17T07:27:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "whcater" ] ;

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "hl7fhirseriousmedcoreimplementationguide"] ; # 
   fhir:title [ fhir:v "HL7® Serious Med FHIR® Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-16T04:57:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-17T07:27:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "whcater" ] ;
