@@ -13,6 +13,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Give execute permission to _updatePublisher.sh
+      run: chmod +x ./_updatePublisher.sh
+      
     - name: Update the image to the latest publisher
       uses: docker://hl7fhir/ig-publisher-base:latest
       with:
