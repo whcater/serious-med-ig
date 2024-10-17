@@ -69,7 +69,9 @@ jobs:
         export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
         jekyll -v || echo "Jekyll is not in the default PATH"
         chmod +x ./_genonce.sh
-        ./_genonce.sh 
+        chmod +x ./input-cache/publisher.jar
+        # ./_genonce.sh 
+        env PATH=$PATH java -jar input-cache/publisher.jar -ig ig.ini
         # || jekyll build --source "./temp/pages" --destination "./output"
 
     - name: Deploy to GitHub Pages
