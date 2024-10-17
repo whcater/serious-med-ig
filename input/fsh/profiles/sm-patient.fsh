@@ -2,7 +2,14 @@ Profile: SmPatientBase
 Parent: Patient
 Id: sm-patient
 Title: "SmPatient Base"
-Description: "This profile represents the constraints applied to the Patient resource by the International Patient Summary FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the composition or in one of the referred resources."
+Description: "病人（Serious Medical Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料"
+* . ^short = "接受健康医护服务的个人信息"
+* . ^definition = "关于接受医护或其他健康相关服务的个人的人口统计学和其他行政信息。"
+* id ^short = "不重复的ID用以识别储存在特定FHIR Server中的Patient纪录，通常又称为逻辑性ID。"
+* id ^comment = "一个resource使用新增操作（create operation）提交给伺服器时，此resource没有id，它的id在resource被创建后由伺器分配/指定。"
+* language from CommonLanguages (preferred)
+* language ^short = "用以表述Patient Resource内容的语言。"
+* language ^example.valueString = "zh-TW"
 * identifier MS  
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"

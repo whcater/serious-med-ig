@@ -1,0 +1,119 @@
+name: Deploy FHIR IG to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+        
+    - name: Install SUSHI
+      run: pwd & npm install -g fsh-sushi
+
+    - name: Check Gem installation paths
+      run: gem environment
+
+    - name: Install Jekyll and Bundler
+      run: |
+        echo 'export PATH=$HOME/.local/share/gem/ruby/3.0.0/bin/:$PATH' >> $GITHUB_ENV
+        # echo 'export PATH=~/.local/share/gem/ruby/3.0.0/bin/:/var/lib/gems/3.0.0/bin/:/home/runner/.local/share/gem/ruby/3.0.0/bin/:/usr/local/lib/ruby/gems/3.0.0/bin/:/usr/lib/ruby/gems/3.0.0/bin/:/usr/lib/x86_64-linux-gnu/ruby/gems/3.0.0/bin/:/usr/share/rubygems-integration/3.0.0/bin/:/usr/share/rubygems-integration/all/bin/:/usr/lib/x86_64-linux-gnu/rubygems-integration/3.0.0/bin/:$PATH' >> $GITHUB_ENV
+        export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
+        source $GITHUB_ENV
+        gem install --user-install bundler jekyll jekyll-paginate
+        echo $PATH
+        cat $GITHUB_ENV
+
+    - name: Determine Jekyll installation path
+      run: |
+        echo "Jekyll installed at:"
+        gem which jekyll
+        echo $PATH
+        export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
+        jekyll -v || echo "Jekyll is not in the default PATH"
+        ls -la ~/.local/share/gem/ruby/3.0.0/bin/
+        # ls -la /var/lib/gems/3.0.0/bin/
+        # ls -la /home/runner/.local/share/gem/ruby/3.0.0/bin/
+        # ls -la /usr/local/lib/ruby/gems/3.0.0/bin/
+        # ls -la /usr/lib/ruby/gems/3.0.0/bin/
+        # ls -la /usr/lib/x86_64-linux-gnu/ruby/gems/3.0.0/bin/
+        # ls -la /usr/share/rubygems-integration/3.0.0/bin/
+        # ls -la /usr/share/rubygems-integration/all/bin/
+        # ls -la /usr/lib/x86_64-linux-gnu/rubygems-integration/3.0.0/bin/
+
+    - name: Create input-cache directory
+      run: pwd & mkdir -p ./input-cache  & mkdir -p ./output
+      
+    - name: Give execute permissions to scripts
+      run: chmod +x _updatePublisher.sh _genonce.sh
+
+    - name: Update IG Publisher
+      run: yes | ./_updatePublisher.sh
+
+    - name: Run SUSHI to generate FHIR resources
+      run: sushi .
+
+    - name: Run IG Publisher using _genonce.sh
+      run: |
+        cat $GITHUB_ENV
+        export PATH="~/.local/share/gem/ruby/3.0.0/bin:$PATH"
+        jekyll -v || echo "Jekyll is not in the default PATH"
+        
+        ./_genonce.sh 
+        # || jekyll build --source "./temp/pages" --destination "./output"
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
+
+
+
+---
+
+name: Deploy FHIR IG to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Update the image to the latest publisher
+      uses: docker://hl7fhir/ig-publisher-base:latest
+      with:
+        args: ./_updatePublisher.sh --force
+    
+    - name: Run sushi to generate the ig.ini file
+      uses: docker://hl7fhir/ig-publisher-base:latest
+      with:
+        args: sushi
+
+    - name: Run the IG publisher
+      uses: docker://hl7fhir/ig-publisher-base:latest
+      with:
+        args: ./_genonce.sh -no-sushi
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
