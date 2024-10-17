@@ -1,3 +1,6 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.serious.med.core.json	1838	-	0	0	0	0	0	0	6	133	0	0	3	0	0	0	0	0	0	0	98	77	0	0	0	3	0	1
-fsh-generated/resources/StructureDefinition-sm-patient.json	3565	25	0	0	0	0	0	106	0	108	0	0	0	0	0	0	0	2	0	0	373	2936	0	0	0	14	0	1
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.serious.med.core.json	2504	-	0	0	0	0	0	0	5	85	0	0	5	0	0	0	0	1	0	0	87	75	0	0	0	2	0	2
+fsh-generated/resources/CodeSystem-v2-0203.json	1514	13	0	0	1	0	0	0	0	27	0	0	0	0	0	0	0	0	0	0	23	3470	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ext-person-age.json	2057	11	1	0	0	0	0	16	1	62	0	0	1	0	0	0	0	2	0	0	74	1207	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-sm-patient.json	44791	20	0	0	0	0	0	213	0	680	0	0	0	0	0	0	0	3	0	0	1026	3022	0	0	0	60	0	7
+fsh-generated/resources/ValueSet-identifier-type.json	754	11	0	0	0	0	0	0	0	93	0	0	0	0	0	0	0	0	0	0	16	6121	0	0	0	1	0	0

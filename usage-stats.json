@@ -2,7 +2,15 @@
   "package": "hl7.fhir.serious.med.core",
   "version": "1.0.0",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://sm-ig.gihub.io/StructureDefinition/ext-person-age",
+      "title": "Person Age",
+      "types": [
+        "Age"
+      ]
+    }
+  ],
   "profiles": {
     "Patient": [
       {
@@ -19,10 +27,17 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -45,6 +60,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://sm-ig.gihub.io/StructureDefinition/ext-person-age": [
+      "Patient"
     ]
   }
 }

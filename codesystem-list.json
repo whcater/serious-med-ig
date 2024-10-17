@@ -1,3 +1,12 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "IdentifierType_V20203",
+      "title" : "识别码类型",
+      "description" : "识别码类型"
+    }
+  ]
 }

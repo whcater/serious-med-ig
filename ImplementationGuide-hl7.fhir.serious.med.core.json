@@ -10,7 +10,7 @@
   "name" : "hl7fhirseriousmedcoreimplementationguide",
   "title" : "HL7® Serious Med FHIR® Core Implementation Guide",
   "status" : "draft",
-  "date" : "2024-10-17T09:58:57+00:00",
+  "date" : "2024-10-17T16:06:49+00:00",
   "publisher" : "whcater",
   "contact" : [{
     "name" : "whcater",
@@ -613,6 +613,30 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/identifier-type"
+      },
+      "name" : "IdentifierType - 识别码类型值集",
+      "description" : "IdentifierType - 识别码类型值集",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ext-person-age"
+      },
+      "name" : "Person Age",
+      "description" : "年龄",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -620,6 +644,18 @@
       },
       "name" : "SmPatient Base",
       "description" : "病人（Serious Medical Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/v2-0203"
+      },
+      "name" : "识别码类型",
+      "description" : "识别码类型",
       "exampleBoolean" : false
     }],
     "page" : {

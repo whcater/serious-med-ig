@@ -11,7 +11,7 @@
   <name value="hl7fhirseriousmedcoreimplementationguide"/>
   <title value="HL7® Serious Med FHIR® Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-10-17T09:58:57+00:00"/>
+  <date value="2024-10-17T16:06:49+00:00"/>
   <publisher value="whcater"/>
   <contact>
     <name value="whcater"/>
@@ -456,6 +456,28 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/identifier-type"/>
+      </reference>
+      <name value="IdentifierType - 识别码类型值集"/>
+      <description value="IdentifierType - 识别码类型值集"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ext-person-age"/>
+      </reference>
+      <name value="Person Age"/>
+      <description value="年龄"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -463,6 +485,17 @@
       </reference>
       <name value="SmPatient Base"/>
       <description value="病人（Serious Medical Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/v2-0203"/>
+      </reference>
+      <name value="识别码类型"/>
+      <description value="识别码类型"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

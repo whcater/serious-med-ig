@@ -1,5 +1,12 @@
 [
   {
+    "id" : "v2-0203",
+    "type" : "CodeSystem",
+    "url" : "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+    "version" : "1.0.0",
+    "name" : "IdentifierType_V20203"
+  },
+  {
     "id" : "hl7.fhir.serious.med.core",
     "type" : "ImplementationGuide",
     "url" : "https://sm-ig.gihub.io/ImplementationGuide/hl7.fhir.serious.med.core",
@@ -7,10 +14,24 @@
     "name" : "hl7fhirseriousmedcoreimplementationguide"
   },
   {
+    "id" : "ext-person-age",
+    "type" : "StructureDefinition",
+    "url" : "https://sm-ig.gihub.io/StructureDefinition/ext-person-age",
+    "version" : "1.0.0",
+    "name" : "ExtPersonAge"
+  },
+  {
     "id" : "sm-patient",
     "type" : "StructureDefinition",
     "url" : "https://sm-ig.gihub.io/StructureDefinition/sm-patient",
     "version" : "1.0.0",
     "name" : "SmPatientBase"
+  },
+  {
+    "id" : "identifier-type",
+    "type" : "ValueSet",
+    "url" : "https://sm-ig.gihub.io/ValueSet/identifier-type",
+    "version" : "1.0.0",
+    "name" : "IdentifierType"
   }
 ]

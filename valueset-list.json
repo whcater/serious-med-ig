@@ -1,3 +1,16 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "https://sm-ig.gihub.io/ValueSet/identifier-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "IdentifierType - 识别码类型值集",
+      "description" : "IdentifierType - 识别码类型值集",
+      "systems" : [
+        "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+        "http://terminology.hl7.org/CodeSystem/v2-0203"
+      ]
+    }
+  ]
 }

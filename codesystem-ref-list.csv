@@ -1,2 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://hl7.org/fhir/identifier-use,4.0.1,active,"2.16.840.1.113883.4.642.4.58",IdentifierUse,IdentifierUse,"Identifies the purpose for this identifier, if known .","ValueSet/identifier-use"
+http://terminology.hl7.org/CodeSystem/v2-0203,4.0.0,active,"2.16.840.1.113883.18.108",IdentifierType,identifierType,"HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.","ValueSet/identifier-type"
+https://sm-ig.gihub.io/CodeSystem/v2-0203,1.0.0,active,,IdentifierType_V20203,识别码类型,"识别码类型","ValueSet/identifier-type"
 urn:ietf:bcp:47,2.0.1,active,"2.16.840.1.113883.6.121",Ietf3066,Tags for the Identification of Languages,"Older value from OID registry.  Superceded; see recommendations in BCP-47.","ValueSet/languages"

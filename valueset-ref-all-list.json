@@ -15,20 +15,6 @@
       "StructureDefinition-sm-patient.html" : "SmPatient Base"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "Identifier Type Codes",
-      "title" : "IdentifierType",
-      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
-      "oids" : ["2.16.840.1.113883.4.642.3.45"],
-      "sources" : ["2.16.840.1.113883.4.642.3.45"],
-      "uses" : {
-      },
-      "StructureDefinition-sm-patient.html" : "SmPatient Base"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -111,6 +97,21 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
       "oids" : ["2.16.840.1.113883.4.642.3.1130"],
       "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-patient.html" : "SmPatient Base"
+    },
+    {
+      "url" : "https://sm-ig.gihub.io/ValueSet/identifier-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "IdentifierType - 识别码类型值集",
+      "description" : "IdentifierType - 识别码类型值集",
+      "systems" : [
+        "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+        "http://terminology.hl7.org/CodeSystem/v2-0203"
+      ],
       "uses" : {
       },
       "StructureDefinition-sm-patient.html" : "SmPatient Base"

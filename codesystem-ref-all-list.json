@@ -70,7 +70,7 @@
       "oids" : ["2.16.840.1.113883.18.108"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+      "ValueSet-identifier-type.html" : "IdentifierType - 识别码类型值集"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
@@ -95,6 +95,17 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "IdentifierType_V20203",
+      "title" : "识别码类型",
+      "description" : "识别码类型",
+      "uses" : {
+      },
+      "ValueSet-identifier-type.html" : "IdentifierType - 识别码类型值集"
     },
     {
       "url" : "urn:ietf:bcp:47",

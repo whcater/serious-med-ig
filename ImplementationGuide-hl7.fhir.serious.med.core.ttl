@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "hl7fhirseriousmedcoreimplementationguide"] ; # 
   fhir:title [ fhir:v "HL7® Serious Med FHIR® Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-17T09:58:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-17T16:06:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "whcater" ] ;
@@ -529,6 +529,30 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://sm-ig.gihub.io/ValueSet/identifier-type> ;
+         fhir:reference [ fhir:v "ValueSet/identifier-type" ]
+       ] ;
+       fhir:name [ fhir:v "IdentifierType - 识别码类型值集" ] ;
+       fhir:description [ fhir:v "IdentifierType - 识别码类型值集" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://sm-ig.gihub.io/StructureDefinition/ext-person-age> ;
+         fhir:reference [ fhir:v "StructureDefinition/ext-person-age" ]
+       ] ;
+       fhir:name [ fhir:v "Person Age" ] ;
+       fhir:description [ fhir:v "年龄" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -537,6 +561,18 @@
        ] ;
        fhir:name [ fhir:v "SmPatient Base" ] ;
        fhir:description [ fhir:v "病人（Serious Medical Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://sm-ig.gihub.io/CodeSystem/v2-0203> ;
+         fhir:reference [ fhir:v "CodeSystem/v2-0203" ]
+       ] ;
+       fhir:name [ fhir:v "识别码类型" ] ;
+       fhir:description [ fhir:v "识别码类型" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

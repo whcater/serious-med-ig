@@ -1,6 +1,41 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.4.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "ValueSet-identifier-type.html" : "IdentifierType - 识别码类型值集"
+    },
+    {
+      "url" : "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "IdentifierType_V20203",
+      "title" : "识别码类型",
+      "description" : "识别码类型",
+      "uses" : {
+      },
+      "ValueSet-identifier-type.html" : "IdentifierType - 识别码类型值集"
+    },
+    {
       "url" : "urn:ietf:bcp:47",
       "version" : "2.0.1",
       "status" : "active",

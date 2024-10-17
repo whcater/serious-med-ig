@@ -1,6 +1,20 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-patient.html" : "SmPatient Base"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
       "version" : "4.0.1",
       "status" : "draft",
@@ -10,6 +24,21 @@
       "systems" : ["urn:ietf:bcp:47"],
       "oids" : ["2.16.840.1.113883.4.642.3.20"],
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-patient.html" : "SmPatient Base"
+    },
+    {
+      "url" : "https://sm-ig.gihub.io/ValueSet/identifier-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "IdentifierType - 识别码类型值集",
+      "description" : "IdentifierType - 识别码类型值集",
+      "systems" : [
+        "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+        "http://terminology.hl7.org/CodeSystem/v2-0203"
+      ],
       "uses" : {
       },
       "StructureDefinition-sm-patient.html" : "SmPatient Base"

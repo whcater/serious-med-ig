@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "identifier-type",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet identifier-type</b></p><a name=\"identifier-type\"> </a><a name=\"hcidentifier-type\"> </a><a name=\"identifier-type-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v2-0203.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a></li><li>Include these codes as defined in <a href=\"CodeSystem-v2-0203.html\"><code>https://sm-ig.gihub.io/CodeSystem/v2-0203</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-v2-0203.html#v2-0203-GOI\">GOI</a></td><td>Government Organization Identifier</td><td>Government Organization Identifier number</td></tr><tr><td><a href=\"CodeSystem-v2-0203.html#v2-0203-UBN\">UBN</a></td><td>Unified Business number</td><td>Unified Business number</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://sm-ig.gihub.io/ValueSet/identifier-type",
+  "version" : "1.0.0",
+  "name" : "IdentifierType",
+  "title" : "IdentifierType - 识别码类型值集",
+  "status" : "active",
+  "date" : "2024-10-17",
+  "publisher" : "whcater",
+  "contact" : [{
+    "name" : "whcater",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.serious-med.com"
+    }]
+  }],
+  "description" : "IdentifierType - 识别码类型值集",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203"
+    },
+    {
+      "system" : "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+      "concept" : [{
+        "code" : "GOI",
+        "display" : "Government Organization Identifier"
+      },
+      {
+        "code" : "UBN",
+        "display" : "Unified Business number"
+      }]
+    }]
+  }
+}
