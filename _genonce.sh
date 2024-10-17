@@ -14,6 +14,10 @@ fi
 
 echo "$txoption"
 
+# Add Jekyll installation path to PATH
+export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
+echo "Current PATH: $PATH"
+
 export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8"
 
 publisher=$input_cache_path/$publisher_jar
