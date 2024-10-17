@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "hl7fhirseriousmedcoreimplementationguide"] ; # 
   fhir:title [ fhir:v "HL7® Serious Med FHIR® Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-17T07:27:22+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-17T09:58:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "whcater" ] ;
@@ -536,7 +536,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sm-patient" ]
        ] ;
        fhir:name [ fhir:v "SmPatient Base" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the Patient resource by the International Patient Summary FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the composition or in one of the referred resources." ] ;
+       fhir:description [ fhir:v "病人（Serious Medical Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

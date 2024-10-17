@@ -1,6 +1,6 @@
 {
   "version" : "1.0.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20241017072624",
+  "date" : "20241017095749",
   "name" : "hl7.fhir.serious.med.core"
 }

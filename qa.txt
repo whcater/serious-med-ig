@@ -1,12 +1,12 @@
 hl7fhirseriousmedcoreimplementationguide : Validation Results
 =========================================
 
-err = 1, warn = 8, info = 0
+err = 3, warn = 8, info = 0
 IG Publisher Version: 1.6.31
-Generated Thu Oct 17 07:27:46 UTC 2024. FHIR version 4.0.1 for hl7.fhir.serious.med.core#1.0.0 (canonical = https://sm-ig.gihub.io)
+Generated Thu Oct 17 09:59:19 UTC 2024. FHIR version 4.0.1 for hl7.fhir.serious.med.core#1.0.0 (canonical = https://sm-ig.gihub.io)
  Build Errors : 48 / 5 / 0
  /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/ImplementationGuide-hl7.fhir.serious.med.core : 0 / 2 / 1
- /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-sm-patient : 1 / 1 / 1
+ /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-sm-patient : 3 / 1 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
@@ -66,5 +66,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 WARNING: ImplementationGuide/hl7.fhir.serious.med.core: ImplementationGuide: Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS "null"')
 == fsh-generated/resources/StructureDefinition-sm-patient.json ==
+ERROR: StructureDefinition/sm-patient: StructureDefinition.snapshot.element[4].example[0]: ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
+ERROR: StructureDefinition/sm-patient: StructureDefinition.differential.element[2].example[0]: ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS "null"')
 WARNING: StructureDefinition.where(url = 'https://sm-ig.gihub.io/StructureDefinition/sm-patient'): The Implementation Guide contains no examples for this profile

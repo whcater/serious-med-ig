@@ -10,7 +10,7 @@
   "name" : "hl7fhirseriousmedcoreimplementationguide",
   "title" : "HL7® Serious Med FHIR® Core Implementation Guide",
   "status" : "draft",
-  "date" : "2024-10-17T07:27:22+00:00",
+  "date" : "2024-10-17T09:58:57+00:00",
   "publisher" : "whcater",
   "contact" : [{
     "name" : "whcater",
@@ -619,7 +619,7 @@
         "reference" : "StructureDefinition/sm-patient"
       },
       "name" : "SmPatient Base",
-      "description" : "This profile represents the constraints applied to the Patient resource by the International Patient Summary FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the composition or in one of the referred resources.",
+      "description" : "病人（Serious Medical Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料",
       "exampleBoolean" : false
     }],
     "page" : {
