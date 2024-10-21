@@ -1,12 +1,12 @@
-Profile: SmPatientBase
+Profile: SmPatient
 Parent: Patient
 Id: sm-patient
-Title: "SmPatientBase"
+Title: "SmPatient"
 Description: "病人（Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料"
 * . ^short = "接受健康医护服务的个人信息"
 * . ^definition = "关于接受医护或其他健康相关服务的个人的人口统计学和其他行政信息。"
 * id ^short = "不重复的ID用以识别储存在特定FHIR Server中的Patient纪录，通常又称为逻辑性ID。"
-* id ^comment = "一个resource使用新增操作（create operation）提交给伺服器时，此resource没有id，它的id在resource被创建后由伺器分配/指定。"
+* id ^comment = "一个resource使用新增操作（create operation）提交给伺服器时，此resource没有id，它的id在resource被创建后由服务器分配/指定。"
 * language from CommonLanguages (preferred)
 * language ^short = "用以表述Patient Resource内容的语言。"
 * language ^example.valueString = "zh-cn"
@@ -499,8 +499,8 @@ Description: "病人（Patient) Profile说明本IG如何进一步定义FHIR的Pa
 * maritalStatus ^binding.extension[=].valueBoolean = true
 * maritalStatus ^binding.description = "病人的婚姻状态；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。"
 * multipleBirth[x] ^short = "病人是否为多胞胎；或多胞胎出生顺序。"
-* multipleBirth[x] ^definition = "表示病人是否是为多胞胎（布林值）或表示实际的出生顺序（整数值）"
-* multipleBirth[x] ^comment = "在提供valueInteger的情况下，这个数字是序列中的出生序。例如：三胞胎中的中间胎儿是valueInteger=2，第三胎儿是valueInteger=3，如果是为三胞胎提供布林值，那么所有3位病人的纪录都是valueBoolean=true（没有指明出生序）。"
+* multipleBirth[x] ^definition = "表示病人是否是为多胞胎（布尔值）或表示实际的出生顺序（整数值）"
+* multipleBirth[x] ^comment = "在提供valueInteger的情况下，这个数字是序列中的出生序。例如：三胞胎中的中间胎儿是valueInteger=2，第三胎儿是valueInteger=3，如果是为三胞胎提供布尔值，那么所有3位病人的纪录都是valueBoolean=true（没有指明出生序）。"
 * multipleBirth[x] ^requirements = "用于消除多胎孩童的歧义，特别是在医护人员没有见到病人的情况下，例如：在实验室。"
 * photo MS
 * photo ^short = "病人的影像（照片）"
@@ -640,7 +640,7 @@ Description: "病人（Patient) Profile说明本IG如何进一步定义FHIR的Pa
 * link ^definition = "连结到另一个涉及同一实际病人的Patient resource。"
 * link ^comment = "不存在连结的病人纪录有相互连结的假设"
 * link ^requirements = "有多种使用案例：  \n由于难以一致地指明与人相关的文件而错误地重复制作病人纪录，并在多个服务器上发布病人的信息。"
-* link.other only Reference(SmPatientBase or RelatedPerson)
+* link.other only Reference(SmPatient or RelatedPerson)
 * link.other ^short = "连结至其他Patient或RelatedPerson Resource"
 * link.other ^definition = "此连超所参照的另一个Patient resource"
 * link.other ^comment = "在这里参照一个RelatedPerson，就不需要另外使用Person来将Patient及RelatedPerson作为同一个人关联起来。"
