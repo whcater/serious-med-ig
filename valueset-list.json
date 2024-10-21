@@ -1,14 +1,14 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://sm-ig.gihub.io/ValueSet/identifier-type",
+      "url" : "https://whcater.github.io/serious-med-ig/ValueSet/identifier-type",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "IdentifierType",
-      "title" : "IdentifierType - 识别码类型值集",
-      "description" : "IdentifierType - 识别码类型值集",
+      "title" : "IdentifierType",
+      "description" : "识别码类型值集",
       "systems" : [
-        "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+        "https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203",
         "http://terminology.hl7.org/CodeSystem/v2-0203"
       ]
     }

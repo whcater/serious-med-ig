@@ -5,25 +5,25 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://sm-ig.gihub.io/ImplementationGuide/hl7.fhir.serious.med.core> a fhir:ImplementationGuide ;
+<https://whcater.github.io/serious-med-ig/ImplementationGuide/hl7.fhir.serious.med.core> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "hl7.fhir.serious.med.core"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.serious.med.core</b></p><a name=\"hl7.fhir.serious.med.core\"> </a><a name=\"hchl7.fhir.serious.med.core\"> </a><a name=\"hl7.fhir.serious.med.core-en-US\"> </a><h2>hl7fhirseriousmedcoreimplementationguide</h2><p>The official URL for this implementation guide is: </p><pre>https://sm-ig.gihub.io/ImplementationGuide/hl7.fhir.serious.med.core</pre><div><p>FHIR Core Implementation Guide for Serious Med</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.serious.med.core</b></p><a name=\"hl7.fhir.serious.med.core\"> </a><a name=\"hchl7.fhir.serious.med.core\"> </a><a name=\"hl7.fhir.serious.med.core-en-US\"> </a><h2>hl7fhirseriousmedcoreimplementationguide</h2><p>The official URL for this implementation guide is: </p><pre>https://whcater.github.io/serious-med-ig/ImplementationGuide/hl7.fhir.serious.med.core</pre><div><p>FHIR Core Implementation Guide for Serious Med</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "https://sm-ig.gihub.io/ImplementationGuide/hl7.fhir.serious.med.core"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://whcater.github.io/serious-med-ig/ImplementationGuide/hl7.fhir.serious.med.core"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "hl7fhirseriousmedcoreimplementationguide"] ; # 
   fhir:title [ fhir:v "HL7® Serious Med FHIR® Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-17T16:06:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-21T01:26:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "whcater" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.serious-med.com" ]
+       fhir:value [ fhir:v "https://whcater.github.io/serious-med-ig/" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "FHIR Core Implementation Guide for Serious Med"] ; # 
@@ -159,7 +159,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "https://sm-ig.gihub.io/history.html" ]
+         fhir:value [ fhir:v "https://whcater.github.io/serious-med-ig/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -387,7 +387,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "https://sm-ig.gihub.io/history.html" ]
+         fhir:value [ fhir:v "https://whcater.github.io/serious-med-ig/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -532,11 +532,23 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://sm-ig.gihub.io/ValueSet/identifier-type> ;
+         fhir:link <https://whcater.github.io/serious-med-ig/ValueSet/identifier-type> ;
          fhir:reference [ fhir:v "ValueSet/identifier-type" ]
        ] ;
-       fhir:name [ fhir:v "IdentifierType - 识别码类型值集" ] ;
-       fhir:description [ fhir:v "IdentifierType - 识别码类型值集" ] ;
+       fhir:name [ fhir:v "IdentifierType" ] ;
+       fhir:description [ fhir:v "识别码类型值集" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203> ;
+         fhir:reference [ fhir:v "CodeSystem/v2-0203" ]
+       ] ;
+       fhir:name [ fhir:v "IdentifierType_V20203" ] ;
+       fhir:description [ fhir:v "识别码类型" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -544,10 +556,10 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://sm-ig.gihub.io/StructureDefinition/ext-person-age> ;
+         fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age> ;
          fhir:reference [ fhir:v "StructureDefinition/ext-person-age" ]
        ] ;
-       fhir:name [ fhir:v "Person Age" ] ;
+       fhir:name [ fhir:v "PersonAge" ] ;
        fhir:description [ fhir:v "年龄" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -556,23 +568,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://sm-ig.gihub.io/StructureDefinition/sm-patient> ;
+         fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/sm-patient> ;
          fhir:reference [ fhir:v "StructureDefinition/sm-patient" ]
        ] ;
-       fhir:name [ fhir:v "SmPatient Base" ] ;
-       fhir:description [ fhir:v "病人（Serious Medical Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://sm-ig.gihub.io/CodeSystem/v2-0203> ;
-         fhir:reference [ fhir:v "CodeSystem/v2-0203" ]
-       ] ;
-       fhir:name [ fhir:v "识别码类型" ] ;
-       fhir:description [ fhir:v "识别码类型" ] ;
+       fhir:name [ fhir:v "SmPatientBase" ] ;
+       fhir:description [ fhir:v "病人（Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

@@ -25,7 +25,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","任何应用程序、专案或标准使用扩充时，都不应该带有任何负面的联想。使用扩充是允许FHIR规范为每个人保留一个核心的简易性。","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:age","Patient.extension","age","","",0,1,"Y","","","Extension {[CanonicalType[https://sm-ig.gihub.io/StructureDefinition/ext-person-age]]} {[]}
+"Patient.extension:age","Patient.extension","age","","",0,1,"Y","","","Extension {[CanonicalType[https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age]]} {[]}
 ","年龄","年龄","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -56,7 +56,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）","这个唯一识别码（identifier）的用途","应用程序可以假定一个识别码是永久的，除非它明确说它是暂时的。","允许从一组识别码中为特定的使用场景选择适当的识别码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","如果知道，请说明此识别码的目的；应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.code or implied by context","N/A"
 "Patient.identifier:idCardNumber.type","Patient.identifier.type","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","身份识别码（identifier）的型别说明","识别码的代码型别，用于决定特定目适用的识别码。","这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。","允许使用者在不知道识别码系统的情况下利用识别码","","","","","","","",,"extensible","识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","https://sm-ig.gihub.io/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","身份识别码（identifier）的型别说明","识别码的代码型别，用于决定特定目适用的识别码。","这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。","允许使用者在不知道识别码系统的情况下利用识别码","","","","","","","",,"extensible","识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","https://whcater.github.io/serious-med-ig/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.code or implied by context","CX.5"
 "Patient.identifier:idCardNumber.type.id","Patient.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -66,7 +66,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.identifier:idCardNumber.type.coding","Patient.identifier.type.coding","","","",1,*,"","","Y","Coding {[]} {[]}
-","由专门术语系统（terminology system）定义的代码","由专门术语系统（terminology system）所定义之代码的参照","代码可以在列举清单（enumerations）或代码清单（code lists）中非常随意地定义，直至有非常正式的定义，例如：SNOMED CT—更多信息见HL7 v3核心原则（Core Principles）。编码的排序是未定义的因而 **必须没有（SHALL NOT）** 被用来推断意义。一般来说，最多只有一个编码值（coding values）会被标记为UserSelected = true。","允许代码系统中的替代编码，以及翻译到其他编码系统。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","由专门术语系统（terminology system）定义的代码","A reference to a code defined by a terminology system.","代码可以在列举清单（enumerations）或代码清单（code lists）中非常随意地定义，直至有非常正式的定义，例如：SNOMED CT—更多信息见HL7 v3核心原则（Core Principles）。编码的排序是未定义的因而 **必须没有（SHALL NOT）** 被用来推断意义。一般来说，最多只有一个编码值（coding values）会被标记为UserSelected = true。","允许编码系统中的替代编码，以及翻译到其他编码系统。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","union(., ./translation)","C*E.1-8, C*E.10-22"
 "Patient.identifier:idCardNumber.type.coding.id","Patient.identifier.type.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -76,13 +76,13 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.identifier:idCardNumber.type.coding.system","Patient.identifier.type.coding.system","","","",1,1,"Y","","Y","uri {[]} {[]}
-","专门术语系统（terminology system）的识别","定义代码中符号意义的代码系统识别","URI可以是一个OID（urn:oid:...）或一个UUID（urn:uuid:...）；OID和UUID **必须（SHALL）** 参照HL7 OID注册中心；否则，URI应该来自HL7的FHIR定义的特殊URI列表，或者它应该参照一些明确建立的系统定义。","需要明确说明符号定义的来源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","专门术语系统（terminology system）的识别","定义代码中符号意义的编码系统识别","URI可以是一个OID（urn:oid:...）或一个UUID（urn:uuid:...）；OID和UUID **必须（SHALL）** 参照HL7 OID注册中心；否则，URI应该来自HL7的FHIR定义的特殊URI列表，或者它应该参照一些明确建立的系统定义。","需要明确说明符号定义的来源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystem","C*E.3"
 "Patient.identifier:idCardNumber.type.coding.version","Patient.identifier.type.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","系统的版本—如果相关的话","选择此代码时使用的代码系统版本；请注意，一个维护良好的代码系统不需要版本报告，因为代码的意义在不同系统版本中是一致的；然而，不能始终保证这点，当不能保证意义一致时， **必须（SHALL）** 将版本信息也一并作交换。","如果专门术语没有明确定义应该使用什么字串来识别代码系统的版本，建议使用版本正式发布的日期（用FHIR日期格式表示）作为版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","系统的版本—如果相关的话","选择此代码时使用的编码系统版本；请注意，一个维护良好的编码系统不需要版本报告，因为代码的意义在不同系统版本中是一致的；然而，不能始终保证这点，当不能保证意义一致时， **必须（SHALL）** 将版本信息也一并作交换。","如果专门术语没有明确定义应该使用什么字串来识别编码系统的版本，建议使用版本正式发布的日期（用FHIR日期格式表示）作为版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystemVersion","C*E.7"
 "Patient.identifier:idCardNumber.type.coding.code","Patient.identifier.type.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
-","系统定义的语法之符号","系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是代码系统定义的语法中的表达式（如后组合配对／后组合式）。","","需要参照系统中的一个特定代码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""NNxxx""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","系统定义的语法之符号","系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是编码系统定义的语法中的表达式（如后组合配对／后组合式）。","","需要参照系统中的一个特定代码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""NNxxx""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code","C*E.1"
 "Patient.identifier:idCardNumber.type.coding.display","Patient.identifier.type.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
 ","由编码系统定义的描述","遵循系统的规则以呈现代码含义的描述","","需要能为不了解此系统的读者呈现可读的代码含义","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -120,7 +120,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）","这个唯一识别码（identifier）的用途","应用程序可以假定一个识别码是永久的，除非它明确说它是暂时的。","允许从一组识别码中为特定的使用场景选择适当的识别码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","如果知道，请说明此识别码的目的；应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.code or implied by context","N/A"
 "Patient.identifier:passportNumber.type","Patient.identifier.type","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","身份识别码（identifier）的型别说明","识别码的代码型别，用于决定特定目适用的识别码。","这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。","允许使用者在不知道识别码系统的情况下利用识别码","","","","","","","",,"extensible","识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","https://sm-ig.gihub.io/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","身份识别码（identifier）的型别说明","识别码的代码型别，用于决定特定目适用的识别码。","这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。","允许使用者在不知道识别码系统的情况下利用识别码","","","","","","","",,"extensible","识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","https://whcater.github.io/serious-med-ig/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.code or implied by context","CX.5"
 "Patient.identifier:passportNumber.type.id","Patient.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -130,7 +130,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.identifier:passportNumber.type.coding","Patient.identifier.type.coding","","","",1,*,"Y","","Y","Coding {[]} {[]}
-","由专门术语系统（terminology system）定义的代码","由专门术语系统（terminology system）所定义之代码的参照","代码可以在列举清单（enumerations）或代码清单（code lists）中非常随意地定义，直至有非常正式的定义，例如：SNOMED CT—更多信息见HL7 v3核心原则（Core Principles）。编码的排序是未定义的因而 **必须没有（SHALL NOT）** 被用来推断意义。一般来说，最多只有一个编码值（coding values）会被标记为UserSelected = true。","允许代码系统中的替代编码，以及翻译到其他编码系统。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","由专门术语系统（terminology system）定义的代码","A reference to a code defined by a terminology system.","代码可以在列举清单（enumerations）或代码清单（code lists）中非常随意地定义，直至有非常正式的定义，例如：SNOMED CT—更多信息见HL7 v3核心原则（Core Principles）。编码的排序是未定义的因而 **必须没有（SHALL NOT）** 被用来推断意义。一般来说，最多只有一个编码值（coding values）会被标记为UserSelected = true。","允许编码系统中的替代编码，以及翻译到其他编码系统。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","union(., ./translation)","C*E.1-8, C*E.10-22"
 "Patient.identifier:passportNumber.type.coding.id","Patient.identifier.type.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -140,13 +140,13 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.identifier:passportNumber.type.coding.system","Patient.identifier.type.coding.system","","","",1,1,"Y","","Y","uri {[]} {[]}
-","专门术语系统（terminology system）的识别","定义代码中符号意义的代码系统识别","URI可以是一个OID（urn:oid:...）或一个UUID（urn:uuid:...）；OID和UUID **必须（SHALL）** 参照HL7 OID注册中心；否则，URI应该来自HL7的FHIR定义的特殊URI列表，或者它应该参照一些明确建立的系统定义。","需要明确说明符号定义的来源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","专门术语系统（terminology system）的识别","定义代码中符号意义的编码系统识别","URI可以是一个OID（urn:oid:...）或一个UUID（urn:uuid:...）；OID和UUID **必须（SHALL）** 参照HL7 OID注册中心；否则，URI应该来自HL7的FHIR定义的特殊URI列表，或者它应该参照一些明确建立的系统定义。","需要明确说明符号定义的来源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystem","C*E.3"
 "Patient.identifier:passportNumber.type.coding.version","Patient.identifier.type.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","系统的版本—如果相关的话","选择此代码时使用的代码系统版本；请注意，一个维护良好的代码系统不需要版本报告，因为代码的意义在不同系统版本中是一致的；然而，不能始终保证这点，当不能保证意义一致时， **必须（SHALL）** 将版本信息也一并作交换。","如果专门术语没有明确定义应该使用什么字串来识别代码系统的版本，建议使用版本正式发布的日期（用FHIR日期格式表示）作为版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","系统的版本—如果相关的话","选择此代码时使用的编码系统版本；请注意，一个维护良好的编码系统不需要版本报告，因为代码的意义在不同系统版本中是一致的；然而，不能始终保证这点，当不能保证意义一致时， **必须（SHALL）** 将版本信息也一并作交换。","如果专门术语没有明确定义应该使用什么字串来识别编码系统的版本，建议使用版本正式发布的日期（用FHIR日期格式表示）作为版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystemVersion","C*E.7"
 "Patient.identifier:passportNumber.type.coding.code","Patient.identifier.type.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
-","系统定义的语法之符号","系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是代码系统定义的语法中的表达式（如后组合配对／后组合式）。","","需要参照系统中的一个特定代码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PPN""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","系统定义的语法之符号","系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是编码系统定义的语法中的表达式（如后组合配对／后组合式）。","","需要参照系统中的一个特定代码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PPN""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code","C*E.1"
 "Patient.identifier:passportNumber.type.coding.display","Patient.identifier.type.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
 ","由编码系统定义的描述","遵循系统的规则以呈现代码含义的描述","","需要能为不了解此系统的读者呈现可读的代码含义","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -183,7 +183,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）","这个唯一识别码（identifier）的用途","应用程序可以假定一个识别码是永久的，除非它明确说它是暂时的。","允许从一组识别码中为特定的使用场景选择适当的识别码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","如果知道，请说明此识别码的目的；应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.code or implied by context","N/A"
 "Patient.identifier:residentNumber.type","Patient.identifier.type","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","身份识别码（identifier）的型别说明","识别码的代码型别，用于决定特定目适用的识别码。","这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。","允许使用者在不知道识别码系统的情况下利用识别码","","","","","","","",,"extensible","识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","https://sm-ig.gihub.io/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","身份识别码（identifier）的型别说明","识别码的代码型别，用于决定特定目适用的识别码。","这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。","允许使用者在不知道识别码系统的情况下利用识别码","","","","","","","",,"extensible","识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","https://whcater.github.io/serious-med-ig/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.code or implied by context","CX.5"
 "Patient.identifier:residentNumber.type.id","Patient.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -193,7 +193,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.identifier:residentNumber.type.coding","Patient.identifier.type.coding","","","",1,*,"","","Y","Coding {[]} {[]}
-","由专门术语系统（terminology system）定义的代码","由专门术语系统（terminology system）所定义之代码的参照","代码可以在列举清单（enumerations）或代码清单（code lists）中非常随意地定义，直至有非常正式的定义，例如：SNOMED CT—更多信息见HL7 v3核心原则（Core Principles）。编码的排序是未定义的因而 **必须没有（SHALL NOT）** 被用来推断意义。一般来说，最多只有一个编码值（coding values）会被标记为UserSelected = true。","允许代码系统中的替代编码，以及翻译到其他编码系统。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","由专门术语系统（terminology system）定义的代码","A reference to a code defined by a terminology system.","代码可以在列举清单（enumerations）或代码清单（code lists）中非常随意地定义，直至有非常正式的定义，例如：SNOMED CT—更多信息见HL7 v3核心原则（Core Principles）。编码的排序是未定义的因而 **必须没有（SHALL NOT）** 被用来推断意义。一般来说，最多只有一个编码值（coding values）会被标记为UserSelected = true。","允许编码系统中的替代编码，以及翻译到其他编码系统。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","union(., ./translation)","C*E.1-8, C*E.10-22"
 "Patient.identifier:residentNumber.type.coding.id","Patient.identifier.type.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -203,13 +203,13 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.identifier:residentNumber.type.coding.system","Patient.identifier.type.coding.system","","","",1,1,"Y","","Y","uri {[]} {[]}
-","专门术语系统（terminology system）的识别","定义代码中符号意义的代码系统识别","URI可以是一个OID（urn:oid:...）或一个UUID（urn:uuid:...）；OID和UUID **必须（SHALL）** 参照HL7 OID注册中心；否则，URI应该来自HL7的FHIR定义的特殊URI列表，或者它应该参照一些明确建立的系统定义。","需要明确说明符号定义的来源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","专门术语系统（terminology system）的识别","定义代码中符号意义的编码系统识别","URI可以是一个OID（urn:oid:...）或一个UUID（urn:uuid:...）；OID和UUID **必须（SHALL）** 参照HL7 OID注册中心；否则，URI应该来自HL7的FHIR定义的特殊URI列表，或者它应该参照一些明确建立的系统定义。","需要明确说明符号定义的来源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystem","C*E.3"
 "Patient.identifier:residentNumber.type.coding.version","Patient.identifier.type.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","系统的版本—如果相关的话","选择此代码时使用的代码系统版本；请注意，一个维护良好的代码系统不需要版本报告，因为代码的意义在不同系统版本中是一致的；然而，不能始终保证这点，当不能保证意义一致时， **必须（SHALL）** 将版本信息也一并作交换。","如果专门术语没有明确定义应该使用什么字串来识别代码系统的版本，建议使用版本正式发布的日期（用FHIR日期格式表示）作为版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","系统的版本—如果相关的话","选择此代码时使用的编码系统版本；请注意，一个维护良好的编码系统不需要版本报告，因为代码的意义在不同系统版本中是一致的；然而，不能始终保证这点，当不能保证意义一致时， **必须（SHALL）** 将版本信息也一并作交换。","如果专门术语没有明确定义应该使用什么字串来识别编码系统的版本，建议使用版本正式发布的日期（用FHIR日期格式表示）作为版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystemVersion","C*E.7"
 "Patient.identifier:residentNumber.type.coding.code","Patient.identifier.type.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
-","系统定义的语法之符号","系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是代码系统定义的语法中的表达式（如后组合配对／后组合式）。","","需要参照系统中的一个特定代码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRC""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","系统定义的语法之符号","系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是编码系统定义的语法中的表达式（如后组合配对／后组合式）。","","需要参照系统中的一个特定代码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRC""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code","C*E.1"
 "Patient.identifier:residentNumber.type.coding.display","Patient.identifier.type.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
 ","由编码系统定义的描述","遵循系统的规则以呈现代码含义的描述","","需要能为不了解此系统的读者呈现可读的代码含义","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -246,7 +246,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）","这个唯一识别码（identifier）的用途","应用程序可以假定一个识别码是永久的，除非它明确说它是暂时的。","允许从一组识别码中为特定的使用场景选择适当的识别码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","如果知道，请说明此识别码的目的；应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.code or implied by context","N/A"
 "Patient.identifier:medicalRecord.type","Patient.identifier.type","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","身份识别码（identifier）的型别说明","识别码的代码型别，用于决定特定目适用的识别码。","这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。","允许使用者在不知道识别码系统的情况下利用识别码","","","","","","","",,"extensible","识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","https://sm-ig.gihub.io/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","身份识别码（identifier）的型别说明","识别码的代码型别，用于决定特定目适用的识别码。","这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。","允许使用者在不知道识别码系统的情况下利用识别码","","","","","","","",,"extensible","识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","https://whcater.github.io/serious-med-ig/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.code or implied by context","CX.5"
 "Patient.identifier:medicalRecord.type.id","Patient.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -256,7 +256,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.identifier:medicalRecord.type.coding","Patient.identifier.type.coding","","","",1,*,"","","Y","Coding {[]} {[]}
-","由专门术语系统（terminology system）定义的代码","由专门术语系统（terminology system）所定义之代码的参照","代码可以在列举清单（enumerations）或代码清单（code lists）中非常随意地定义，直至有非常正式的定义，例如：SNOMED CT—更多信息见HL7 v3核心原则（Core Principles）。编码的排序是未定义的因而 **必须没有（SHALL NOT）** 被用来推断意义。一般来说，最多只有一个编码值（coding values）会被标记为UserSelected = true。","允许代码系统中的替代编码，以及翻译到其他编码系统。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","由专门术语系统（terminology system）定义的代码","A reference to a code defined by a terminology system.","代码可以在列举清单（enumerations）或代码清单（code lists）中非常随意地定义，直至有非常正式的定义，例如：SNOMED CT—更多信息见HL7 v3核心原则（Core Principles）。编码的排序是未定义的因而 **必须没有（SHALL NOT）** 被用来推断意义。一般来说，最多只有一个编码值（coding values）会被标记为UserSelected = true。","允许编码系统中的替代编码，以及翻译到其他编码系统。","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","union(., ./translation)","C*E.1-8, C*E.10-22"
 "Patient.identifier:medicalRecord.type.coding.id","Patient.identifier.type.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -266,13 +266,13 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.identifier:medicalRecord.type.coding.system","Patient.identifier.type.coding.system","","","",1,1,"Y","","Y","uri {[]} {[]}
-","专门术语系统（terminology system）的识别","定义代码中符号意义的代码系统识别","URI可以是一个OID（urn:oid:...）或一个UUID（urn:uuid:...）；OID和UUID **必须（SHALL）** 参照HL7 OID注册中心；否则，URI应该来自HL7的FHIR定义的特殊URI列表，或者它应该参照一些明确建立的系统定义。","需要明确说明符号定义的来源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","专门术语系统（terminology system）的识别","定义代码中符号意义的编码系统识别","URI可以是一个OID（urn:oid:...）或一个UUID（urn:uuid:...）；OID和UUID **必须（SHALL）** 参照HL7 OID注册中心；否则，URI应该来自HL7的FHIR定义的特殊URI列表，或者它应该参照一些明确建立的系统定义。","需要明确说明符号定义的来源","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystem","C*E.3"
 "Patient.identifier:medicalRecord.type.coding.version","Patient.identifier.type.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","系统的版本—如果相关的话","选择此代码时使用的代码系统版本；请注意，一个维护良好的代码系统不需要版本报告，因为代码的意义在不同系统版本中是一致的；然而，不能始终保证这点，当不能保证意义一致时， **必须（SHALL）** 将版本信息也一并作交换。","如果专门术语没有明确定义应该使用什么字串来识别代码系统的版本，建议使用版本正式发布的日期（用FHIR日期格式表示）作为版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","系统的版本—如果相关的话","选择此代码时使用的编码系统版本；请注意，一个维护良好的编码系统不需要版本报告，因为代码的意义在不同系统版本中是一致的；然而，不能始终保证这点，当不能保证意义一致时， **必须（SHALL）** 将版本信息也一并作交换。","如果专门术语没有明确定义应该使用什么字串来识别编码系统的版本，建议使用版本正式发布的日期（用FHIR日期格式表示）作为版本日期。","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystemVersion","C*E.7"
 "Patient.identifier:medicalRecord.type.coding.code","Patient.identifier.type.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
-","系统定义的语法之符号","系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是代码系统定义的语法中的表达式（如后组合配对／后组合式）。","","需要参照系统中的一个特定代码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""MR""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","系统定义的语法之符号","系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是编码系统定义的语法中的表达式（如后组合配对／后组合式）。","","需要参照系统中的一个特定代码","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""MR""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code","C*E.1"
 "Patient.identifier:medicalRecord.type.coding.display","Patient.identifier.type.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
 ","由编码系统定义的描述","遵循系统的规则以呈现代码含义的描述","","需要能为不了解此系统的读者呈现可读的代码含义","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -284,7 +284,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","概念的文字描述","输入资料的使用者所见／所选／所说的人类可读文字表述，和（或）其代表使用者的预期含义。","很多时候，此文字表述与其中一个代码的显示名称相同。","专门术语中的代码并不总是能捕捉人类使用的细微差别的正确意义，或者根本就没有合适的代码；这些情况下，文字表述被用来捕捉来源的全部意义。","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./originalText[mediaType/code=""text/plain""]/data","C*E.9. But note many systems use C*E.2 for this"
 "Patient.identifier:medicalRecord.system","Patient.identifier.system","","","",1,1,"Y","","Y","uri {[]} {[]}
-","身份识别码（identifier）的命名空间（namespace），可至[twTerminology](https://twcore.mohw.gov.tw/ts/namingsystem.jsp?status=active&amp;type=0)申请或查询命名系统。","建立值的命名空间－即一个描述一组值的唯一URL","Identifier.system总是区分大小写","有许多识别码的集合。为了进行两个识别码的对应，我们需要知道我们处理的是哪一组。系统指明了一个特定的唯一识别码集。","","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","身份识别码（identifier）的命名空间（namespace），可至[twTerminology](https://.mohw.gov.tw/ts/namingsystem.jsp?status=active&amp;type=0)申请或查询命名系统。","建立值的命名空间－即一个描述一组值的唯一URL","Identifier.system总是区分大小写","有许多识别码的集合。为了进行两个识别码的对应，我们需要知道我们处理的是哪一组。系统指明了一个特定的唯一识别码集。","","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","II.root or Role.id.root","CX.4 / EI-2-4"
 "Patient.identifier:medicalRecord.value","Patient.identifier.value","","","",1,1,"Y","","Y","string {[]} {[]}
 ","唯一值。
@@ -303,8 +303,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 已过世的病人也可能因为同样的原因被标记为inactive，但在过世后的一段时间内可能是active。","如果一笔病人纪录没有在使用，但与另一笔使用中的病人纪录相连结，那么未来的病人／纪录更新应该发生在另一笔病人纪录。","若纪录因为错误而创建，需要能够将这位病人纪录标记为不使用","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"Patient.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","statusCode","n/a","FiveWs.status"
-"Patient.name","Patient.name","","","",1,*,"Y","","Y","HumanName {[]} {[]}
-","病人的姓名","个人名字","一位病人可能有多个姓名，有不同的用途或适用期。对于动物来说，这个姓名是一个「HumanName」，它是人类指定和使用的，具有相同的模式。","需要能够追踪病人的多个姓名。例如：正式姓名及配偶姓名。 **必须（SHALL）** 总是提供姓名的完整拼法。","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.name","Patient.name","","","",0,*,"","","Y","HumanName {[]} {[]}
+","病人的姓名","个人名字","一位病人可能有多个姓名，有不同的用途或适用期。对于动物来说，这个姓名是一个「HumanName」，它是人类指定和使用的，具有相同的模式。","需要能够追踪病人的多个姓名。例如：正式姓名及配偶姓名。 **必须（SHALL）** 总是提供姓名的完整拼法。","","","","","","","",,,,,"","pattern:use}
+","",,"open","Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","name",".patient.name","PID-5, PID-9"
 "Patient.name.id","Patient.name.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -314,18 +315,18 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.name.use","Patient.name.use","","","",0,1,"","Y","Y","code {[]} {[]}
-","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","usual | official | temp | nickname | anonymous | old | maiden","此姓名的用途","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","允许从一组姓名中为特定的使用场景选择适当的姓名","","","","","","","",,"required","人名的使用情况；应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","unique(./use)","XPN.7, but often indicated by which field contains the name"
-"Patient.name.text","Patient.name.text","","","",0,1,"Y","","Y","string {[]} {[]}
-","English full name, Patient’s full name in English","Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","","","",100,,,,"",,,,"HumanName.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.name.text","Patient.name.text","","","",0,1,"","","Y","string {[]} {[]}
+","Text representation of the full name","Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","","","",,,,,"",,,,"HumanName.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./formatted","implied by XPN.11"
 "Patient.name.family","Patient.name.family","","surname
-","",0,1,"Y","","Y","string {[]} {[]}
-","English surname, Patient's surname in English","The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.","Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).","","","","","","","","",40,,,,"",,,,"HumanName.family",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","",0,1,"","","Y","string {[]} {[]}
+","Family name (often called 'Surname')","The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.","Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).","","","","","","","","",,,,,"",,,,"HumanName.family",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./part[partType = FAM]","XPN.1/FN.1"
 "Patient.name.given","Patient.name.given","","first name
-middle name","",0,*,"Y","","Y","string {[]} {[]}
-","English given name, Patient's given name in English","Given name.","If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called ""first name"" since given names do not always come first.","","","","","","","","",40,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+middle name","",0,*,"","","Y","string {[]} {[]}
+","Given names (not always 'first'). Includes middle names","Given name.","If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called ""first name"" since given names do not always come first.","","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./part[partType = GIV]","XPN.2 + XPN.3"
 "Patient.name.prefix","Patient.name.prefix","","","",0,*,"","","Y","string {[]} {[]}
 ","Parts that come before the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -336,35 +337,201 @@ middle name","",0,*,"Y","","Y","string {[]} {[]}
 "Patient.name.period","Patient.name.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./usablePeriod[type=""IVL<TS>""]","XPN.13 + XPN.14"
+"Patient.name:official","Patient.name","official","","",0,1,"Y","","Y","HumanName {[]} {[]}
+","病人的护照姓名","A name associated with the individual.","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+rl-patient-name:Patient.name.text or Patient.name.family or both SHALL be present {text.exists() or family.exists()}","name",".patient.name","PID-5, PID-9"
+"Patient.name:official.id","Patient.name.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Patient.name:official.extension","Patient.name.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.name:official.use","Patient.name.use","","","",1,1,"Y","Y","Y","code {[]} {[]}
+","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","unique(./use)","XPN.7, but often indicated by which field contains the name"
+"Patient.name:official.text","Patient.name.text","","","",0,1,"Y","","Y","string {[]} {[]}
+","完整的护照姓名","完整姓名的文字表述。由于世界各地的文化差异，取得资料的系统可能不知道如何正确地呈现姓名；此外，不是所有的名字部分都呈现予姓或名。因此，我们强烈建议创建者透过这个资料项目提供姓名的显示文字。","可以同时提供文字表述（text）和部分（part）。更新姓名的应用程序 **必须（SHALL）** 确保当test和lpart都存在时，text中不包含part中没有的内容。","一个可呈现的、未编码的形式。","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Chia-Lin Chan""/>","","",,,,,"",,,,"HumanName.text",0,1,"rl-patient-name
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./formatted","implied by XPN.11"
+"Patient.name:official.family","Patient.name.family","","surname
+","",0,1,"Y","","Y","string {[]} {[]}
+","护照中的姓","姓名中与族谱相关的部分。在一些文化中（如厄立特里亚），儿子的姓氏是其父亲的名字。","姓氏可以使用扩充名（de、nl、es相关文化）分解成具体的部分（part）","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Chen""/>","","",,,,,"",,,,"HumanName.family",0,1,"rl-patient-name
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = FAM]","XPN.1/FN.1"
+"Patient.name:official.given","Patient.name.given","","first name
+middle name","",0,*,"Y","","Y","string {[]} {[]}
+","护照中的名","姓名中的「名」","如果只记录首字母，可以用它们来代替完整姓名。首字母可以分为多个名，但由于实际情况的限制，通常不会这样做。这个资料项目不被称为 「first name」，因为「given name」并不总是排在前面。","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Chia-Lin""/>","","",,,,,"",,,,"HumanName.given",0,*,"rl-patient-name
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = GIV]","XPN.2 + XPN.3"
+"Patient.name:official.prefix","Patient.name.prefix","","","",0,*,"","","Y","string {[]} {[]}
+","姓名前面的头衔
+由于学术，法律，职业或贵族身份等原因而获得头衔，出现在姓名开头。","由于学术、法规、就业或贵族身份等原因而获得的名，并出现在姓名的开头。","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = PFX]","XPN.5"
+"Patient.name:official.suffix","Patient.name.suffix","","","",0,*,"","","Y","string {[]} {[]}
+","姓名后面的称谓
+由于学术，法律，职业或贵族身份等原因而获得头衔，出现在姓名之后。","由于学术、法规、就业或贵族身份等原因而获得的名，并出现在姓名的开头。","","","","","","","","","",,,,,"",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = SFX]","XPN/4"
+"Patient.name:official.period","Patient.name.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此姓名的使用效期","表明这个姓名对此病人有效的时间区间或期间","","允许多个姓名按其历史场景（效期）储存","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./usablePeriod[type=""IVL<TS>""]","XPN.13 + XPN.14"
+"Patient.name:usual","Patient.name","usual","","",0,1,"Y","","Y","HumanName {[]} {[]}
+","病人所属国籍的真实姓名","A name associated with the individual.","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+rl-patient-name:Patient.name.text or Patient.name.family or both SHALL be present {text.exists() or family.exists()}","name",".patient.name","PID-5, PID-9"
+"Patient.name:usual.id","Patient.name.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Patient.name:usual.extension","Patient.name.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.name:usual.use","Patient.name.use","","","",1,1,"Y","Y","Y","code {[]} {[]}
+","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""usual""/>","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","unique(./use)","XPN.7, but often indicated by which field contains the name"
+"Patient.name:usual.text","Patient.name.text","","","",0,1,"Y","","Y","string {[]} {[]}
+","完整的中文姓名","完整姓名的文字表述。由于世界各地的文化差异，取得资料的系统可能不知道如何正确地呈现姓名；此外，不是所有的名字部分都呈现予姓或名。因此，我们强烈建议创建者透过这个资料项目提供姓名的显示文字。","可以同时提供文字表述（text）和部分（part）。更新姓名的应用程序 **必须（SHALL）** 确保当test和lpart都存在时，text中不包含part中没有的内容。","一个可呈现的、未编码的形式。","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""陈加玲""/>","","",,,,,"",,,,"HumanName.text",0,1,"rl-patient-name
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./formatted","implied by XPN.11"
+"Patient.name:usual.family","Patient.name.family","","surname
+","",0,1,"Y","","Y","string {[]} {[]}
+","若所属国籍可区分family及given，填入所属国籍之姓（family）","姓名中与族谱相关的部分。在一些文化中（如厄立特里亚），儿子的姓氏是其父亲的名字。","姓氏可以使用扩充名（de、nl、es相关文化）分解成具体的部分（part）","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""陈""/>","","",,,,,"",,,,"HumanName.family",0,1,"rl-patient-name
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = FAM]","XPN.1/FN.1"
+"Patient.name:usual.given","Patient.name.given","","first name
+middle name","",0,*,"Y","","Y","string {[]} {[]}
+","若所属国籍可区分family及given，填入所属国籍之名（given）","姓名中的「名」","如果只记录首字母，可以用它们来代替完整姓名。首字母可以分为多个名，但由于实际情况的限制，通常不会这样做。这个资料项目不被称为 「first name」，因为「given name」并不总是排在前面。","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""加玲""/>","","",,,,,"",,,,"HumanName.given",0,*,"rl-patient-name
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = GIV]","XPN.2 + XPN.3"
+"Patient.name:usual.prefix","Patient.name.prefix","","","",0,*,"","","Y","string {[]} {[]}
+","姓名前面的头衔
+由于学术，法律，职业或贵族身份等原因而获得头衔，出现在姓名开头。","由于学术、法规、就业或贵族身份等原因而获得的名，并出现在姓名的开头。","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = PFX]","XPN.5"
+"Patient.name:usual.suffix","Patient.name.suffix","","","",0,*,"","","Y","string {[]} {[]}
+","姓名后面的称谓
+由于学术，法律，职业或贵族身份等原因而获得头衔，出现在姓名之后。","由于学术、法规、就业或贵族身份等原因而获得的名，并出现在姓名的开头。","","","","","","","","","",,,,,"",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = SFX]","XPN/4"
+"Patient.name:usual.period","Patient.name.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此姓名的使用效期","表明这个姓名对此病人有效的时间区间或期间","","允许多个姓名按其历史场景（效期）储存","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./usablePeriod[type=""IVL<TS>""]","XPN.13 + XPN.14"
+"Patient.name:temp","Patient.name","temp","","",0,1,"Y","","Y","HumanName {[]} {[]}
+","新生儿姓名，紧急救护未知病人姓名时亦可用。","A name associated with the individual.","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","需要能够追踪病人的多个姓名。","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","name",".patient.name","PID-5, PID-9"
+"Patient.name:temp.id","Patient.name.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Patient.name:temp.extension","Patient.name.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.name:temp.use","Patient.name.use","","","",1,1,"Y","Y","Y","code {[]} {[]}
+","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""temp""/>","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","unique(./use)","XPN.7, but often indicated by which field contains the name"
+"Patient.name:temp.text","Patient.name.text","","","",1,1,"Y","","Y","string {[]} {[]}
+","完整的中文姓名","完整姓名的文字表述。由于世界各地的文化差异，取得资料的系统可能不知道如何正确地呈现姓名；此外，不是所有的名字部分都呈现予姓或名。因此，我们强烈建议创建者透过这个资料项目提供姓名的显示文字。","可以同时提供文字表述（text）和部分（part）。更新姓名的应用程序 **必须（SHALL）** 确保当test和lpart都存在时，text中不包含part中没有的内容。","一个可呈现的、未编码的形式。","","","","","","","",,,,,"",,,,"HumanName.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./formatted","implied by XPN.11"
+"Patient.name:temp.family","Patient.name.family","","surname
+","",0,0,"","","Y","string {[]} {[]}
+","Family name (often called 'Surname')","The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.","Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).","","","","","","","","",,,,,"",,,,"HumanName.family",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = FAM]","XPN.1/FN.1"
+"Patient.name:temp.given","Patient.name.given","","first name
+middle name","",0,0,"","","Y","string {[]} {[]}
+","Given names (not always 'first'). Includes middle names","Given name.","If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called ""first name"" since given names do not always come first.","","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = GIV]","XPN.2 + XPN.3"
+"Patient.name:temp.prefix","Patient.name.prefix","","","",0,0,"","","Y","string {[]} {[]}
+","Parts that come before the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = PFX]","XPN.5"
+"Patient.name:temp.suffix","Patient.name.suffix","","","",0,0,"","","Y","string {[]} {[]}
+","Parts that come after the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.","","","","","","","","","",,,,,"",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = SFX]","XPN/4"
+"Patient.name:temp.period","Patient.name.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此姓名的使用效期","表明这个姓名对此病人有效的时间区间或期间","","允许多个姓名按其历史场景（效期）储存","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./usablePeriod[type=""IVL<TS>""]","XPN.13 + XPN.14"
+"Patient.name:anonymous","Patient.name","anonymous","","",0,1,"Y","","Y","HumanName {[]} {[]}
+","匿名供研究使用","A name associated with the individual.","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","需要能够追踪病人的多个姓名。","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","name",".patient.name","PID-5, PID-9"
+"Patient.name:anonymous.id","Patient.name.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Patient.name:anonymous.extension","Patient.name.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.name:anonymous.use","Patient.name.use","","","",1,1,"Y","Y","Y","code {[]} {[]}
+","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""anonymous""/>","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","unique(./use)","XPN.7, but often indicated by which field contains the name"
+"Patient.name:anonymous.text","Patient.name.text","","","",1,1,"Y","","Y","string {[]} {[]}
+","完整的中文姓名","完整姓名的文字表述。由于世界各地的文化差异，取得资料的系统可能不知道如何正确地呈现姓名；此外，不是所有的名字部分都呈现予姓或名。因此，我们强烈建议创建者透过这个资料项目提供姓名的显示文字。","可以同时提供文字表述（text）和部分（part）。更新姓名的应用程序 **必须（SHALL）** 确保当test和lpart都存在时，text中不包含part中没有的内容。","一个可呈现的、未编码的形式。","","","","","","","",,,,,"",,,,"HumanName.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./formatted","implied by XPN.11"
+"Patient.name:anonymous.family","Patient.name.family","","surname
+","",0,0,"","","Y","string {[]} {[]}
+","Family name (often called 'Surname')","The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.","Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).","","","","","","","","",,,,,"",,,,"HumanName.family",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = FAM]","XPN.1/FN.1"
+"Patient.name:anonymous.given","Patient.name.given","","first name
+middle name","",0,0,"","","Y","string {[]} {[]}
+","Given names (not always 'first'). Includes middle names","Given name.","If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called ""first name"" since given names do not always come first.","","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = GIV]","XPN.2 + XPN.3"
+"Patient.name:anonymous.prefix","Patient.name.prefix","","","",0,0,"","","Y","string {[]} {[]}
+","Parts that come before the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = PFX]","XPN.5"
+"Patient.name:anonymous.suffix","Patient.name.suffix","","","",0,0,"","","Y","string {[]} {[]}
+","Parts that come after the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.","","","","","","","","","",,,,,"",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = SFX]","XPN/4"
+"Patient.name:anonymous.period","Patient.name.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此姓名的使用效期","表明这个姓名对此病人有效的时间区间或期间","","允许多个姓名按其历史场景（效期）储存","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./usablePeriod[type=""IVL<TS>""]","XPN.13 + XPN.14"
 "Patient.telecom","Patient.telecom","","","",0,*,"Y","","Y","ContactPoint {[]} {[]}
-","A contact detail for the individual","A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.","A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address might not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner's phone).","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","病人的联络信息（例如：电话、电子邮件等）","可与此人联络的详细联络方式（如电话或电子邮件地址等）","一位病人可能有多种联络方式，有不同的用途或适用期。可能需要有紧急联络此人的选项，也需要帮忙识别身份。地址可能不会直接联络到此人，但可能到透过他人代为联络（意即家中的电话）。","人们有（主要）方式与他们联络，如电话、电子邮件。","","","","","","","",,,,,"",,,,"Patient.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","telecom",".telecom","PID-13, PID-14, PID-40"
+"Patient.telecom.id","Patient.telecom.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Patient.telecom.extension","Patient.telecom.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.telecom.system","Patient.telecom.system","","","",1,1,"Y","","Y","code {[]} {[]}
+","phone | fax | email | pager | url | sms | other","联络方式的通讯形式－需要什么通讯系统进行联络","","","","","","","","","",,"required","应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1","",,,,"ContactPoint.system",0,1,"cpt-2
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./scheme","XTN.3"
+"Patient.telecom.value","Patient.telecom.value","","","",1,1,"Y","","Y","string {[]} {[]}
+","实际的联络方式之细节","实际的联络方式之细节，针对指定的通讯系统提供有意义的形式（电话号码或是电子邮件位址）","额外的文字资料，例如电话分机号码、或关于联络人的说明，有时也包括于此值。","需支援非严格格式控制之旧有号码","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./url","XTN.1 (or XTN.12)"
+"Patient.telecom.use","Patient.telecom.use","","","",0,1,"Y","Y","Y","code {[]} {[]}
+","home | work | temp | old | mobile－此联络方式的用途","确定联络方式的用途","应用程序可以假定一个联络方法是目前使用中，除非它明确说它是暂时的或旧的。","需要追踪此人使用这种联络的方式，使用者可以选择适合他们用途的联络方式。","","","","","","","",,"required","应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1","",,,,"ContactPoint.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","unique(./use)","XTN.2 - but often indicated by field"
+"Patient.telecom.rank","Patient.telecom.rank","","","",0,1,"","","Y","positiveInt {[]} {[]}
+","具体说明偏好的使用顺序（1=最高优先顺序）","具体说明使用一组联系方式的优先顺序，较小排名序位的联络方式比较大排名序位的联络方式之序位还要前面。","请注意，排名序位没有一定要遵循联络方式在实例中呈现的顺序。","","","","","","","","",,,,,"",,,,"ContactPoint.rank",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","n/a"
+"Patient.telecom.period","Patient.telecom.period","","","",0,1,"Y","","Y","Period {[]} {[]}
+","此联络方式的使用效期","此联络方式的使用效期","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./usablePeriod[type=""IVL<TS>""]","N/A"
 "Patient.gender","Patient.gender","","","",1,1,"Y","","Y","code {[]} {[]}
-","Sex","Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.","The gender might not match the biological sex as determined by genetics or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than male and female, though the vast majority of systems and contexts only support male and female.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific sex or gender aspect of interest (anatomical, chromosomal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosomal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overridable error, not a ""hard"" error.  See the Patient Gender and Sex section for additional information about communicating patient gender and sex.","Needed for identification of the individual, in combination with (at least) name and birth date.","","","","","","","",,"required","The gender of a person used for administrative purposes.","http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1","",,,,"Patient.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","male ｜ female ｜ other ｜ unknown","Administrative Gender 为行政管理及保存纪录目的之病人性别","行政管理用之性别可能不符合由遗传学或个人偏好的识别所决定的生物性别。请注意，对于人类，特别是动物，除了男性和女性，还有其他合法归类的可能性，尽管绝大多数系统和场景只支持男性和女性。提供决策支援或执行业务规则的系统最好以检验检查（Observation）呈现特定性别或感兴趣的性别（解剖学、染色体、社会等）。然而，由于这些检验检验不常被记录，预设为行政管理用之性别是常见的做法。在这种预设的情况下，规则的执行应该允许行政管理用和生物、染色体和其他性别方面的差异。例如：关于男性子宫切除的警讯应该作为警告或可推翻的错误来处理，而不是 「硬（hard） 」错误。关于沟通病人性别的更多信息，请参阅Patient Gender及Sex的部分。","性别用于结合（至少）姓名和出生日期以识别个人身份","","","","","","","",,"required","病人性别；应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1","",,,,"Patient.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender",".patient.administrativeGenderCode","PID-8"
 "Patient.birthDate","Patient.birthDate","","","",1,1,"Y","","Y","date {[]} {[]}
-","Date of Birth, The patient's date of birth","The date of birth for the individual.","At least an estimated year should be provided as a guess if the real DOB is unknown  There is a standard extension ""patient-birthTime"" available that should be used where Time is required (such as in maternity/infant care systems).","Age of the individual drives many clinical processes.","","","","","","","",10,,,,"",,,,"Patient.birthDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","病人出生日期","个人的出生日期","如果真实的出生日期未知，至少应该提供一个估计的出生年份作为猜测。有一个标准的扩充 「patient-birthTime」，应该于需要出生时间（Time）信息时使用（例如：在产科／新生儿医护系统中）。","个人的年龄驱动著许多临床过程／进程","","","","","","","",,,,,"",,,,"Patient.birthDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/birthTime",".patient.birthTime","PID-7","21112-8"
 "Patient.deceased[x]","Patient.deceased[x]","","","",0,1,"","Y","Y","boolean {[]} {[]}
-dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates if the individual is deceased or not.","If there's no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.","The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.","","","","","","","",,,,,"",,,,"Patient.deceased[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+dateTime {[]} {[]}","病人是否过世","表示此人是否过世","如果实例中没有值，就意味著没有关于此人是否过世的声明。大多数系统会把没有数值解释为这个人还活著的标志。","病人已经过世的事实影响了临床过程／进度。另外，在人际沟通和关系管理中，有必要知道这个人是否活著。","","","","","","","",,,,,"",,,,"Patient.deceased[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedInd, player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedTime","n/a","PID-30  (bool) and PID-29 (datetime)"
-"Patient.address","Patient.address","","","",0,*,"","","Y","Address {[]} {[]}
-","An address for the individual","An address for the individual.","Patient may have multiple addresses with different uses or applicable periods.","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","","","",,,,,"",,,,"Patient.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.address","Patient.address","","","",0,*,"Y","","Y","Address {[]} {[]}
+","病人联络地址
+pat-cnt-2or3-char：如果有国家名，则必须（SHALL）从[ISO Country Alpha-2](http://hl7.org/fhir/valueset/iso3166-1-2)找出相对代码作呈现。 如果未在ISO Country Alpha-2 中找到此一国家的代码，则可能可以（MAY）从[ISO Country Alpha-3](http://hl7.org/fhir/valueset/iso3166-1-3)找出相对代码作呈现。","此人的地址","病人可能有多个地址，有不同的用途或适用期。","可能需要记录病人的地址，以便联系、结算或报告的要求，也有助于识别身份。","","","","","","","",,,,,"",,,,"Patient.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","addr",".addr","PID-11"
-"Patient.maritalStatus","Patient.maritalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Marital (civil) status of a patient","This field contains a patient's most recent marital (civil) status.","","Most, if not all systems capture it.","","","","","","","",,"extensible","The domestic partnership status of a person.","http://hl7.org/fhir/ValueSet/marital-status","",,,,"Patient.maritalStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.maritalStatus","Patient.maritalStatus","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
+","病人的婚姻状态","这个栏位包含病人的目前婚姻（民事）状态","","如果不是所有的系统都能取得此信息","","","","","","","",,"extensible","病人的婚姻状态；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","http://hl7.org/fhir/ValueSet/marital-status","",,,,"Patient.maritalStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN]/maritalStatusCode",".patient.maritalStatusCode","PID-16"
 "Patient.multipleBirth[x]","Patient.multipleBirth[x]","","","",0,1,"","","","boolean {[]} {[]}
-integer {[]} {[]}","Whether patient is part of a multiple birth","Indicates whether the patient is part of a multiple (boolean) or indicates the actual birth order (integer).","Where the valueInteger is provided, the number is the birth number in the sequence. E.g. The middle birth in triplets would be valueInteger=2 and the third born would have valueInteger=3 If a boolean value was provided for this triplets example, then all 3 patient records would have valueBoolean=true (the ordering is not indicated).","For disambiguation of multiple-birth children, especially relevant where the care provider doesn't meet the patient, such as labs.","","","","","","","",,,,,"",,,,"Patient.multipleBirth[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+integer {[]} {[]}","病人是否为多胞胎；或多胞胎出生顺序。","表示病人是否是为多胞胎（布林值）或表示实际的出生顺序（整数值）","在提供valueInteger的情况下，这个数字是序列中的出生序。例如：三胞胎中的中间胎儿是valueInteger=2，第三胎儿是valueInteger=3，如果是为三胞胎提供布林值，那么所有3位病人的纪录都是valueBoolean=true（没有指明出生序）。","用于消除多胎孩童的歧义，特别是在医护人员没有见到病人的情况下，例如：在实验室。","","","","","","","",,,,,"",,,,"Patient.multipleBirth[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/multipleBirthInd,  player[classCode=PSN|ANM and determinerCode=INSTANCE]/multipleBirthOrderNumber","n/a","PID-24 (bool), PID-25 (integer)"
-"Patient.photo","Patient.photo","","","",0,*,"","","","Attachment {[]} {[]}
-","Image of the patient","Image of the patient.","Guidelines:
-* Use id photos, not clinical photos.
-* Limit dimensions to thumbnail.
-* Keep byte count low to ease resource updates.","Many EHR systems have the capability to capture an image of the patient. Fits with newer social media usage too.","","","","","","","",,,,,"",,,,"Patient.photo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.photo","Patient.photo","","","",0,*,"Y","","","Attachment {[]} {[]}
+","病人的影像（照片）","病人的影像（照片）","指引：
+使用个人影像，而不是临床影像。
+限制尺寸为缩图。
+保持低位元组小档案以便更新resource。","许多EHR系统有能力取得病人的影像，这也符合较新的社群媒体的使用。","","","","","","","",,,,,"",,,,"Patient.photo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/desc","n/a","OBX-5 - needs a profile"
-"Patient.contact","Patient.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
-","A contact party (e.g. guardian, partner, friend) for the patient","A contact party (e.g. guardian, partner, friend) for the patient.","Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact.","Need to track people you can contact about the patient.","","","","","","","",,,,,"",,,,"Patient.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.contact","Patient.contact","","","",0,*,"Y","","","BackboneElement {[]} {[]}
+","病人的联络人，例如：监护人、伴侣、朋友等。","病人的联络人（如监护人、伴侣、朋友）。","联络涵盖所有种类的联络人：家人、业务联络、监护人、照顾者。不适用于登记血统和家庭关系，因这超出联络的目的。","需能联络到的病人的人。","","","","","","","",,,,,"",,,,"Patient.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 pat-1:SHALL at least contain a contact's details or a reference to an organization {name.exists() or telecom.exists() or address.exists() or organization.exists()}","player[classCode=PSN|ANM and determinerCode=INSTANCE]/scopedRole[classCode=CON]","n/a"
 "Patient.contact.id","Patient.contact.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -378,30 +545,85 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"Patient.contact.relationship","Patient.contact.relationship","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","The kind of relationship","The nature of the relationship between the patient and the contact person.","","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","","","","",,"extensible","The nature of the relationship between a patient and a contact person for that patient.","http://hl7.org/fhir/ValueSet/patient-contactrelationship","",,,,"Patient.contact.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.contact.relationship","Patient.contact.relationship","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
+","概念（Concept）－参照一个专门术语或只是文字表述","可以透过正式参照一个专门术语或知识本体来定义一个概念，或者也可以文字表述此概念。","","根据情况决定哪位联络人最有关联以作联系","","","","","","","",,"required","应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype","",,,,"Patient.contact.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","code","n/a","NK1-7, NK1-3"
-"Patient.contact.name","Patient.contact.name","","","",0,1,"","","","HumanName {[]} {[]}
-","A name associated with the contact person","A name associated with the contact person.","","Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person.","","","","","","","",,,,,"",,,,"Patient.contact.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.contact.name","Patient.contact.name","","","",0,1,"Y","","","HumanName {[]} {[]}
+","联络人姓名","与联络人有关的姓名","","联络人需要以姓名来识别，但通常不需要此联络人的其他姓名的细节。","","","","","","","",,,,,"",,,,"Patient.contact.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","name","n/a","NK1-2"
-"Patient.contact.telecom","Patient.contact.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
-","A contact detail for the person","A contact detail for the person, e.g. a telephone number or an email address.","Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification.","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.contact.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.contact.name.id","Patient.contact.name.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Patient.contact.name.extension","Patient.contact.name.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.contact.name.use","Patient.contact.name.use","","","",0,1,"Y","Y","Y","code {[]} {[]}
+","usual | official | temp | nickname | anonymous | old | maiden","此姓名的用途","应用程序可以假定一个姓名是永久的，除非它明确说它是暂时或旧的。","允许从一组姓名中为特定的使用场景选择适当的姓名","","","","","","","",,"required","人名的使用情况；应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","unique(./use)","XPN.7, but often indicated by which field contains the name"
+"Patient.contact.name.text","Patient.contact.name.text","","","",0,1,"Y","","Y","string {[]} {[]}
+","完整的中文姓名","完整姓名的文字表述。由于世界各地的文化差异，取得资料的系统可能不知道如何正确地呈现姓名；此外，不是所有的名字部分都呈现予姓或名。因此，我们强烈建议创建者透过这个资料项目提供姓名的显示文字。","可以同时提供文字表述（text）和部分（part）。更新姓名的应用程序  **必须（SHALL）**  确保当test和lpart都存在时，text中不包含part中没有的内容。","一个可呈现的、未编码的形式。","","","","","","","",,,,,"",,,,"HumanName.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./formatted","implied by XPN.11"
+"Patient.contact.name.family","Patient.contact.name.family","","surname
+","",0,1,"Y","","Y","string {[]} {[]}
+","英文姓","姓名中与族谱相关的部分。在一些文化中（如厄立特里亚），儿子的姓氏是其父亲的名字。","姓氏可以使用扩充名（de、nl、es相关文化）分解成具体的部分（part）","","","","","","","","",,,,,"",,,,"HumanName.family",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = FAM]","XPN.1/FN.1"
+"Patient.contact.name.given","Patient.contact.name.given","","first name
+middle name","",0,*,"Y","","Y","string {[]} {[]}
+","英文名","姓名中的「名」","如果只记录首字母，可以用它们来代替完整姓名。首字母可以分为多个名，但由于实际情况的限制，通常不会这样做。这个资料项目不被称为 「first name」，因为「given name」并不总是排在前面。","","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = GIV]","XPN.2 + XPN.3"
+"Patient.contact.name.prefix","Patient.contact.name.prefix","","","",0,*,"","","Y","string {[]} {[]}
+","姓名前面的头衔
+由于学术，法律，职业或贵族身份等原因而获得头衔，出现在姓名开头。","由于学术、法规、就业或贵族身份等原因而获得的名，并出现在姓名的开头。","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = PFX]","XPN.5"
+"Patient.contact.name.suffix","Patient.contact.name.suffix","","","",0,*,"","","Y","string {[]} {[]}
+","姓名后面的称谓
+由于学术，法律，职业或贵族身份等原因而获得头衔，出现在姓名之后。","由于学术、法规、就业或贵族身份等原因而获得的名，并出现在姓名的开头。","","","","","","","","","",,,,,"",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./part[partType = SFX]","XPN/4"
+"Patient.contact.name.period","Patient.contact.name.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此姓名的使用效期","表明这个姓名对此病人有效的时间区间或期间","","允许多个姓名按其历史场景（效期）储存","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./usablePeriod[type=""IVL<TS>""]","XPN.13 + XPN.14"
+"Patient.contact.telecom","Patient.contact.telecom","","","",0,*,"Y","","","ContactPoint {[]} {[]}
+","联络人的详细联络信息","此人的详细联络方式，例如：电话号码或电子邮件地址。","联络人可能有多种联络方式，有不同的用途或适用期。可能需要有紧急联络此人的选项，及需要帮忙身份识别。","人们可透过（主要）方式与他们联络，例如电话、电子邮件。","","","","","","","",,,,,"",,,,"Patient.contact.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","telecom","n/a","NK1-5, NK1-6, NK1-40"
+"Patient.contact.telecom.id","Patient.contact.telecom.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Patient.contact.telecom.extension","Patient.contact.telecom.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Patient.contact.telecom.system","Patient.contact.telecom.system","","","",1,1,"Y","","Y","code {[]} {[]}
+","phone | fax | email | pager | url | sms | other","联络方式的通讯形式－需要什么通讯系统进行联络","","","","","","","","","",,"required","应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1","",,,,"ContactPoint.system",0,1,"cpt-2
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./scheme","XTN.3"
+"Patient.contact.telecom.value","Patient.contact.telecom.value","","","",1,1,"Y","","Y","string {[]} {[]}
+","实际的联络方式之细节","实际的联络方式之细节，针对指定的通讯系统提供有意义的形式（电话号码或是电子邮件位址）。","额外的文字资料，例如电话分机号码、或关于联络人的说明，有时也包括于此值。","需支援非严格格式控制之旧有号码","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./url","XTN.1 (or XTN.12)"
+"Patient.contact.telecom.use","Patient.contact.telecom.use","","","",0,1,"Y","Y","Y","code {[]} {[]}
+","home | work | temp | old | mobile－此联络方式的用途","确定联络方式的用途","应用程序可以假定一个联络方法是目前使用中，除非它明确说它是暂时的或旧的。","需要追踪此人使用这种联络的方式，使用者可以选择适合他们用途的联络方式。","","","","","","","",,"required","应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1","",,,,"ContactPoint.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","unique(./use)","XTN.2 - but often indicated by field"
+"Patient.contact.telecom.rank","Patient.contact.telecom.rank","","","",0,1,"","","Y","positiveInt {[]} {[]}
+","具体说明偏好的使用顺序（1=最高优先顺序）","具体说明使用一组联系方式的优先顺序，较小排名序位的联络方式比较大排名序位的联络方式之序位还要前面。","请注意，排名序位没有一定要遵循联络方式在实例中呈现的顺序。","","","","","","","","",,,,,"",,,,"ContactPoint.rank",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","n/a"
+"Patient.contact.telecom.period","Patient.contact.telecom.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此联络方式的使用效期","此联络方式的使用效期","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./usablePeriod[type=""IVL<TS>""]","N/A"
 "Patient.contact.address","Patient.contact.address","","","",0,1,"","","","Address {[]} {[]}
-","Address for the contact person","Address for the contact person.","","Need to keep track where the contact person can be contacted per postal mail or visited.","","","","","","","",,,,,"",,,,"Patient.contact.address",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","联络人的地址","联络人的地址","","需要纪录用以联络联络人的邮件地址或到访地址","","","","","","","",,,,,"",,,,"Patient.contact.address",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","addr","n/a","NK1-4"
 "Patient.contact.gender","Patient.contact.gender","","","",0,1,"","","","code {[]} {[]}
-","male | female | other | unknown","Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.","","Needed to address the person correctly.","","","","","","","",,"required","The gender of a person used for administrative purposes.","http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1","",,,,"Patient.contact.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","male ｜ female ｜ other ｜ unknown","Administrative Gender为行政管理的及保存纪录目的之联络人性别","","用以正确称呼联络人","","","","","","","",,"required","联络人的性别；应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1","",,,,"Patient.contact.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender","n/a","NK1-15"
 "Patient.contact.organization","Patient.contact.organization","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
-","Organization that is associated with the contact","Organization on behalf of which the contact is acting or for which the contact is working.","","For guardians or business related contacts, the organization is relevant.","","","","","","","",,,,,"",,,,"Patient.contact.organization",0,1,"pat-1
+","可联络到联络人的机构","联络人为机构或联络人为其工作的机构","","监护人或与业务相关联络与此机构有关","","","","","","","",,,,,"",,,,"Patient.contact.organization",0,1,"pat-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","scoper","n/a","NK1-13, NK1-30, NK1-31, NK1-32, NK1-41"
-"Patient.contact.period","Patient.contact.period","","","",0,1,"","","","Period {[]} {[]}
-","The period during which this contact person or organization is valid to be contacted relating to this patient","The period during which this contact person or organization is valid to be contacted relating to this patient.","","","","","","","","","",,,,,"",,,,"Patient.contact.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.contact.period","Patient.contact.period","","","",0,1,"Y","","","Period {[]} {[]}
+","联络人或其可联络机构之可联络期（时间区间）","与此病人有关的联络人或机构的有效联络期","","","","","","","","","",,,,,"",,,,"Patient.contact.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","effectiveTime","n/a"
-"Patient.communication","Patient.communication","","","",0,*,"","","","BackboneElement {[]} {[]}
-","A language which may be used to communicate with the patient about his or her health","A language which may be used to communicate with the patient about his or her health.","If no language is specified, this *implies* that the default local language is spoken.  If you need to convey proficiency for multiple modes, then you need multiple Patient.Communication associations.   For animals, language is not a relevant field, and should be absent from the instance. If the Patient does not speak the default local language, then the Interpreter Required Standard can be used to explicitly declare that an interpreter is required.","If a patient does not speak the local language, interpreters may be required, so languages spoken and proficiency are important things to keep track of both for patient and other persons of interest.","","","","","","","",,,,,"",,,,"Patient.communication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.communication","Patient.communication","","","",0,*,"Y","","","BackboneElement {[]} {[]}
+","向病人说明健康状态时所使用的语言","可用于与病人沟通其健康状况的语言。","如果没有指定语言，这意味著预设使用当地语言。如果你需要多种模式的熟练程度，那么你需要多个Patient.Communication关联。对于动物来说，语言不是相关的栏位，应该不存在于实例中。如果病人不讲预设的当地语言，那么可以使用 「（Interpreter Required Standard）需要口译员」来明确声明需要口译员。","如果病人不会说当地语言，可能需要翻译，因此，对于病人和其他相关人员来说，所讲的语言和熟练程度都是需要记录的重要内容。","","","","","","","",,,,,"",,,,"Patient.communication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","LanguageCommunication","patient.languageCommunication"
 "Patient.communication.id","Patient.communication.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -415,27 +637,23 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"Patient.communication.language","Patient.communication.language","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","The language which can be used to communicate with the patient about his or her health","The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. ""en"" for English, or ""en-US"" for American English versus ""en-EN"" for England English.","The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems actually code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.","Most systems in multilingual countries will want to convey language. Not all systems actually need the regional dialect.","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Patient.communication.language",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.communication.language","Patient.communication.language","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","向病人说明健康状况时所使用的语言","小写的ISO-639-1字母两个代码表示的语言，后面可以有连字符号，大写的ISO-3166-1字母两个代码表示使用此语言的地区；例如「en 」代表英语，或者 「en-US 」代表美国英语，而 「en-EN 」代表英国英语。","带有这种精确字母大小写的aa-BB结构是最广泛使用的地方性符号之一。但并不是所有的系统都对其进行编码，而是将其作为纯文字表述。因此，data type为CodeableConcept而不是code。","在多语言国家的大多数系统都会想要沟通语言。并非所有的系统实际上都需要区域方言。","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""zh-cn""/>","","",,"preferred","应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/languages","",,,,"Patient.communication.language",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/languageCommunication/code",".languageCode","PID-15, LAN-2"
 "Patient.communication.preferred","Patient.communication.preferred","","","",0,1,"","","","boolean {[]} {[]}
-","Language preference indicator","Indicates whether or not the patient prefers this language (over other languages he masters up a certain level).","This language is specifically identified for communicating healthcare information.","People that master multiple languages up to certain level may prefer one or more, i.e. feel more confident in communicating in a particular language making other languages sort of a fall back method.","","","","","","","",,,,,"",,,,"Patient.communication.preferred",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","病人是否偏好使用此语言","表示病人是否偏好此语言（相对于其他它已掌握到一定水平的语言）","此语言专门用以沟通健康医护信息","掌握多种语言达到一定水平的人可能更偏好一种或多种语言，也就是说，在用某一种语言沟通时感到更有信心，使其他语言成为一种备用语言。","","","","","","","",,,,,"",,,,"Patient.communication.preferred",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","preferenceInd",".preferenceInd","PID-15"
 "Patient.generalPractitioner","Patient.generalPractitioner","","careProvider
 ","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole]]}
-","Patient's nominated primary care provider","Patient's nominated care provider.","This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disability setting, or even organization that will provide people to perform the care provider roles.  It is not to be used to record Care Teams, these should be in a CareTeam resource that may be linked to the CarePlan or EpisodeOfCare resources.
-Multiple GPs may be recorded against the patient for various reasons, such as a student that has his home GP listed along with the GP at university during the school semesters, or a ""fly-in/fly-out"" worker that has the onsite GP also included with his home GP to remain aware of medical issues.
-
-Jurisdictions may decide that they can profile this down to 1 if desired, or 1 per type.","","","","","","","","",,,,,"",,,,"Patient.generalPractitioner",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","医护此病人的机构、医护服务提供者、或健康医护服务提供者的角色","病人指定的医护服务提供者","这可能是基层健康医护提供者（在一般科医生的场景下），也可能是在社区／失能环境中由病人提名的医护管理者，甚至是提供人力来履行医护提供者角色的机构。它不能用来记录Care Teams，这些团队应该在CareTeams resource中，可以连接到CarePlan或EpisodeOfCare。由于各种原因，病人可能会被记录有多个一般科医生，例如：一位学生在学校学期期间将他的家庭医生与大学的医生一起列出，或者一位至偏远地区「飞进／飞出 」的工作者会有当地的医师及其家庭医生，以保持对医疗问题的了解。  
+如果需要，各行政管辖区可决定将其规范为只有1位，或每种型别1位。","","","","","","","","",,,,,"",,,,"Patient.generalPractitioner",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","subjectOf.CareEvent.performer.AssignedEntity","n/a","PD1-4"
-"Patient.managingOrganization","Patient.managingOrganization","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
-","Organization that is the custodian of the patient record","Organization that is the custodian of the patient record.","There is only one managing organization for a specific patient record. Other organizations will have their own Patient record, and may use the Link property to join the records together (or a Person resource which can include confidence ratings for the association).","Need to know who recognizes this patient record, manages and updates it.","","","","","","","",,,,,"",,,,"Patient.managingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.managingOrganization","Patient.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","此纪录的保管机构","病人纪录的保管机构","仅有一个管理特定病人纪录的机构。其他机构将拥有自己的「病人」纪录，并可透过使用「Link」属性将纪录结合在一起（或可以包含关联可信的「Person」resource）。","需要知道谁识别、管理和更新这位病人的纪录","","","","","","","",,,,,"",,,,"Patient.managingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","scoper",".providerOrganization"
 "Patient.link","Patient.link","","","",0,*,"","Y","Y","BackboneElement {[]} {[]}
-","Link to another patient resource that concerns the same actual person","Link to another patient resource that concerns the same actual patient.","There is no assumption that linked patient records have mutual links.","There are multiple use cases:   
-
-* Duplicate patient records due to the clerical errors associated with the difficulties of identifying humans consistently, and 
-* Distribution of patient information across multiple servers.","","","","","","","",,,,,"",,,,"Patient.link",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","连结至此病人的其他Patient Resource","连结到另一个涉及同一实际病人的Patient resource。","不存在连结的病人纪录有相互连结的假设","有多种使用案例：  
+由于难以一致地指明与人相关的文件而错误地重复制作病人纪录，并在多个服务器上发布病人的信息。","","","","","","","",,,,,"",,,,"Patient.link",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","outboundLink","n/a"
 "Patient.link.id","Patient.link.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -449,9 +667,9 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"Patient.link.other","Patient.link.other","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
-","The other patient or related person resource that the link refers to","The other patient resource that the link refers to.","Referencing a RelatedPerson here removes the need to use a Person record to associate a Patient and RelatedPerson as the same individual.","","","","","","","","",,,,,"",,,,"Patient.link.other",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.link.other","Patient.link.other","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://whcater.github.io/serious-med-ig/StructureDefinition/sm-patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+","连结至其他Patient或RelatedPerson Resource","此连超所参照的另一个Patient resource","在这里参照一个RelatedPerson，就不需要另外使用Person来将Patient及RelatedPerson作为同一个人关联起来。","","","","","","","","",,,,,"",,,,"Patient.link.other",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","id","n/a","PID-3, MRG-1"
 "Patient.link.type","Patient.link.type","","","",1,1,"","","Y","code {[]} {[]}
-","replaced-by | replaces | refer | seealso","The type of link between this patient resource and another patient resource.","","","","","","","","","",,"required","The type of link between this patient resource and another patient resource.","http://hl7.org/fhir/ValueSet/link-type|4.0.1","",,,,"Patient.link.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","replaced-by ｜ replaces ｜ refer ｜ seealso","这个Patient resource与另一个Patient resource之间的连结型别","","","","","","","","","",,"required","连结的型别；应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/link-type|4.0.1","",,,,"Patient.link.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","typeCode","n/a"

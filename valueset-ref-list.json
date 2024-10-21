@@ -1,6 +1,48 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -12,7 +54,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatient Base"
+      "StructureDefinition-sm-patient.html" : "SmPatientBase"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -26,22 +68,84 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatient Base"
+      "StructureDefinition-sm-patient.html" : "SmPatientBase"
     },
     {
-      "url" : "https://sm-ig.gihub.io/ValueSet/identifier-type",
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PatientRelationshipType",
+      "title" : "Patient relationship type",
+      "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.449"],
+      "sources" : ["2.16.840.1.113883.4.642.3.449"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+    },
+    {
+      "url" : "https://whcater.github.io/serious-med-ig/ValueSet/identifier-type",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "IdentifierType",
-      "title" : "IdentifierType - 识别码类型值集",
-      "description" : "IdentifierType - 识别码类型值集",
+      "title" : "IdentifierType",
+      "description" : "识别码类型值集",
       "systems" : [
-        "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+        "https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203",
         "http://terminology.hl7.org/CodeSystem/v2-0203"
       ],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatient Base"
+      "StructureDefinition-sm-patient.html" : "SmPatientBase"
     }
   ]
 }

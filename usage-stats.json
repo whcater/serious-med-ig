@@ -4,8 +4,8 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://sm-ig.gihub.io/StructureDefinition/ext-person-age",
-      "title": "Person Age",
+      "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age",
+      "title": "PersonAge",
       "types": [
         "Age"
       ]
@@ -14,8 +14,8 @@
   "profiles": {
     "Patient": [
       {
-        "url": "https://sm-ig.gihub.io/StructureDefinition/sm-patient",
-        "title": "SmPatient Base"
+        "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-patient",
+        "title": "SmPatientBase"
       }
     ]
   },
@@ -30,7 +30,12 @@
       "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
@@ -43,6 +48,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
@@ -61,7 +67,7 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://sm-ig.gihub.io/StructureDefinition/ext-person-age": [
+    "https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age": [
       "Patient"
     ]
   }

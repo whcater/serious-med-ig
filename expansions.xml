@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="874a2137-91f2-41de-b215-296fd0a5e15e"/>
+  <id value="cd5e6cc1-9a05-40af-a4a1-ac32c26cc68b"/>
   <meta>
-    <lastUpdated value="2024-10-17T16:06:49.695+00:00"/>
+    <lastUpdated value="2024-10-21T01:26:48.542+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://sm-ig.gihub.io/ValueSet/identifier-type"/>
+    <fullUrl value="https://whcater.github.io/serious-med-ig/ValueSet/identifier-type"/>
     <resource>
       <ValueSet>
         <text>
@@ -23,7 +23,7 @@
                   <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v2-0203.html">codesystem identifierType v4.0.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-v2-0203.html">codesystem 识别码类型 v1.0.0 (CodeSystem)</a>
+                  <a href="CodeSystem-v2-0203.html">codesystem IdentifierType_V20203 v1.0.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -1977,10 +1977,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-https://sm-ig.gihub.io/CodeSystem/v2-0203-GOI"> </a>  
+                  <a name="x-https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203-GOI"> </a>  
                   <a href="CodeSystem-v2-0203.html#v2-0203-GOI">GOI</a>
                 </td>
-                <td>https://sm-ig.gihub.io/CodeSystem/v2-0203</td>
+                <td>https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203</td>
                 <td>Government Organization Identifier</td>
                 <td>
                   <div>
@@ -1991,10 +1991,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-https://sm-ig.gihub.io/CodeSystem/v2-0203-UBN"> </a>  
+                  <a name="x-https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203-UBN"> </a>  
                   <a href="CodeSystem-v2-0203.html#v2-0203-UBN">UBN</a>
                 </td>
-                <td>https://sm-ig.gihub.io/CodeSystem/v2-0203</td>
+                <td>https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203</td>
                 <td>Unified Business number</td>
                 <td>
                   <div>
@@ -2006,15 +2006,15 @@
             </table>
           </div>
         </text>
-        <url value="https://sm-ig.gihub.io/ValueSet/identifier-type"/>
+        <url value="https://whcater.github.io/serious-med-ig/ValueSet/identifier-type"/>
         <version value="1.0.0"/>
         <name value="IdentifierType"/>
-        <title value="IdentifierType - 识别码类型值集"/>
+        <title value="IdentifierType"/>
         <status value="active"/>
         <date value="2024-10-17"/>
         <expansion>
-          <identifier value="urn:uuid:38bb3771-b053-415e-88de-ec65d3922b54"/>
-          <timestamp value="2024-10-17T16:07:10+00:00"/>
+          <identifier value="urn:uuid:12f4d528-5bcb-4e5c-9d9f-2d8d42d1dd4d"/>
+          <timestamp value="2024-10-21T01:27:11+00:00"/>
           <total value="140"/>
           <offset value="0"/>
           <parameter>
@@ -2035,7 +2035,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://sm-ig.gihub.io/CodeSystem/v2-0203|1.0.0"/>
+            <valueUri value="https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203|1.0.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
@@ -2728,12 +2728,12 @@
             <display value="Organization identifier"/>
           </contains>
           <contains>
-            <system value="https://sm-ig.gihub.io/CodeSystem/v2-0203"/>
+            <system value="https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203"/>
             <code value="GOI"/>
             <display value="Government Organization Identifier"/>
           </contains>
           <contains>
-            <system value="https://sm-ig.gihub.io/CodeSystem/v2-0203"/>
+            <system value="https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203"/>
             <code value="UBN"/>
             <display value="Unified Business number"/>
           </contains>

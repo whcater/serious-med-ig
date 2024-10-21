@@ -3,20 +3,20 @@
   "id" : "hl7.fhir.serious.med.core",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.serious.med.core</b></p><a name=\"hl7.fhir.serious.med.core\"> </a><a name=\"hchl7.fhir.serious.med.core\"> </a><a name=\"hl7.fhir.serious.med.core-en-US\"> </a><h2>hl7fhirseriousmedcoreimplementationguide</h2><p>The official URL for this implementation guide is: </p><pre>https://sm-ig.gihub.io/ImplementationGuide/hl7.fhir.serious.med.core</pre><div><p>FHIR Core Implementation Guide for Serious Med</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.serious.med.core</b></p><a name=\"hl7.fhir.serious.med.core\"> </a><a name=\"hchl7.fhir.serious.med.core\"> </a><a name=\"hl7.fhir.serious.med.core-en-US\"> </a><h2>hl7fhirseriousmedcoreimplementationguide</h2><p>The official URL for this implementation guide is: </p><pre>https://whcater.github.io/serious-med-ig/ImplementationGuide/hl7.fhir.serious.med.core</pre><div><p>FHIR Core Implementation Guide for Serious Med</p>\n</div></div>"
   },
-  "url" : "https://sm-ig.gihub.io/ImplementationGuide/hl7.fhir.serious.med.core",
+  "url" : "https://whcater.github.io/serious-med-ig/ImplementationGuide/hl7.fhir.serious.med.core",
   "version" : "1.0.0",
   "name" : "hl7fhirseriousmedcoreimplementationguide",
   "title" : "HL7® Serious Med FHIR® Core Implementation Guide",
   "status" : "draft",
-  "date" : "2024-10-17T16:06:49+00:00",
+  "date" : "2024-10-21T01:26:48+00:00",
   "publisher" : "whcater",
   "contact" : [{
     "name" : "whcater",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.serious-med.com"
+      "value" : "https://whcater.github.io/serious-med-ig/"
     }]
   }],
   "description" : "FHIR Core Implementation Guide for Serious Med",
@@ -162,7 +162,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://sm-ig.gihub.io/history.html"
+        "valueString" : "https://whcater.github.io/serious-med-ig/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -441,7 +441,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://sm-ig.gihub.io/history.html"
+        "valueString" : "https://whcater.github.io/serious-med-ig/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -618,8 +618,20 @@
       "reference" : {
         "reference" : "ValueSet/identifier-type"
       },
-      "name" : "IdentifierType - 识别码类型值集",
-      "description" : "IdentifierType - 识别码类型值集",
+      "name" : "IdentifierType",
+      "description" : "识别码类型值集",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/v2-0203"
+      },
+      "name" : "IdentifierType_V20203",
+      "description" : "识别码类型",
       "exampleBoolean" : false
     },
     {
@@ -630,7 +642,7 @@
       "reference" : {
         "reference" : "StructureDefinition/ext-person-age"
       },
-      "name" : "Person Age",
+      "name" : "PersonAge",
       "description" : "年龄",
       "exampleBoolean" : false
     },
@@ -642,20 +654,8 @@
       "reference" : {
         "reference" : "StructureDefinition/sm-patient"
       },
-      "name" : "SmPatient Base",
-      "description" : "病人（Serious Medical Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/v2-0203"
-      },
-      "name" : "识别码类型",
-      "description" : "识别码类型",
+      "name" : "SmPatientBase",
+      "description" : "病人（Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料",
       "exampleBoolean" : false
     }],
     "page" : {

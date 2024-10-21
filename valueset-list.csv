@@ -1,2 +1,2 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-https://sm-ig.gihub.io/ValueSet/identifier-type,1.0.0,active,,IdentifierType,IdentifierType - 识别码类型值集,"IdentifierType - 识别码类型值集",,"THO (V2),Internal"
+https://whcater.github.io/serious-med-ig/ValueSet/identifier-type,1.0.0,active,,IdentifierType,IdentifierType,"识别码类型值集",,"THO (V2),Internal"

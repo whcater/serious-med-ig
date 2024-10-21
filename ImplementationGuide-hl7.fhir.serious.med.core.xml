@@ -3,21 +3,21 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.serious.med.core"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.serious.med.core</b></p><a name="hl7.fhir.serious.med.core"> </a><a name="hchl7.fhir.serious.med.core"> </a><a name="hl7.fhir.serious.med.core-en-US"> </a><h2>hl7fhirseriousmedcoreimplementationguide</h2><p>The official URL for this implementation guide is: </p><pre>https://sm-ig.gihub.io/ImplementationGuide/hl7.fhir.serious.med.core</pre><div><p>FHIR Core Implementation Guide for Serious Med</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.serious.med.core</b></p><a name="hl7.fhir.serious.med.core"> </a><a name="hchl7.fhir.serious.med.core"> </a><a name="hl7.fhir.serious.med.core-en-US"> </a><h2>hl7fhirseriousmedcoreimplementationguide</h2><p>The official URL for this implementation guide is: </p><pre>https://whcater.github.io/serious-med-ig/ImplementationGuide/hl7.fhir.serious.med.core</pre><div><p>FHIR Core Implementation Guide for Serious Med</p>
 </div></div>
   </text>
-  <url value="https://sm-ig.gihub.io/ImplementationGuide/hl7.fhir.serious.med.core"/>
+  <url value="https://whcater.github.io/serious-med-ig/ImplementationGuide/hl7.fhir.serious.med.core"/>
   <version value="1.0.0"/>
   <name value="hl7fhirseriousmedcoreimplementationguide"/>
   <title value="HL7® Serious Med FHIR® Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-10-17T16:06:49+00:00"/>
+  <date value="2024-10-21T01:26:48+00:00"/>
   <publisher value="whcater"/>
   <contact>
     <name value="whcater"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.serious-med.com"/>
+      <value value="https://whcater.github.io/serious-med-ig/"/>
     </telecom>
   </contact>
   <description value="FHIR Core Implementation Guide for Serious Med"/>
@@ -128,7 +128,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://sm-ig.gihub.io/history.html"/>
+        <valueString value="https://whcater.github.io/serious-med-ig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -331,7 +331,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://sm-ig.gihub.io/history.html"/>
+        <valueString value="https://whcater.github.io/serious-med-ig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -461,8 +461,19 @@
       <reference>
         <reference value="ValueSet/identifier-type"/>
       </reference>
-      <name value="IdentifierType - 识别码类型值集"/>
-      <description value="IdentifierType - 识别码类型值集"/>
+      <name value="IdentifierType"/>
+      <description value="识别码类型值集"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/v2-0203"/>
+      </reference>
+      <name value="IdentifierType_V20203"/>
+      <description value="识别码类型"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -472,7 +483,7 @@
       <reference>
         <reference value="StructureDefinition/ext-person-age"/>
       </reference>
-      <name value="Person Age"/>
+      <name value="PersonAge"/>
       <description value="年龄"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -483,19 +494,8 @@
       <reference>
         <reference value="StructureDefinition/sm-patient"/>
       </reference>
-      <name value="SmPatient Base"/>
-      <description value="病人（Serious Medical Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/v2-0203"/>
-      </reference>
-      <name value="识别码类型"/>
-      <description value="识别码类型"/>
+      <name value="SmPatientBase"/>
+      <description value="病人（Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

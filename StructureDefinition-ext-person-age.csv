@@ -10,7 +10,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","扩充的资料项目名称","扩充的资料项目之定义连结—一个逻辑名称或URL","此定义可直接指向可计算的或人类可读的扩充资料项目的定义，也可以是其他规范中声明的逻辑URI。此定义**必须（SHALL）** 定义扩充的结构定义的URI。","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://sm-ig.gihub.io/StructureDefinition/ext-person-age""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+","扩充的资料项目名称","扩充的资料项目之定义连结—一个逻辑名称或URL","此定义可直接指向可计算的或人类可读的扩充资料项目的定义，也可以是其他规范中声明的逻辑URI。此定义**必须（SHALL）** 定义扩充的结构定义的URI。","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Age {[]} {[]}
 ","扩充的资料项目的内容值","扩充的资料项目的内容值—必须是一组受限制的data type中的一个（清单请见[Extensibility](http://hl7.org/fhir/2021Mar/extensibility.html)）","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"

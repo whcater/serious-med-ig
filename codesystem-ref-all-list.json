@@ -13,6 +13,30 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
+      "url" : "http://hl7.org/fhir/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.72"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.74"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
+    },
+    {
       "url" : "http://hl7.org/fhir/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -58,7 +82,7 @@
       "oids" : ["2.16.840.1.113883.18.58"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -70,7 +94,7 @@
       "oids" : ["2.16.840.1.113883.18.108"],
       "uses" : {
       },
-      "ValueSet-identifier-type.html" : "IdentifierType - 识别码类型值集"
+      "ValueSet-identifier-type.html" : "IdentifierType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
@@ -97,15 +121,27 @@
       "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
     },
     {
-      "url" : "https://sm-ig.gihub.io/CodeSystem/v2-0203",
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RoleCode",
+      "title" : "RoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+    },
+    {
+      "url" : "https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "IdentifierType_V20203",
-      "title" : "识别码类型",
+      "title" : "IdentifierType_V20203",
       "description" : "识别码类型",
       "uses" : {
       },
-      "ValueSet-identifier-type.html" : "IdentifierType - 识别码类型值集"
+      "ValueSet-identifier-type.html" : "IdentifierType"
     },
     {
       "url" : "urn:ietf:bcp:47",
