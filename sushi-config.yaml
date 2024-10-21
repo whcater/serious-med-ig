@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.serious.med.core
-canonical: https://sm-ig.gihub.io
+canonical: https://whcater.github.io/serious-med-ig
 name: hl7-fhir-serious-med-core-implementation-guide
 title: HL7® Serious Med FHIR® Core Implementation Guide
 description: FHIR Core Implementation Guide for Serious Med
@@ -17,7 +17,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
     name: whcater
-    url: https://www.serious-med.com
+    url: https://whcater.github.io/serious-med-ig/
 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the

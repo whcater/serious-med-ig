@@ -1,6 +1,6 @@
 CodeSystem: IdentifierType_V20203
 Id: v2-0203
-Title: "识别码类型"
+Title: "IdentifierType_V20203"
 Description: """识别码类型""" 
 * ^status = #active
 * ^experimental = false
@@ -32,8 +32,8 @@ Description: """识别码类型"""
 
 ValueSet: IdentifierType
 Id: identifier-type
-Title: "IdentifierType - 识别码类型值集"
-Description: "IdentifierType - 识别码类型值集"
+Title: "IdentifierType"
+Description: "识别码类型值集"
 * ^status = #active
 * ^date = "2024-10-17"
 * include codes from system $v2-0203
