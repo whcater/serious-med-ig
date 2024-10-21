@@ -12,10 +12,16 @@
     }
   ],
   "profiles": {
+    "Organization": [
+      {
+        "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-organization",
+        "title": "SmOrganization"
+      }
+    ],
     "Patient": [
       {
         "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-patient",
-        "title": "SmPatientBase"
+        "title": "SmPatient"
       }
     ]
   },

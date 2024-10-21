@@ -8,7 +8,7 @@
   "url" : "https://whcater.github.io/serious-med-ig/ValueSet/identifier-type",
   "version" : "1.0.0",
   "name" : "IdentifierType",
-  "title" : "IdentifierType",
+  "title" : "ValueSet-IdentifierType",
   "status" : "active",
   "date" : "2024-10-17",
   "publisher" : "whcater",

@@ -5,7 +5,7 @@
       "version" : "1.0.0",
       "status" : "active",
       "name" : "IdentifierType",
-      "title" : "IdentifierType",
+      "title" : "ValueSet-IdentifierType",
       "description" : "识别码类型值集",
       "systems" : [
         "https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203",

@@ -10,7 +10,7 @@
   "name" : "hl7fhirseriousmedcoreimplementationguide",
   "title" : "HL7® Serious Med FHIR® Core Implementation Guide",
   "status" : "draft",
-  "date" : "2024-10-21T01:26:48+00:00",
+  "date" : "2024-10-21T09:42:39+00:00",
   "publisher" : "whcater",
   "contact" : [{
     "name" : "whcater",
@@ -613,25 +613,13 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/identifier-type"
-      },
-      "name" : "IdentifierType",
-      "description" : "识别码类型值集",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
         "reference" : "CodeSystem/v2-0203"
       },
-      "name" : "IdentifierType_V20203",
-      "description" : "识别码类型",
+      "name" : "CodeSystem-IdentifierType_V20203",
+      "description" : "识别码类型编码系统",
       "exampleBoolean" : false
     },
     {
@@ -652,10 +640,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/sm-organization"
+      },
+      "name" : "SmOrganization",
+      "description" : "科室机构基本信息",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/sm-patient"
       },
-      "name" : "SmPatientBase",
+      "name" : "SmPatient",
       "description" : "病人（Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/identifier-type"
+      },
+      "name" : "ValueSet-IdentifierType",
+      "description" : "识别码类型值集",
       "exampleBoolean" : false
     }],
     "page" : {

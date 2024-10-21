@@ -11,7 +11,7 @@
   <name value="hl7fhirseriousmedcoreimplementationguide"/>
   <title value="HL7® Serious Med FHIR® Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-10-21T01:26:48+00:00"/>
+  <date value="2024-10-21T09:42:39+00:00"/>
   <publisher value="whcater"/>
   <contact>
     <name value="whcater"/>
@@ -456,24 +456,13 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/identifier-type"/>
-      </reference>
-      <name value="IdentifierType"/>
-      <description value="识别码类型值集"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
         <reference value="CodeSystem/v2-0203"/>
       </reference>
-      <name value="IdentifierType_V20203"/>
-      <description value="识别码类型"/>
+      <name value="CodeSystem-IdentifierType_V20203"/>
+      <description value="识别码类型编码系统"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -492,10 +481,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sm-organization"/>
+      </reference>
+      <name value="SmOrganization"/>
+      <description value="科室机构基本信息"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/sm-patient"/>
       </reference>
-      <name value="SmPatientBase"/>
+      <name value="SmPatient"/>
       <description value="病人（Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/identifier-type"/>
+      </reference>
+      <name value="ValueSet-IdentifierType"/>
+      <description value="识别码类型值集"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

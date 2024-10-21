@@ -1,0 +1,1983 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "sm-organization",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition sm-organization</b></p><a name=\"sm-organization\"> </a><a name=\"hcsm-organization\"> </a><a name=\"sm-organization-en-US\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization\" title=\"为实现某种形式的集体行动而形成的正式或非正式认可的一群人或机构的团体。包括公司、机构、企业、部门、社群团体、健康医护实务团体、付款人／保险公司等。\">Organization</a><a name=\"Organization\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A grouping of people or organizations with a common purpose</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.id\">id</a><a name=\"Organization.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#id\">id</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">不重复的ID用以识别储存在特定FHIR Server中的Organization纪录，通常又称为逻辑性ID。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.identifier\">identifier</a><a name=\"Organization.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">用于指明跨多个不同系统的机构识别码</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.identifier.id\" title=\"resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。\">id</a><a name=\"Organization.identifier.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">唯一可识别ID，以供资料项目间相互参照。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.identifier.extension\" title=\"扩展字段\">extension</a><a name=\"Organization.identifier.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">扩展字段</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.identifier.use\" title=\"这个唯一识别码（identifier）的用途\">use</a><a name=\"Organization.identifier.use\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-identifier-use.html\" title=\"http://hl7.org/fhir/ValueSet/identifier-use\">IdentifierUse</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>): 如果已知，请说明此识别码的目的；应填入所绑定值集中的其中一个代码。<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.identifier.type\" title=\"识别码的代码型别，用于决定特定目适用的识别码。\">type</a><a name=\"Organization.identifier.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">机构识别码（identifier）的型别说明<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-identifier-type.html\" title=\"https://whcater.github.io/serious-med-ig/ValueSet/identifier-type\">ValueSet-IdentifierType</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): 识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中的其中一个代码。<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.identifier.system\" title=\"建立值的命名空间－即一个描述一组值的唯一URL\">system</a><a name=\"Organization.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">机构识别码（identifier）的命名空间（namespace），可至Terminology Server查询命名系统。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.identifier.value\" title=\"识别码中通常与使用者有关的部分，在编码系统作用域内是唯一的。\">value</a><a name=\"Organization.identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">唯一值</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.identifier.period\" title=\"识别码有效／曾经有效使用的时段或期间\">period</a><a name=\"Organization.identifier.period\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">此机构识别码（identifier）的使用效期</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.identifier.assigner\" title=\"签发／管理识别码的机构\">assigner</a><a name=\"Organization.identifier.assigner\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">签发identifier的机构（可以只是文字表述）</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.active\" title=\"此机构的纪录是否仍在使用中\">active</a><a name=\"Organization.active\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">此机构的纪录是否仍在使用中</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.type\" title=\"机构的型别\">type</a><a name=\"Organization.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">机构的型别<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-organization-type.html\" title=\"http://hl7.org/fhir/ValueSet/organization-type\">OrganizationType</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#example\" title=\"Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.\">example</a>): 用于分类机构；可参考所绑定值集，但此值集只是针对这个栏位的一个可能值的范例，不预期也不鼓励使用者一定要使用此值集的代码。<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.name\" title=\"与此机构相关名称\">name</a><a name=\"Organization.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">机构的名称</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.alias\" title=\"此机构目前或过去已知的其他（多个）名称\">alias</a><a name=\"Organization.alias\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">此机构目前或过去已知的其他（多个）名称</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.telecom\" title=\"此机构的详细联络方式\">telecom</a><a name=\"Organization.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#ContactPoint\">ContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">此机构的详细联络方式。\norg-3：一个机构的通讯永远不可能是「家用」，意即不可能使用「home」。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.telecom.id\" title=\"resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。\">id</a><a name=\"Organization.telecom.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">唯一可识别ID，以供资料项目间相互参照。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.telecom.extension\" title=\"可用于表示不属于此资料项目基本定义的附加信息。为了扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一套要求 **必须（SHALL）** 满足。\">extension</a><a name=\"Organization.telecom.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">扩展字段</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.telecom.system\" title=\"联络方式的通讯形式－需要什么通讯系统进行联络\">system</a><a name=\"Organization.telecom.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">phone | fax | email | pager | url | sms | other</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-contact-point-system.html\" title=\"http://hl7.org/fhir/ValueSet/contact-point-system\">ContactPointSystem</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>): 应填入所绑定值集中的其中一个代码。<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.telecom.value\" title=\"实际的联络方式之细节，针对指定的通讯系统提供有意义的形式（电话号码或是电子邮件位址）。\">value</a><a name=\"Organization.telecom.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">实际的联络方式之细节</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.telecom.use\" title=\"确定联络方式的用途\">use</a><a name=\"Organization.telecom.use\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">home | work | temp | old | mobile－此联络方式的用途<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-contact-point-use.html\" title=\"http://hl7.org/fhir/ValueSet/contact-point-use\">ContactPointUse</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>): 应填入所绑定值集中的其中一个代码。<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.telecom.rank\" title=\"具体说明使用一组联系方式的优先顺序，较小排名序位的联络方式比较大排名序位的联络方式之序位还要前面。\">rank</a><a name=\"Organization.telecom.rank\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">具体说明偏好的使用顺序（1=最高优先顺序）</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.telecom.period\" title=\"此联络方式的使用效期\">period</a><a name=\"Organization.telecom.period\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">此联络方式的使用效期</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.address\" title=\"此机构的地址\">address</a><a name=\"Organization.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">此机构的地址。\norg-2：一个机构的地址永远不可能是「家用」，意即不可能使用「home」。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.partOf\" title=\"此机构属于哪个更高层次机构的一部分\">partOf</a><a name=\"Organization.partOf\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">此机构属于哪个更高层次机构的一部分</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.contact\" title=\"某一用途的机构联络方式\">contact</a><a name=\"Organization.contact\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">某一用途的机构联络方式</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.contact.id\" title=\"resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。\">id</a><a name=\"Organization.contact.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">唯一可识别ID，以供资料项目间相互参照。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.contact.extension\" title=\"可用于表示不属于此资料项目基本定义的附加信息。为了扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一套要求 **必须（SHALL）** 满足。\">extension</a><a name=\"Organization.contact.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">扩展字段</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_modifier_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.contact.modifierExtension\" title=\"可以用来表示不属于资料项目的基本定义的附加信息，并且修改对它所内嵌（contained）的资料项目的理解和／或对包含资料项目之后续使用的理解。通常，修饰用的资料项目提供否定或限定。为了使扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一组要求 **必须（SHALL）** 满足。处理resource的应用程序被要求检查修饰用的扩充资料项目。\n\n修饰用的扩充资料项目 **必须没有（SHALL NOT）** 改变resource或DomainResource上任何资料项目的含义（包括不能改变modifierExtension本身的含义）。\">modifierExtension</a><a name=\"Organization.contact.modifierExtension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">此扩展字段可能会完全修正或改变其他资料项目的意涵，需特别留意。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.contact.purpose\" title=\"表明可联络到此联络人的联络方式之用途\">purpose</a><a name=\"Organization.contact.purpose\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">联络的型别<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-contactentity-type.html\" title=\"http://hl7.org/fhir/ValueSet/contactentity-type\">ContactEntityType</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): 你所联络之联络人的联络方式用途；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.contact.name\" title=\"联络人名字\">name</a><a name=\"Organization.contact.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#HumanName\">HumanName</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">联络人名字</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.contact.telecom\" title=\"可与此人联络的详细联络方式（如电话或电子邮件地址等）\">telecom</a><a name=\"Organization.contact.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#ContactPoint\">ContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">联络人的详细联络方式（例如：电话、电子邮件等）。</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.contact.address\" title=\"可到访及邮寄联络人的地址\">address</a><a name=\"Organization.contact.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">联络人的到访或邮政地址</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-sm-organization-definitions.html#Organization.endpoint\" title=\"存取此Organization的技术服务的终端（endpoints）\">endpoint</a><a name=\"Organization.endpoint\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/endpoint.html\">Endpoint</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">存取此Organization的技术服务的终端（endpoints）</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-organization",
+  "version" : "1.0.0",
+  "name" : "SmOrganization",
+  "title" : "SmOrganization",
+  "status" : "draft",
+  "date" : "2024-10-21T09:42:39+00:00",
+  "publisher" : "whcater",
+  "contact" : [{
+    "name" : "whcater",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://whcater.github.io/serious-med-ig/"
+    }]
+  }],
+  "description" : "科室机构基本信息",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Organization",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation" : "constraint",
+  "snapshot" : {
+    "element" : [{
+      "id" : "Organization",
+      "path" : "Organization",
+      "short" : "A grouping of people or organizations with a common purpose",
+      "definition" : "为实现某种形式的集体行动而形成的正式或非正式认可的一群人或机构的团体。包括公司、机构、企业、部门、社群团体、健康医护实务团体、付款人／保险公司等。",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Organization",
+        "min" : 0,
+        "max" : "*"
+      },
+      "constraint" : [{
+        "key" : "dom-2",
+        "severity" : "error",
+        "human" : "If the resource is contained in another resource, it SHALL NOT contain nested Resources",
+        "expression" : "contained.contained.empty()",
+        "xpath" : "not(parent::f:contained and f:contained)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+      },
+      {
+        "key" : "dom-3",
+        "severity" : "error",
+        "human" : "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource",
+        "expression" : "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()",
+        "xpath" : "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))",
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+      },
+      {
+        "key" : "dom-4",
+        "severity" : "error",
+        "human" : "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated",
+        "expression" : "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()",
+        "xpath" : "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))",
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+      },
+      {
+        "key" : "dom-5",
+        "severity" : "error",
+        "human" : "If a resource is contained in another resource, it SHALL NOT have a security label",
+        "expression" : "contained.meta.security.empty()",
+        "xpath" : "not(exists(f:contained/*/f:meta/f:security))",
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
+          "valueBoolean" : true
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation",
+          "valueMarkdown" : "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
+        }],
+        "key" : "dom-6",
+        "severity" : "warning",
+        "human" : "A resource should have narrative for robust management",
+        "expression" : "text.`div`.exists()",
+        "xpath" : "exists(f:text/h:div)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+      },
+      {
+        "key" : "org-1",
+        "severity" : "error",
+        "human" : "The organization SHALL at least have a name or an identifier, and possibly more than one",
+        "expression" : "(identifier.count() + name.count()) > 0",
+        "xpath" : "count(f:identifier | f:name) > 0",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Organization"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "Entity. Role, or Act"
+      },
+      {
+        "identity" : "v2",
+        "map" : "(also see master files messages)"
+      },
+      {
+        "identity" : "rim",
+        "map" : "Organization(classCode=ORG, determinerCode=INST)"
+      },
+      {
+        "identity" : "servd",
+        "map" : "Organization"
+      }]
+    },
+    {
+      "id" : "Organization.id",
+      "path" : "Organization.id",
+      "short" : "不重复的ID用以识别储存在特定FHIR Server中的Organization纪录，通常又称为逻辑性ID。",
+      "definition" : "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+      "comment" : "一个resource使用新增操作（create operation）提交给服务器时，此resource没有id，它的id在resource被创建后由服务器分配/指定。",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Resource.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "id"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : true
+    },
+    {
+      "id" : "Organization.meta",
+      "path" : "Organization.meta",
+      "short" : "Metadata about the resource",
+      "definition" : "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Resource.meta",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Meta"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true
+    },
+    {
+      "id" : "Organization.implicitRules",
+      "path" : "Organization.implicitRules",
+      "short" : "A set of rules under which this content was created",
+      "definition" : "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.",
+      "comment" : "Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Resource.implicitRules",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation",
+      "isSummary" : true
+    },
+    {
+      "id" : "Organization.language",
+      "path" : "Organization.language",
+      "short" : "Language of the resource content",
+      "definition" : "The base language in which the resource is written.",
+      "comment" : "Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Resource.language",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
+          "valueCanonical" : "http://hl7.org/fhir/ValueSet/all-languages"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "Language"
+        }],
+        "strength" : "preferred",
+        "description" : "A human language.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+      }
+    },
+    {
+      "id" : "Organization.text",
+      "path" : "Organization.text",
+      "short" : "Text summary of the resource, for human interpretation",
+      "definition" : "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+      "comment" : "Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a \"text blob\" or where text is additionally entered raw or narrated and encoded information is added later.",
+      "alias" : ["narrative",
+      "html",
+      "xhtml",
+      "display"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "DomainResource.text",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Narrative"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "Act.text?"
+      }]
+    },
+    {
+      "id" : "Organization.contained",
+      "path" : "Organization.contained",
+      "short" : "Contained, inline Resources",
+      "definition" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+      "comment" : "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.",
+      "alias" : ["inline resources",
+      "anonymous resources",
+      "contained resources"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "DomainResource.contained",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Resource"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Organization.extension",
+      "path" : "Organization.extension",
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "DomainResource.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Organization.modifierExtension",
+      "path" : "Organization.modifierExtension",
+      "short" : "Extensions that cannot be ignored",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "DomainResource.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them",
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Organization.identifier",
+      "path" : "Organization.identifier",
+      "short" : "用于指明跨多个不同系统的机构识别码",
+      "definition" : "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
+      "requirements" : "Organizations通常有多种识别码。有些机构保有数个，而大多数机构收集识别码用于跟其他机构交流有关此机构的信息。",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "Organization.identifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }],
+      "condition" : ["org-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "FiveWs.identifier"
+      },
+      {
+        "identity" : "v2",
+        "map" : "XON.10 / XON.3"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".scopes[Role](classCode=IDENT)"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Identifiers"
+      }]
+    },
+    {
+      "id" : "Organization.identifier.id",
+      "path" : "Organization.identifier.id",
+      "representation" : ["xmlAttr"],
+      "short" : "唯一可识别ID，以供资料项目间相互参照。",
+      "definition" : "resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Organization.identifier.extension",
+      "path" : "Organization.identifier.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "扩展字段",
+      "definition" : "扩展字段",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Organization.identifier.use",
+      "path" : "Organization.identifier.use",
+      "short" : "usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）",
+      "definition" : "这个唯一识别码（identifier）的用途",
+      "comment" : "应用程序可以假定一个识别码是永久的，除非它明确说它是暂时的。",
+      "requirements" : "允许从一组识别码中为特定的使用场景选择适当的识别码",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.use",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : true,
+      "isModifierReason" : "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one.",
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "IdentifierUse"
+        }],
+        "strength" : "required",
+        "description" : "如果已知，请说明此识别码的目的；应填入所绑定值集中的其中一个代码。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "rim",
+        "map" : "Role.code or implied by context"
+      }]
+    },
+    {
+      "id" : "Organization.identifier.type",
+      "path" : "Organization.identifier.type",
+      "short" : "机构识别码（identifier）的型别说明",
+      "definition" : "识别码的代码型别，用于决定特定目适用的识别码。",
+      "comment" : "这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。",
+      "requirements" : "允许使用者在不知道识别码系统的情况下利用识别码",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.type",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中的其中一个代码。",
+        "valueSet" : "https://whcater.github.io/serious-med-ig/ValueSet/identifier-type"
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "CX.5"
+      },
+      {
+        "identity" : "rim",
+        "map" : "Role.code or implied by context"
+      }]
+    },
+    {
+      "id" : "Organization.identifier.system",
+      "path" : "Organization.identifier.system",
+      "short" : "机构识别码（identifier）的命名空间（namespace），可至Terminology Server查询命名系统。",
+      "definition" : "建立值的命名空间－即一个描述一组值的唯一URL",
+      "comment" : "Identifier.system总是区分大小写",
+      "requirements" : "有许多识别码的集合。为了进行两个识别码的对应，我们需要知道我们处理的是哪一组。系统指明了一个特定的唯一识别码集。",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.system",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueUri" : "http://www.acme.com/identifiers/patient"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "CX.4 / EI-2-4"
+      },
+      {
+        "identity" : "rim",
+        "map" : "II.root or Role.id.root"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./IdentifierType"
+      }]
+    },
+    {
+      "id" : "Organization.identifier.value",
+      "path" : "Organization.identifier.value",
+      "short" : "唯一值",
+      "definition" : "识别码中通常与使用者有关的部分，在编码系统作用域内是唯一的。",
+      "comment" : "如果此值是一个完整的URI，那么此系统 **必须（SHALL）** 是urn:ietf:rfc:3986。此值的主要目的是为了可运算的对应。因此，为了比较的目的，它可能会被正规化（例如：去除不重要的空白、破折号等）。一个为人显示的格式化的值可以使用[Rendered Value](http://hl7.org/fhir/R4/extension-rendered-value.html)扩充来传达。除非对Identifier.system的了解使处理者确信不区分大小写的处理是安全的，否则Identifier.value应被视为区分大小写。",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "123456"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "CX.1 / EI.1"
+      },
+      {
+        "identity" : "rim",
+        "map" : "II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Value"
+      }]
+    },
+    {
+      "id" : "Organization.identifier.period",
+      "path" : "Organization.identifier.period",
+      "short" : "此机构识别码（identifier）的使用效期",
+      "definition" : "识别码有效／曾经有效使用的时段或期间",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "CX.7 + CX.8"
+      },
+      {
+        "identity" : "rim",
+        "map" : "Role.effectiveTime or implied by context"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./StartDate and ./EndDate"
+      }]
+    },
+    {
+      "id" : "Organization.identifier.assigner",
+      "path" : "Organization.identifier.assigner",
+      "short" : "签发identifier的机构（可以只是文字表述）",
+      "definition" : "签发／管理识别码的机构",
+      "comment" : "Identifier.assigner可以省略.reference资料项目，只包含一个.display资料项目，反映指定机构的名称或其他文字表述信息。",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.assigner",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "CX.4 / (CX.4,CX.9,CX.10)"
+      },
+      {
+        "identity" : "rim",
+        "map" : "II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./IdentifierIssuingAuthority"
+      }]
+    },
+    {
+      "id" : "Organization.active",
+      "path" : "Organization.active",
+      "short" : "此机构的纪录是否仍在使用中",
+      "definition" : "此机构的纪录是否仍在使用中",
+      "comment" : "这个Active标记不是用来标记机构暂时关闭或正在建设中。反而应该是Organization的地点（Location）应该具有暂停状态。如果需要进一步详细说明暂停的原因，那么应该针对这个资料项目的提供一个扩展字段。\n\n这个资料项目被标记为修饰语／修饰用，因为它可用来标记resource是错误建立的。",
+      "requirements" : "需要一个标记表明此记录不再被使用，一般来说应会在使用者界面中隐藏此资料项目。",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Organization.active",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "meaningWhenMissing" : "This resource is generally assumed to be active if no value is provided for the active element",
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : true,
+      "isModifierReason" : "This element is labelled as a modifier because it is a status element that can indicate that a record should not be treated as valid",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "FiveWs.status"
+      },
+      {
+        "identity" : "v2",
+        "map" : "No equivalent in HL7 v2"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".status"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Status (however this concept in ServD more covers why the organization is active or not, could be delisted, deregistered, not operational yet) this could alternatively be derived from ./StartDate and ./EndDate and given a context date."
+      }]
+    },
+    {
+      "id" : "Organization.type",
+      "path" : "Organization.type",
+      "short" : "机构的型别",
+      "definition" : "机构的型别",
+      "comment" : "机构可以是公司、病房、科室、临床团队、政府部门等。请注意，代码通常是机构型别的分类；在许多应用程序中，若代码是用来指明一个特定机构（例如：病房），而不是另一个相同型别的机构，那么这些算是识别码代码，而不是型别代码。\n\n当考虑多个型别是否合适时，你应该评估子机构是否是一个更合适的概念使用，因为不同的型别可能在不同子区域的机构。这最有可能用于型别值不相关（orthogonal values）的地方，像是一个宗教的、学术的和医学中心。\n\n我们期望一些行政管辖区设计此资料项目为可选填且基数设定为1。",
+      "requirements" : "需要能够追踪这是哪种机构－不同机构型别有不同的用途。",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Organization.type",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "OrganizationType"
+        }],
+        "strength" : "example",
+        "description" : "用于分类机构；可参考所绑定值集，但此值集只是针对这个栏位的一个可能值的范例，不预期也不鼓励使用者一定要使用此值集的代码。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/organization-type"
+      },
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "FiveWs.class"
+      },
+      {
+        "identity" : "v2",
+        "map" : "No equivalent in v2"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".code"
+      },
+      {
+        "identity" : "servd",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Organization.name",
+      "path" : "Organization.name",
+      "short" : "机构的名称",
+      "definition" : "与此机构相关名称",
+      "comment" : "如果一个机构改变名称，可以考虑把旧的名称放在别名（alias）资料项目中，这样仍然可以透过查询找到它。",
+      "requirements" : "需要使用名称作为机构的标签",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Organization.name",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "condition" : ["org-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XON.1"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".name"
+      },
+      {
+        "identity" : "servd",
+        "map" : ".PreferredName/Name"
+      }]
+    },
+    {
+      "id" : "Organization.alias",
+      "path" : "Organization.alias",
+      "short" : "此机构目前或过去已知的其他（多个）名称",
+      "definition" : "此机构目前或过去已知的其他（多个）名称",
+      "comment" : "没有与别名／历史名称相关的日期，因为这不是为了追踪使用名称的时间，而是为了协助查询，以便旧名称仍然可以指明此机构。",
+      "requirements" : "随著时间的推移，地点和机构经历了许多变化，可能会有不同的名称。\n\n对于查询而言，了解此机构以前的名称是非常有用的。",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Organization.alias",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".name"
+      }]
+    },
+    {
+      "id" : "Organization.telecom",
+      "path" : "Organization.telecom",
+      "short" : "此机构的详细联络方式。\norg-3：一个机构的通讯永远不可能是「家用」，意即不可能使用「home」。",
+      "definition" : "此机构的详细联络方式",
+      "comment" : "不能使用代码 「home」。请注意，这些联络人不是指受雇于此机构或代表此机构的人的详细联络方式，而是此机构本身的官方联络人。",
+      "requirements" : "此机构的联络人",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Organization.telecom",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "ContactPoint"
+      }],
+      "condition" : ["org-3"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "org-3",
+        "severity" : "error",
+        "human" : "The telecom of an organization can never be of use 'home'",
+        "expression" : "where(use = 'home').empty()",
+        "xpath" : "count(f:use[@value='home']) = 0",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Organization"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "ORC-22?"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".telecom"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./ContactPoints"
+      }]
+    },
+    {
+      "id" : "Organization.telecom.id",
+      "path" : "Organization.telecom.id",
+      "representation" : ["xmlAttr"],
+      "short" : "唯一可识别ID，以供资料项目间相互参照。",
+      "definition" : "resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Organization.telecom.extension",
+      "path" : "Organization.telecom.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "扩展字段",
+      "definition" : "可用于表示不属于此资料项目基本定义的附加信息。为了扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一套要求 **必须（SHALL）** 满足。",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Organization.telecom.system",
+      "path" : "Organization.telecom.system",
+      "short" : "phone | fax | email | pager | url | sms | other",
+      "definition" : "联络方式的通讯形式－需要什么通讯系统进行联络",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ContactPoint.system",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "condition" : ["cpt-2"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ContactPointSystem"
+        }],
+        "strength" : "required",
+        "description" : "应填入所绑定值集中的其中一个代码。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XTN.3"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./scheme"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./ContactPointType"
+      }]
+    },
+    {
+      "id" : "Organization.telecom.value",
+      "path" : "Organization.telecom.value",
+      "short" : "实际的联络方式之细节",
+      "definition" : "实际的联络方式之细节，针对指定的通讯系统提供有意义的形式（电话号码或是电子邮件位址）。",
+      "comment" : "额外的文字资料，例如电话分机号码、或关于联络人的说明，有时也包括于此值。",
+      "requirements" : "需支援非严格格式控制之旧有号码",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ContactPoint.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XTN.1 (or XTN.12)"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./url"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Value"
+      }]
+    },
+    {
+      "id" : "Organization.telecom.use",
+      "path" : "Organization.telecom.use",
+      "short" : "home | work | temp | old | mobile－此联络方式的用途",
+      "definition" : "确定联络方式的用途",
+      "comment" : "应用程序可以假定一个联络方法是目前使用中，除非它明确说它是暂时的或旧的。",
+      "requirements" : "需要追踪此人使用这种联络的方式，使用者可以选择适合他们用途的联络方式。",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ContactPoint.use",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old contact etc.for a current/permanent one",
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ContactPointUse"
+        }],
+        "strength" : "required",
+        "description" : "应填入所绑定值集中的其中一个代码。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XTN.2 - but often indicated by field"
+      },
+      {
+        "identity" : "rim",
+        "map" : "unique(./use)"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./ContactPointPurpose"
+      }]
+    },
+    {
+      "id" : "Organization.telecom.rank",
+      "path" : "Organization.telecom.rank",
+      "short" : "具体说明偏好的使用顺序（1=最高优先顺序）",
+      "definition" : "具体说明使用一组联系方式的优先顺序，较小排名序位的联络方式比较大排名序位的联络方式之序位还要前面。",
+      "comment" : "请注意，排名序位没有一定要遵循联络方式在实例中呈现的顺序。",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ContactPoint.rank",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "positiveInt"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "n/a"
+      },
+      {
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Organization.telecom.period",
+      "path" : "Organization.telecom.period",
+      "short" : "此联络方式的使用效期",
+      "definition" : "此联络方式的使用效期",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ContactPoint.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./usablePeriod[type=\"IVL<TS>\"]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./StartDate and ./EndDate"
+      }]
+    },
+    {
+      "id" : "Organization.address",
+      "path" : "Organization.address",
+      "short" : "此机构的地址。\norg-2：一个机构的地址永远不可能是「家用」，意即不可能使用「home」。",
+      "definition" : "此机构的地址",
+      "comment" : "机构可能有多个地址，有不同的用途或适用期。不使用代码「home」。",
+      "requirements" : "为了联络、计费或通报要求而可能需要追踪机构的地址",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Organization.address",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Address"
+      }],
+      "condition" : ["org-2"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "org-2",
+        "severity" : "error",
+        "human" : "An address of an organization can never be of use 'home'",
+        "expression" : "where(use = 'home').empty()",
+        "xpath" : "count(f:use[@value='home']) = 0",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Organization"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "ORC-23?"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".address"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./PrimaryAddress and ./OtherAddresses"
+      }]
+    },
+    {
+      "id" : "Organization.partOf",
+      "path" : "Organization.partOf",
+      "short" : "此机构属于哪个更高层次机构的一部分",
+      "definition" : "此机构属于哪个更高层次机构的一部分",
+      "requirements" : "需要能够追踪一个机构内的机构层次结构",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Organization.partOf",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+          "valueBoolean" : true
+        }],
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "No equivalent in HL7 v2"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".playedBy[classCode=Part].scoper"
+      },
+      {
+        "identity" : "servd",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Organization.contact",
+      "path" : "Organization.contact",
+      "short" : "某一用途的机构联络方式",
+      "definition" : "某一用途的机构联络方式",
+      "comment" : "如果为同一个用途提供多个联络方式，则可有一个扩展字段用以决定哪一个优先联络。",
+      "requirements" : "需要在更大的机构内追踪用的指定联络方式",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Organization.contact",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".contactParty"
+      }]
+    },
+    {
+      "id" : "Organization.contact.id",
+      "path" : "Organization.contact.id",
+      "representation" : ["xmlAttr"],
+      "short" : "唯一可识别ID，以供资料项目间相互参照。",
+      "definition" : "resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Organization.contact.extension",
+      "path" : "Organization.contact.extension",
+      "short" : "扩展字段",
+      "definition" : "可用于表示不属于此资料项目基本定义的附加信息。为了扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一套要求 **必须（SHALL）** 满足。",
+      "comment" : "无论使用或定义扩充的机构或管辖区，任何应用程序、专案或标准使用扩充都不背负任何污名（stigma）。使用扩充是允许FHIR规范为每个人保留一个核心的简易性。",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Organization.contact.modifierExtension",
+      "path" : "Organization.contact.modifierExtension",
+      "short" : "此扩展字段可能会完全修正或改变其他资料项目的意涵，需特别留意。",
+      "definition" : "可以用来表示不属于资料项目的基本定义的附加信息，并且修改对它所内嵌（contained）的资料项目的理解和／或对包含资料项目之后续使用的理解。通常，修饰用的资料项目提供否定或限定。为了使扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一组要求 **必须（SHALL）** 满足。处理resource的应用程序被要求检查修饰用的扩充资料项目。\n\n修饰用的扩充资料项目 **必须没有（SHALL NOT）** 改变resource或DomainResource上任何资料项目的含义（包括不能改变modifierExtension本身的含义）。",
+      "comment" : "无论使用或定义扩充的机构或管辖区，任何应用程序、专案或标准使用扩充都不背负任何污名（stigma）。使用扩充是允许FHIR规范为每个人保留一个核心的简易性。",
+      "requirements" : "修饰用的资料项目扩充将不能安全地忽略的扩充与绝大多数可以安全地忽略的扩充明确区分开来。透过消除禁止实作者扩充存在的需求来促进可互操作性。更多讯息，请参见修饰用的资料项目扩充之定义。",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true
+    },
+    {
+      "id" : "Organization.contact.purpose",
+      "path" : "Organization.contact.purpose",
+      "short" : "联络的型别",
+      "definition" : "表明可联络到此联络人的联络方式之用途",
+      "requirements" : "需要对多个联络人进行区分",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Organization.contact.purpose",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ContactPartyType"
+        }],
+        "strength" : "extensible",
+        "description" : "你所联络之联络人的联络方式用途；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/contactentity-type"
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "./type"
+      }]
+    },
+    {
+      "id" : "Organization.contact.name",
+      "path" : "Organization.contact.name",
+      "short" : "联络人名字",
+      "definition" : "联络人名字",
+      "requirements" : "需能透过名字来追综此联络人",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Organization.contact.name",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "HumanName"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "PID-5, PID-9"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./name"
+      }]
+    },
+    {
+      "id" : "Organization.contact.telecom",
+      "path" : "Organization.contact.telecom",
+      "short" : "联络人的详细联络方式（例如：电话、电子邮件等）。",
+      "definition" : "可与此人联络的详细联络方式（如电话或电子邮件地址等）",
+      "requirements" : "人们有（主要）方式与他们联络，如电话、电子邮件。",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Organization.contact.telecom",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "ContactPoint"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "PID-13, PID-14"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./telecom"
+      }]
+    },
+    {
+      "id" : "Organization.contact.address",
+      "path" : "Organization.contact.address",
+      "short" : "联络人的到访或邮政地址",
+      "definition" : "可到访及邮寄联络人的地址",
+      "requirements" : "为了联络、计费或通报要求而可能需要追踪机构的地址",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Organization.contact.address",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Address"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "PID-11"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./addr"
+      }]
+    },
+    {
+      "id" : "Organization.endpoint",
+      "path" : "Organization.endpoint",
+      "short" : "存取此Organization的技术服务的终端（endpoints）",
+      "definition" : "存取此Organization的技术服务的终端（endpoints）",
+      "requirements" : "机构有多个提供各种服务的系统，需要能够定义技术连接的细节，如何连接到这些系统，以及为了什么目的。",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Organization.endpoint",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Endpoint"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "Organization",
+      "path" : "Organization",
+      "definition" : "为实现某种形式的集体行动而形成的正式或非正式认可的一群人或机构的团体。包括公司、机构、企业、部门、社群团体、健康医护实务团体、付款人／保险公司等。"
+    },
+    {
+      "id" : "Organization.id",
+      "path" : "Organization.id",
+      "short" : "不重复的ID用以识别储存在特定FHIR Server中的Organization纪录，通常又称为逻辑性ID。",
+      "comment" : "一个resource使用新增操作（create operation）提交给服务器时，此resource没有id，它的id在resource被创建后由服务器分配/指定。"
+    },
+    {
+      "id" : "Organization.identifier",
+      "path" : "Organization.identifier",
+      "short" : "用于指明跨多个不同系统的机构识别码",
+      "requirements" : "Organizations通常有多种识别码。有些机构保有数个，而大多数机构收集识别码用于跟其他机构交流有关此机构的信息。",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organization.identifier.id",
+      "path" : "Organization.identifier.id",
+      "short" : "唯一可识别ID，以供资料项目间相互参照。",
+      "definition" : "resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。"
+    },
+    {
+      "id" : "Organization.identifier.extension",
+      "path" : "Organization.identifier.extension",
+      "short" : "扩展字段",
+      "definition" : "扩展字段"
+    },
+    {
+      "id" : "Organization.identifier.use",
+      "path" : "Organization.identifier.use",
+      "short" : "usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）",
+      "definition" : "这个唯一识别码（identifier）的用途",
+      "comment" : "应用程序可以假定一个识别码是永久的，除非它明确说它是暂时的。",
+      "requirements" : "允许从一组识别码中为特定的使用场景选择适当的识别码",
+      "mustSupport" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "IdentifierUse"
+        }],
+        "strength" : "required",
+        "description" : "如果已知，请说明此识别码的目的；应填入所绑定值集中的其中一个代码。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+      }
+    },
+    {
+      "id" : "Organization.identifier.type",
+      "path" : "Organization.identifier.type",
+      "short" : "机构识别码（identifier）的型别说明",
+      "definition" : "识别码的代码型别，用于决定特定目适用的识别码。",
+      "comment" : "这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。",
+      "requirements" : "允许使用者在不知道识别码系统的情况下利用识别码",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中的其中一个代码。",
+        "valueSet" : "https://whcater.github.io/serious-med-ig/ValueSet/identifier-type"
+      }
+    },
+    {
+      "id" : "Organization.identifier.system",
+      "path" : "Organization.identifier.system",
+      "short" : "机构识别码（identifier）的命名空间（namespace），可至Terminology Server查询命名系统。",
+      "definition" : "建立值的命名空间－即一个描述一组值的唯一URL",
+      "comment" : "Identifier.system总是区分大小写",
+      "requirements" : "有许多识别码的集合。为了进行两个识别码的对应，我们需要知道我们处理的是哪一组。系统指明了一个特定的唯一识别码集。",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organization.identifier.value",
+      "path" : "Organization.identifier.value",
+      "short" : "唯一值",
+      "definition" : "识别码中通常与使用者有关的部分，在编码系统作用域内是唯一的。",
+      "comment" : "如果此值是一个完整的URI，那么此系统 **必须（SHALL）** 是urn:ietf:rfc:3986。此值的主要目的是为了可运算的对应。因此，为了比较的目的，它可能会被正规化（例如：去除不重要的空白、破折号等）。一个为人显示的格式化的值可以使用[Rendered Value](http://hl7.org/fhir/R4/extension-rendered-value.html)扩充来传达。除非对Identifier.system的了解使处理者确信不区分大小写的处理是安全的，否则Identifier.value应被视为区分大小写。",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organization.identifier.period",
+      "path" : "Organization.identifier.period",
+      "short" : "此机构识别码（identifier）的使用效期",
+      "definition" : "识别码有效／曾经有效使用的时段或期间"
+    },
+    {
+      "id" : "Organization.identifier.assigner",
+      "path" : "Organization.identifier.assigner",
+      "short" : "签发identifier的机构（可以只是文字表述）",
+      "definition" : "签发／管理识别码的机构",
+      "comment" : "Identifier.assigner可以省略.reference资料项目，只包含一个.display资料项目，反映指定机构的名称或其他文字表述信息。"
+    },
+    {
+      "id" : "Organization.active",
+      "path" : "Organization.active",
+      "short" : "此机构的纪录是否仍在使用中",
+      "definition" : "此机构的纪录是否仍在使用中",
+      "comment" : "这个Active标记不是用来标记机构暂时关闭或正在建设中。反而应该是Organization的地点（Location）应该具有暂停状态。如果需要进一步详细说明暂停的原因，那么应该针对这个资料项目的提供一个扩展字段。\n\n这个资料项目被标记为修饰语／修饰用，因为它可用来标记resource是错误建立的。",
+      "requirements" : "需要一个标记表明此记录不再被使用，一般来说应会在使用者界面中隐藏此资料项目。",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organization.type",
+      "path" : "Organization.type",
+      "short" : "机构的型别",
+      "definition" : "机构的型别",
+      "comment" : "机构可以是公司、病房、科室、临床团队、政府部门等。请注意，代码通常是机构型别的分类；在许多应用程序中，若代码是用来指明一个特定机构（例如：病房），而不是另一个相同型别的机构，那么这些算是识别码代码，而不是型别代码。\n\n当考虑多个型别是否合适时，你应该评估子机构是否是一个更合适的概念使用，因为不同的型别可能在不同子区域的机构。这最有可能用于型别值不相关（orthogonal values）的地方，像是一个宗教的、学术的和医学中心。\n\n我们期望一些行政管辖区设计此资料项目为可选填且基数设定为1。",
+      "requirements" : "需要能够追踪这是哪种机构－不同机构型别有不同的用途。",
+      "max" : "1",
+      "mustSupport" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "OrganizationType"
+        }],
+        "strength" : "example",
+        "description" : "用于分类机构；可参考所绑定值集，但此值集只是针对这个栏位的一个可能值的范例，不预期也不鼓励使用者一定要使用此值集的代码。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/organization-type"
+      }
+    },
+    {
+      "id" : "Organization.name",
+      "path" : "Organization.name",
+      "short" : "机构的名称",
+      "definition" : "与此机构相关名称",
+      "comment" : "如果一个机构改变名称，可以考虑把旧的名称放在别名（alias）资料项目中，这样仍然可以透过查询找到它。",
+      "requirements" : "需要使用名称作为机构的标签",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organization.alias",
+      "path" : "Organization.alias",
+      "short" : "此机构目前或过去已知的其他（多个）名称",
+      "definition" : "此机构目前或过去已知的其他（多个）名称",
+      "comment" : "没有与别名／历史名称相关的日期，因为这不是为了追踪使用名称的时间，而是为了协助查询，以便旧名称仍然可以指明此机构。",
+      "requirements" : "随著时间的推移，地点和机构经历了许多变化，可能会有不同的名称。\n\n对于查询而言，了解此机构以前的名称是非常有用的。"
+    },
+    {
+      "id" : "Organization.telecom",
+      "path" : "Organization.telecom",
+      "short" : "此机构的详细联络方式。\norg-3：一个机构的通讯永远不可能是「家用」，意即不可能使用「home」。",
+      "definition" : "此机构的详细联络方式",
+      "comment" : "不能使用代码 「home」。请注意，这些联络人不是指受雇于此机构或代表此机构的人的详细联络方式，而是此机构本身的官方联络人。",
+      "requirements" : "此机构的联络人",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organization.telecom.id",
+      "path" : "Organization.telecom.id",
+      "short" : "唯一可识别ID，以供资料项目间相互参照。",
+      "definition" : "resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。"
+    },
+    {
+      "id" : "Organization.telecom.extension",
+      "path" : "Organization.telecom.extension",
+      "short" : "扩展字段",
+      "definition" : "可用于表示不属于此资料项目基本定义的附加信息。为了扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一套要求 **必须（SHALL）** 满足。"
+    },
+    {
+      "id" : "Organization.telecom.system",
+      "path" : "Organization.telecom.system",
+      "definition" : "联络方式的通讯形式－需要什么通讯系统进行联络",
+      "mustSupport" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ContactPointSystem"
+        }],
+        "strength" : "required",
+        "description" : "应填入所绑定值集中的其中一个代码。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
+      }
+    },
+    {
+      "id" : "Organization.telecom.value",
+      "path" : "Organization.telecom.value",
+      "short" : "实际的联络方式之细节",
+      "definition" : "实际的联络方式之细节，针对指定的通讯系统提供有意义的形式（电话号码或是电子邮件位址）。",
+      "comment" : "额外的文字资料，例如电话分机号码、或关于联络人的说明，有时也包括于此值。",
+      "requirements" : "需支援非严格格式控制之旧有号码",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organization.telecom.use",
+      "path" : "Organization.telecom.use",
+      "short" : "home | work | temp | old | mobile－此联络方式的用途",
+      "definition" : "确定联络方式的用途",
+      "comment" : "应用程序可以假定一个联络方法是目前使用中，除非它明确说它是暂时的或旧的。",
+      "requirements" : "需要追踪此人使用这种联络的方式，使用者可以选择适合他们用途的联络方式。",
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ContactPointUse"
+        }],
+        "strength" : "required",
+        "description" : "应填入所绑定值集中的其中一个代码。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"
+      }
+    },
+    {
+      "id" : "Organization.telecom.rank",
+      "path" : "Organization.telecom.rank",
+      "short" : "具体说明偏好的使用顺序（1=最高优先顺序）",
+      "definition" : "具体说明使用一组联系方式的优先顺序，较小排名序位的联络方式比较大排名序位的联络方式之序位还要前面。",
+      "comment" : "请注意，排名序位没有一定要遵循联络方式在实例中呈现的顺序。"
+    },
+    {
+      "id" : "Organization.telecom.period",
+      "path" : "Organization.telecom.period",
+      "short" : "此联络方式的使用效期",
+      "definition" : "此联络方式的使用效期"
+    },
+    {
+      "id" : "Organization.address",
+      "path" : "Organization.address",
+      "short" : "此机构的地址。\norg-2：一个机构的地址永远不可能是「家用」，意即不可能使用「home」。",
+      "definition" : "此机构的地址",
+      "comment" : "机构可能有多个地址，有不同的用途或适用期。不使用代码「home」。",
+      "requirements" : "为了联络、计费或通报要求而可能需要追踪机构的地址"
+    },
+    {
+      "id" : "Organization.partOf",
+      "path" : "Organization.partOf",
+      "short" : "此机构属于哪个更高层次机构的一部分",
+      "definition" : "此机构属于哪个更高层次机构的一部分",
+      "requirements" : "需要能够追踪一个机构内的机构层次结构"
+    },
+    {
+      "id" : "Organization.contact",
+      "path" : "Organization.contact",
+      "short" : "某一用途的机构联络方式",
+      "definition" : "某一用途的机构联络方式",
+      "comment" : "如果为同一个用途提供多个联络方式，则可有一个扩展字段用以决定哪一个优先联络。",
+      "requirements" : "需要在更大的机构内追踪用的指定联络方式"
+    },
+    {
+      "id" : "Organization.contact.id",
+      "path" : "Organization.contact.id",
+      "short" : "唯一可识别ID，以供资料项目间相互参照。",
+      "definition" : "resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。"
+    },
+    {
+      "id" : "Organization.contact.extension",
+      "path" : "Organization.contact.extension",
+      "short" : "扩展字段",
+      "definition" : "可用于表示不属于此资料项目基本定义的附加信息。为了扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一套要求 **必须（SHALL）** 满足。",
+      "comment" : "无论使用或定义扩充的机构或管辖区，任何应用程序、专案或标准使用扩充都不背负任何污名（stigma）。使用扩充是允许FHIR规范为每个人保留一个核心的简易性。"
+    },
+    {
+      "id" : "Organization.contact.modifierExtension",
+      "path" : "Organization.contact.modifierExtension",
+      "short" : "此扩展字段可能会完全修正或改变其他资料项目的意涵，需特别留意。",
+      "definition" : "可以用来表示不属于资料项目的基本定义的附加信息，并且修改对它所内嵌（contained）的资料项目的理解和／或对包含资料项目之后续使用的理解。通常，修饰用的资料项目提供否定或限定。为了使扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一组要求 **必须（SHALL）** 满足。处理resource的应用程序被要求检查修饰用的扩充资料项目。\n\n修饰用的扩充资料项目 **必须没有（SHALL NOT）** 改变resource或DomainResource上任何资料项目的含义（包括不能改变modifierExtension本身的含义）。",
+      "comment" : "无论使用或定义扩充的机构或管辖区，任何应用程序、专案或标准使用扩充都不背负任何污名（stigma）。使用扩充是允许FHIR规范为每个人保留一个核心的简易性。",
+      "requirements" : "修饰用的资料项目扩充将不能安全地忽略的扩充与绝大多数可以安全地忽略的扩充明确区分开来。透过消除禁止实作者扩充存在的需求来促进可互操作性。更多讯息，请参见修饰用的资料项目扩充之定义。"
+    },
+    {
+      "id" : "Organization.contact.purpose",
+      "path" : "Organization.contact.purpose",
+      "short" : "联络的型别",
+      "definition" : "表明可联络到此联络人的联络方式之用途",
+      "requirements" : "需要对多个联络人进行区分",
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ContactPartyType"
+        }],
+        "strength" : "extensible",
+        "description" : "你所联络之联络人的联络方式用途；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/contactentity-type"
+      }
+    },
+    {
+      "id" : "Organization.contact.name",
+      "path" : "Organization.contact.name",
+      "short" : "联络人名字",
+      "definition" : "联络人名字",
+      "requirements" : "需能透过名字来追综此联络人"
+    },
+    {
+      "id" : "Organization.contact.telecom",
+      "path" : "Organization.contact.telecom",
+      "short" : "联络人的详细联络方式（例如：电话、电子邮件等）。",
+      "definition" : "可与此人联络的详细联络方式（如电话或电子邮件地址等）",
+      "requirements" : "人们有（主要）方式与他们联络，如电话、电子邮件。"
+    },
+    {
+      "id" : "Organization.contact.address",
+      "path" : "Organization.contact.address",
+      "short" : "联络人的到访或邮政地址",
+      "definition" : "可到访及邮寄联络人的地址",
+      "requirements" : "为了联络、计费或通报要求而可能需要追踪机构的地址"
+    },
+    {
+      "id" : "Organization.endpoint",
+      "path" : "Organization.endpoint",
+      "short" : "存取此Organization的技术服务的终端（endpoints）",
+      "definition" : "存取此Organization的技术服务的终端（endpoints）",
+      "requirements" : "机构有多个提供各种服务的系统，需要能够定义技术连接的细节，如何连接到这些系统，以及为了什么目的。"
+    }]
+  }
+}

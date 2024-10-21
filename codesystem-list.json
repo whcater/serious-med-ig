@@ -5,8 +5,8 @@
       "version" : "1.0.0",
       "status" : "active",
       "name" : "IdentifierType_V20203",
-      "title" : "IdentifierType_V20203",
-      "description" : "识别码类型"
+      "title" : "CodeSystem-IdentifierType_V20203",
+      "description" : "识别码类型编码系统"
     }
   ]
 }

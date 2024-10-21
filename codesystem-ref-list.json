@@ -73,6 +73,30 @@
       "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1129"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
       "version" : "2.1.0",
       "status" : "active",
@@ -94,7 +118,7 @@
       "oids" : ["2.16.840.1.113883.18.108"],
       "uses" : {
       },
-      "ValueSet-identifier-type.html" : "IdentifierType"
+      "ValueSet-identifier-type.html" : "ValueSet-IdentifierType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
@@ -137,11 +161,11 @@
       "version" : "1.0.0",
       "status" : "active",
       "name" : "IdentifierType_V20203",
-      "title" : "IdentifierType_V20203",
-      "description" : "识别码类型",
+      "title" : "CodeSystem-IdentifierType_V20203",
+      "description" : "识别码类型编码系统",
       "uses" : {
       },
-      "ValueSet-identifier-type.html" : "IdentifierType"
+      "ValueSet-identifier-type.html" : "ValueSet-IdentifierType"
     },
     {
       "url" : "urn:ietf:bcp:47",

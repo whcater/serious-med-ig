@@ -10,16 +10,159 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ext-person-age","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","扩充的资料项目名称","扩充的资料项目之定义连结—一个逻辑名称或URL","此定义可直接指向可计算的或人类可读的扩充资料项目的定义，也可以是其他规范中声明的逻辑URI。此定义**必须（SHALL）** 定义扩充的结构定义的URI。","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+","扩展字段名称","扩展字段之定义连结—一个逻辑名称或URL","此定义可直接指向可计算的或人类可读的扩充资料项目的定义，也可以是其他规范中声明的逻辑URI。此定义**必须（SHALL）** 定义扩充的结构定义的URI。","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ext-person-age","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Age {[]} {[]}
-","扩充的资料项目的内容值","扩充的资料项目的内容值—必须是一组受限制的data type中的一个（清单请见[Extensibility](http://hl7.org/fhir/2021Mar/extensibility.html)）","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","扩展字段的内容值","扩展字段的内容值—必须是一组受限制的data type中的一个（清单请见[Extensibility](http://hl7.org/fhir/2021Mar/extensibility.html)）","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization","Organization","","","",0,*,"","","","null {[]} {[]}
+","A grouping of people or organizations with a common purpose","为实现某种形式的集体行动而形成的正式或非正式认可的一群人或机构的团体。包括公司、机构、企业、部门、社群团体、健康医护实务团体、付款人／保险公司等。","","","","","","","","","",,,,,"",,,,"Organization",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}org-1:The organization SHALL at least have a name or an identifier, and possibly more than one {(identifier.count() + name.count()) > 0}"
+"sm-organization","Organization.id","Organization.id","","","",0,1,"","","Y","id {[]} {[]}
+","不重复的ID用以识别储存在特定FHIR Server中的Organization纪录，通常又称为逻辑性ID。","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","一个resource使用新增操作（create operation）提交给服务器时，此resource没有id，它的id在resource被创建后由服务器分配/指定。","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+"sm-organization","Organization.meta","Organization.meta","","","",0,1,"","","Y","Meta {[]} {[]}
+","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.implicitRules","Organization.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
+","A set of rules under which this content was created","A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.","Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.","","","","","","","","",,,,,"",,,,"Resource.implicitRules",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.language","Organization.language","","","",0,1,"","","","code {[]} {[]}
+","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.text","Organization.text","","narrative
+htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
+","Text summary of the resource, for human interpretation","A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it ""clinically safe"" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.","Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a ""text blob"" or where text is additionally entered raw or narrated and encoded information is added later.","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.contained","Organization.contained","","inline resources
+anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
+","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"",""
+"sm-organization","Organization.extension","Organization.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"sm-organization","Organization.modifierExtension","Organization.modifierExtension","","extensions
+user content","",0,*,"","Y","","Extension {[]} {[]}
+","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"sm-organization","Organization.identifier","Organization.identifier","","","",1,*,"Y","","Y","Identifier {[]} {[]}
+","用于指明跨多个不同系统的机构识别码","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations通常有多种识别码。有些机构保有数个，而大多数机构收集识别码用于跟其他机构交流有关此机构的信息。","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"org-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.identifier.id","Organization.identifier.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可识别ID，以供资料项目间相互参照。","resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"sm-organization","Organization.identifier.extension","Organization.identifier.extension","","","",0,*,"","","","Extension {[]} {[]}
+","扩展字段","扩展字段","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"sm-organization","Organization.identifier.use","Organization.identifier.use","","","",0,1,"Y","Y","Y","code {[]} {[]}
+","usual ｜ official ｜ temp ｜ secondary ｜ old （如果知道）","这个唯一识别码（identifier）的用途","应用程序可以假定一个识别码是永久的，除非它明确说它是暂时的。","允许从一组识别码中为特定的使用场景选择适当的识别码","","","","","","","",,"required","如果已知，请说明此识别码的目的；应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.identifier.type","Organization.identifier.type","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
+","机构识别码（identifier）的型别说明","识别码的代码型别，用于决定特定目适用的识别码。","这个资料项目只涉及识别码的一般类别。它 **必须没有（SHALL NOT）** 被用于与Identifier.system 1..1对应的代码。一些识别码可能由于常见的用法而属于多个类别。在系统是已知的情况下，型别是不必要的，因为型别总是系统定义的一部分。然而，系统经常需要处理系统不为人知的识别码。型别和系统之间不是1:1的关系，因为许多不同的系统有相同的型别。","允许使用者在不知道识别码系统的情况下利用识别码","","","","","","","",,"extensible","识别码的型别，用于决定特定目的所适用的识别码；应填入所绑定值集中的其中一个代码。","https://whcater.github.io/serious-med-ig/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.identifier.system","Organization.identifier.system","","","",0,1,"Y","","Y","uri {[]} {[]}
+","机构识别码（identifier）的命名空间（namespace），可至Terminology Server查询命名系统。","建立值的命名空间－即一个描述一组值的唯一URL","Identifier.system总是区分大小写","有许多识别码的集合。为了进行两个识别码的对应，我们需要知道我们处理的是哪一组。系统指明了一个特定的唯一识别码集。","","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.identifier.value","Organization.identifier.value","","","",1,1,"Y","","Y","string {[]} {[]}
+","唯一值","识别码中通常与使用者有关的部分，在编码系统作用域内是唯一的。","如果此值是一个完整的URI，那么此系统 **必须（SHALL）** 是urn:ietf:rfc:3986。此值的主要目的是为了可运算的对应。因此，为了比较的目的，它可能会被正规化（例如：去除不重要的空白、破折号等）。一个为人显示的格式化的值可以使用[Rendered Value](http://hl7.org/fhir/R4/extension-rendered-value.html)扩充来传达。除非对Identifier.system的了解使处理者确信不区分大小写的处理是安全的，否则Identifier.value应被视为区分大小写。","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.identifier.period","Organization.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此机构识别码（identifier）的使用效期","识别码有效／曾经有效使用的时段或期间","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.identifier.assigner","Organization.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","签发identifier的机构（可以只是文字表述）","签发／管理识别码的机构","Identifier.assigner可以省略.reference资料项目，只包含一个.display资料项目，反映指定机构的名称或其他文字表述信息。","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.active","Organization.active","","","",0,1,"Y","Y","Y","boolean {[]} {[]}
+","此机构的纪录是否仍在使用中","此机构的纪录是否仍在使用中","这个Active标记不是用来标记机构暂时关闭或正在建设中。反而应该是Organization的地点（Location）应该具有暂停状态。如果需要进一步详细说明暂停的原因，那么应该针对这个资料项目的提供一个扩展字段。
+
+这个资料项目被标记为修饰语／修饰用，因为它可用来标记resource是错误建立的。","需要一个标记表明此记录不再被使用，一般来说应会在使用者界面中隐藏此资料项目。","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"Organization.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.type","Organization.type","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
+","机构的型别","机构的型别","机构可以是公司、病房、科室、临床团队、政府部门等。请注意，代码通常是机构型别的分类；在许多应用程序中，若代码是用来指明一个特定机构（例如：病房），而不是另一个相同型别的机构，那么这些算是识别码代码，而不是型别代码。
+
+当考虑多个型别是否合适时，你应该评估子机构是否是一个更合适的概念使用，因为不同的型别可能在不同子区域的机构。这最有可能用于型别值不相关（orthogonal values）的地方，像是一个宗教的、学术的和医学中心。
+
+我们期望一些行政管辖区设计此资料项目为可选填且基数设定为1。","需要能够追踪这是哪种机构－不同机构型别有不同的用途。","","","","","","","",,"example","用于分类机构；可参考所绑定值集，但此值集只是针对这个栏位的一个可能值的范例，不预期也不鼓励使用者一定要使用此值集的代码。","http://hl7.org/fhir/ValueSet/organization-type","",,,,"Organization.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.name","Organization.name","","","",1,1,"Y","","Y","string {[]} {[]}
+","机构的名称","与此机构相关名称","如果一个机构改变名称，可以考虑把旧的名称放在别名（alias）资料项目中，这样仍然可以透过查询找到它。","需要使用名称作为机构的标签","","","","","","","",,,,,"",,,,"Organization.name",0,1,"org-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.alias","Organization.alias","","","",0,*,"","","","string {[]} {[]}
+","此机构目前或过去已知的其他（多个）名称","此机构目前或过去已知的其他（多个）名称","没有与别名／历史名称相关的日期，因为这不是为了追踪使用名称的时间，而是为了协助查询，以便旧名称仍然可以指明此机构。","随著时间的推移，地点和机构经历了许多变化，可能会有不同的名称。
+
+对于查询而言，了解此机构以前的名称是非常有用的。","","","","","","","",,,,,"",,,,"Organization.alias",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.telecom","Organization.telecom","","","",0,*,"Y","","","ContactPoint {[]} {[]}
+","此机构的详细联络方式。
+org-3：一个机构的通讯永远不可能是「家用」，意即不可能使用「home」。","此机构的详细联络方式","不能使用代码 「home」。请注意，这些联络人不是指受雇于此机构或代表此机构的人的详细联络方式，而是此机构本身的官方联络人。","此机构的联络人","","","","","","","",,,,,"",,,,"Organization.telecom",0,*,"org-3
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+org-3:The telecom of an organization can never be of use 'home' {where(use = 'home').empty()}"
+"sm-organization","Organization.telecom.id","Organization.telecom.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可识别ID，以供资料项目间相互参照。","resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"sm-organization","Organization.telecom.extension","Organization.telecom.extension","","","",0,*,"","","","Extension {[]} {[]}
+","扩展字段","可用于表示不属于此资料项目基本定义的附加信息。为了扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一套要求 **必须（SHALL）** 满足。","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"sm-organization","Organization.telecom.system","Organization.telecom.system","","","",0,1,"Y","","Y","code {[]} {[]}
+","phone | fax | email | pager | url | sms | other","联络方式的通讯形式－需要什么通讯系统进行联络","","","","","","","","","",,"required","应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1","",,,,"ContactPoint.system",0,1,"cpt-2
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.telecom.value","Organization.telecom.value","","","",0,1,"Y","","Y","string {[]} {[]}
+","实际的联络方式之细节","实际的联络方式之细节，针对指定的通讯系统提供有意义的形式（电话号码或是电子邮件位址）。","额外的文字资料，例如电话分机号码、或关于联络人的说明，有时也包括于此值。","需支援非严格格式控制之旧有号码","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.telecom.use","Organization.telecom.use","","","",0,1,"","Y","Y","code {[]} {[]}
+","home | work | temp | old | mobile－此联络方式的用途","确定联络方式的用途","应用程序可以假定一个联络方法是目前使用中，除非它明确说它是暂时的或旧的。","需要追踪此人使用这种联络的方式，使用者可以选择适合他们用途的联络方式。","","","","","","","",,"required","应填入所绑定值集中的其中一个代码。","http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1","",,,,"ContactPoint.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.telecom.rank","Organization.telecom.rank","","","",0,1,"","","Y","positiveInt {[]} {[]}
+","具体说明偏好的使用顺序（1=最高优先顺序）","具体说明使用一组联系方式的优先顺序，较小排名序位的联络方式比较大排名序位的联络方式之序位还要前面。","请注意，排名序位没有一定要遵循联络方式在实例中呈现的顺序。","","","","","","","","",,,,,"",,,,"ContactPoint.rank",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.telecom.period","Organization.telecom.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此联络方式的使用效期","此联络方式的使用效期","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.address","Organization.address","","","",0,*,"","","","Address {[]} {[]}
+","此机构的地址。
+org-2：一个机构的地址永远不可能是「家用」，意即不可能使用「home」。","此机构的地址","机构可能有多个地址，有不同的用途或适用期。不使用代码「home」。","为了联络、计费或通报要求而可能需要追踪机构的地址","","","","","","","",,,,,"",,,,"Organization.address",0,*,"org-2
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+org-2:An address of an organization can never be of use 'home' {where(use = 'home').empty()}"
+"sm-organization","Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","此机构属于哪个更高层次机构的一部分","此机构属于哪个更高层次机构的一部分","","需要能够追踪一个机构内的机构层次结构","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.contact","Organization.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
+","某一用途的机构联络方式","某一用途的机构联络方式","如果为同一个用途提供多个联络方式，则可有一个扩展字段用以决定哪一个优先联络。","需要在更大的机构内追踪用的指定联络方式","","","","","","","",,,,,"",,,,"Organization.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.contact.id","Organization.contact.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可识别ID，以供资料项目间相互参照。","resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"sm-organization","Organization.contact.extension","Organization.contact.extension","","","",0,*,"","","","Extension {[]} {[]}
+","扩展字段","可用于表示不属于此资料项目基本定义的附加信息。为了扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一套要求 **必须（SHALL）** 满足。","无论使用或定义扩充的机构或管辖区，任何应用程序、专案或标准使用扩充都不背负任何污名（stigma）。使用扩充是允许FHIR规范为每个人保留一个核心的简易性。","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"sm-organization","Organization.contact.modifierExtension","Organization.contact.modifierExtension","","","",0,*,"","Y","Y","Extension {[]} {[]}
+","此扩展字段可能会完全修正或改变其他资料项目的意涵，需特别留意。","可以用来表示不属于资料项目的基本定义的附加信息，并且修改对它所内嵌（contained）的资料项目的理解和／或对包含资料项目之后续使用的理解。通常，修饰用的资料项目提供否定或限定。为了使扩充的使用安全和可管理，对扩充的定义和使用有一套严格的管理。尽管任何实作者都可以定义一个扩充，但作为扩充定义的一部分，有一组要求 **必须（SHALL）** 满足。处理resource的应用程序被要求检查修饰用的扩充资料项目。
+
+修饰用的扩充资料项目 **必须没有（SHALL NOT）** 改变resource或DomainResource上任何资料项目的含义（包括不能改变modifierExtension本身的含义）。","无论使用或定义扩充的机构或管辖区，任何应用程序、专案或标准使用扩充都不背负任何污名（stigma）。使用扩充是允许FHIR规范为每个人保留一个核心的简易性。","修饰用的资料项目扩充将不能安全地忽略的扩充与绝大多数可以安全地忽略的扩充明确区分开来。透过消除禁止实作者扩充存在的需求来促进可互操作性。更多讯息，请参见修饰用的资料项目扩充之定义。","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"sm-organization","Organization.contact.purpose","Organization.contact.purpose","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","联络的型别","表明可联络到此联络人的联络方式之用途","","需要对多个联络人进行区分","","","","","","","",,"extensible","你所联络之联络人的联络方式用途；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","http://hl7.org/fhir/ValueSet/contactentity-type","",,,,"Organization.contact.purpose",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.contact.name","Organization.contact.name","","","",0,1,"","","","HumanName {[]} {[]}
+","联络人名字","联络人名字","","需能透过名字来追综此联络人","","","","","","","",,,,,"",,,,"Organization.contact.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.contact.telecom","Organization.contact.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
+","联络人的详细联络方式（例如：电话、电子邮件等）。","可与此人联络的详细联络方式（如电话或电子邮件地址等）","","人们有（主要）方式与他们联络，如电话、电子邮件。","","","","","","","",,,,,"",,,,"Organization.contact.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.contact.address","Organization.contact.address","","","",0,1,"","","","Address {[]} {[]}
+","联络人的到访或邮政地址","可到访及邮寄联络人的地址","","为了联络、计费或通报要求而可能需要追踪机构的地址","","","","","","","",,,,,"",,,,"Organization.contact.address",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"sm-organization","Organization.endpoint","Organization.endpoint","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Endpoint]]}
+","存取此Organization的技术服务的终端（endpoints）","存取此Organization的技术服务的终端（endpoints）","","机构有多个提供各种服务的系统，需要能够定义技术连接的细节，如何连接到这些系统，以及为了什么目的。","","","","","","","",,,,,"",,,,"Organization.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "sm-patient","Patient","Patient","","SubjectOfCare Client Resident
 ","",0,*,"","","","null {[]} {[]}
 ","接受健康医护服务的个人信息","关于接受医护或其他健康相关服务的个人的人口统计学和其他行政信息。","","","","","","","","","",,,,,"",,,,"Patient",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
 dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}"
 "sm-patient","Patient.id","Patient.id","","","",0,1,"","","Y","id {[]} {[]}
-","不重复的ID用以识别储存在特定FHIR Server中的Patient纪录，通常又称为逻辑性ID。","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","一个resource使用新增操作（create operation）提交给伺服器时，此resource没有id，它的id在resource被创建后由伺器分配/指定。","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+","不重复的ID用以识别储存在特定FHIR Server中的Patient纪录，通常又称为逻辑性ID。","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","一个resource使用新增操作（create operation）提交给伺服器时，此resource没有id，它的id在resource被创建后由服务器分配/指定。","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "sm-patient","Patient.meta","Patient.meta","","","",0,1,"","","Y","Meta {[]} {[]}
 ","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -537,7 +680,7 @@ pat-cnt-2or3-char：如果有国家名，则必须（SHALL）从[ISO Country Alp
 ","病人的婚姻状态","这个栏位包含病人的目前婚姻（民事）状态","","如果不是所有的系统都能取得此信息","","","","","","","",,"extensible","病人的婚姻状态；应填入所绑定值集中适合的代码，确定无适合的代码才可以使用其他值集的代码来表示。","http://hl7.org/fhir/ValueSet/marital-status","",,,,"Patient.maritalStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "sm-patient","Patient.multipleBirth[x]","Patient.multipleBirth[x]","","","",0,1,"","","","boolean {[]} {[]}
-integer {[]} {[]}","病人是否为多胞胎；或多胞胎出生顺序。","表示病人是否是为多胞胎（布林值）或表示实际的出生顺序（整数值）","在提供valueInteger的情况下，这个数字是序列中的出生序。例如：三胞胎中的中间胎儿是valueInteger=2，第三胎儿是valueInteger=3，如果是为三胞胎提供布林值，那么所有3位病人的纪录都是valueBoolean=true（没有指明出生序）。","用于消除多胎孩童的歧义，特别是在医护人员没有见到病人的情况下，例如：在实验室。","","","","","","","",,,,,"",,,,"Patient.multipleBirth[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+integer {[]} {[]}","病人是否为多胞胎；或多胞胎出生顺序。","表示病人是否是为多胞胎（布尔值）或表示实际的出生顺序（整数值）","在提供valueInteger的情况下，这个数字是序列中的出生序。例如：三胞胎中的中间胎儿是valueInteger=2，第三胎儿是valueInteger=3，如果是为三胞胎提供布尔值，那么所有3位病人的纪录都是valueBoolean=true（没有指明出生序）。","用于消除多胎孩童的歧义，特别是在医护人员没有见到病人的情况下，例如：在实验室。","","","","","","","",,,,,"",,,,"Patient.multipleBirth[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "sm-patient","Patient.photo","Patient.photo","","","",0,*,"Y","","","Attachment {[]} {[]}
 ","病人的影像（照片）","病人的影像（照片）","指引：

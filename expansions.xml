@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="cd5e6cc1-9a05-40af-a4a1-ac32c26cc68b"/>
+  <id value="6c2c7932-07dc-4988-9e56-6312f80c0ca4"/>
   <meta>
-    <lastUpdated value="2024-10-21T01:26:48.542+00:00"/>
+    <lastUpdated value="2024-10-21T09:42:39.600+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -23,7 +23,7 @@
                   <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v2-0203.html">codesystem identifierType v4.0.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-v2-0203.html">codesystem IdentifierType_V20203 v1.0.0 (CodeSystem)</a>
+                  <a href="CodeSystem-v2-0203.html">codesystem CodeSystem-IdentifierType_V20203 v1.0.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -2009,12 +2009,12 @@
         <url value="https://whcater.github.io/serious-med-ig/ValueSet/identifier-type"/>
         <version value="1.0.0"/>
         <name value="IdentifierType"/>
-        <title value="IdentifierType"/>
+        <title value="ValueSet-IdentifierType"/>
         <status value="active"/>
         <date value="2024-10-17"/>
         <expansion>
-          <identifier value="urn:uuid:12f4d528-5bcb-4e5c-9d9f-2d8d42d1dd4d"/>
-          <timestamp value="2024-10-21T01:27:11+00:00"/>
+          <identifier value="urn:uuid:54768701-5eab-44fe-aca2-9809e841ccd7"/>
+          <timestamp value="2024-10-21T09:43:02+00:00"/>
           <total value="140"/>
           <offset value="0"/>
           <parameter>

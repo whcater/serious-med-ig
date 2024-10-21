@@ -21,11 +21,18 @@
     "name" : "ExtPersonAge"
   },
   {
+    "id" : "sm-organization",
+    "type" : "StructureDefinition",
+    "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-organization",
+    "version" : "1.0.0",
+    "name" : "SmOrganization"
+  },
+  {
     "id" : "sm-patient",
     "type" : "StructureDefinition",
     "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-patient",
     "version" : "1.0.0",
-    "name" : "SmPatientBase"
+    "name" : "SmPatient"
   },
   {
     "id" : "identifier-type",

@@ -12,7 +12,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -26,7 +26,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+      "StructureDefinition-sm-organization.html" : "SmOrganization",
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -40,7 +41,22 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+      "StructureDefinition-sm-organization.html" : "SmOrganization",
+      "StructureDefinition-sm-patient.html" : "SmPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-organization.html" : "SmOrganization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -54,7 +70,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+      "StructureDefinition-sm-organization.html" : "SmOrganization",
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -68,7 +85,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -82,7 +99,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.423"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -99,7 +116,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.29"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/name-use",
@@ -113,7 +130,21 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+      "StructureDefinition-sm-patient.html" : "SmPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-organization.html" : "SmOrganization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
@@ -130,14 +161,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.449"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "https://whcater.github.io/serious-med-ig/ValueSet/identifier-type",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "IdentifierType",
-      "title" : "IdentifierType",
+      "title" : "ValueSet-IdentifierType",
       "description" : "识别码类型值集",
       "systems" : [
         "https://whcater.github.io/serious-med-ig/CodeSystem/v2-0203",
@@ -145,7 +176,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatientBase"
+      "StructureDefinition-sm-organization.html" : "SmOrganization",
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     }
   ]
 }
