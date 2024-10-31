@@ -12,6 +12,12 @@
     }
   ],
   "profiles": {
+    "Practitioner": [
+      {
+        "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-Practitioner",
+        "title": "SmPractitioner"
+      }
+    ],
     "Organization": [
       {
         "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-organization",

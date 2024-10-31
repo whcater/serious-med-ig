@@ -11,7 +11,7 @@
   <name value="hl7fhirseriousmedcoreimplementationguide"/>
   <title value="HL7® Serious Med FHIR® Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-10-21T09:42:39+00:00"/>
+  <date value="2024-10-31T17:01:14+00:00"/>
   <publisher value="whcater"/>
   <contact>
     <name value="whcater"/>
@@ -496,6 +496,17 @@
       </reference>
       <name value="SmPatient"/>
       <description value="病人（Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sm-Practitioner"/>
+      </reference>
+      <name value="SmPractitioner"/>
+      <description value="健康医护服务提供者基本信息"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

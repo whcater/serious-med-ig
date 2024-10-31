@@ -1,4 +1,4 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+URL,Version,Status,OIDs,Name,Title,Description,Used
 http://hl7.org/fhir/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.4.2",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","ValueSet/administrative-gender"
 http://hl7.org/fhir/contact-point-system,4.0.1,active,"2.16.840.1.113883.4.642.4.72",ContactPointSystem,ContactPointSystem,"Telecommunications form for contact point.","ValueSet/contact-point-system"
 http://hl7.org/fhir/contact-point-use,4.0.1,active,"2.16.840.1.113883.4.642.4.74",ContactPointUse,ContactPointUse,"Use of contact point.","ValueSet/contact-point-use"

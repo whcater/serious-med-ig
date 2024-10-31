@@ -118,6 +118,7 @@
       "oids" : ["2.16.840.1.113883.18.108"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
       "ValueSet-identifier-type.html" : "ValueSet-IdentifierType"
     },
     {

@@ -10,7 +10,7 @@
   "name" : "hl7fhirseriousmedcoreimplementationguide",
   "title" : "HL7® Serious Med FHIR® Core Implementation Guide",
   "status" : "draft",
-  "date" : "2024-10-21T09:42:39+00:00",
+  "date" : "2024-10-31T17:01:14+00:00",
   "publisher" : "whcater",
   "contact" : [{
     "name" : "whcater",
@@ -656,6 +656,18 @@
       },
       "name" : "SmPatient",
       "description" : "病人（Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sm-Practitioner"
+      },
+      "name" : "SmPractitioner",
+      "description" : "健康医护服务提供者基本信息",
       "exampleBoolean" : false
     },
     {

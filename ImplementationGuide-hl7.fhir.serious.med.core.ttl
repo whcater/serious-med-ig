@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "hl7fhirseriousmedcoreimplementationguide"] ; # 
   fhir:title [ fhir:v "HL7® Serious Med FHIR® Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-21T09:42:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-31T17:01:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "whcater" ] ;
@@ -573,6 +573,18 @@
        ] ;
        fhir:name [ fhir:v "SmPatient" ] ;
        fhir:description [ fhir:v "病人（Patient) Profile说明本IG如何进一步定义FHIR的Patient Resource以呈现基本资料" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/sm-Practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/sm-Practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "SmPractitioner" ] ;
+       fhir:description [ fhir:v "健康医护服务提供者基本信息" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

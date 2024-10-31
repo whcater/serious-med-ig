@@ -21,6 +21,13 @@
     "name" : "ExtPersonAge"
   },
   {
+    "id" : "sm-Practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-Practitioner",
+    "version" : "1.0.0",
+    "name" : "SmPractitioner"
+  },
+  {
     "id" : "sm-organization",
     "type" : "StructureDefinition",
     "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-organization",
