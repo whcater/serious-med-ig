@@ -6,6 +6,9 @@ Description: "科室机构基本信息"
 * . ^definition = "为实现某种形式的集体行动而形成的正式或非正式认可的一群人或机构的团体。包括公司、机构、企业、部门、社群团体、健康医护实务团体、付款人／保险公司等。"
 * id ^short = "不重复的ID用以识别储存在特定FHIR Server中的Organization纪录，通常又称为逻辑性ID。"
 * id ^comment = "一个resource使用新增操作（create operation）提交给服务器时，此resource没有id，它的id在resource被创建后由服务器分配/指定。"
+* language from CommonLanguages (preferred)
+* language ^short = "用以表述Patient Resource内容的语言。"
+* language ^example.valueString = "zh-CN"
 * identifier 1.. MS
 * identifier ^short = "用于指明跨多个不同系统的机构识别码"
 * identifier ^requirements = "Organizations通常有多种识别码。有些机构保有数个，而大多数机构收集识别码用于跟其他机构交流有关此机构的信息。"

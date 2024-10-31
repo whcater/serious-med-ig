@@ -9,7 +9,7 @@ Description: "病人（Patient) Profile说明本IG如何进一步定义FHIR的Pa
 * id ^comment = "一个resource使用新增操作（create operation）提交给伺服器时，此resource没有id，它的id在resource被创建后由服务器分配/指定。"
 * language from CommonLanguages (preferred)
 * language ^short = "用以表述Patient Resource内容的语言。"
-* language ^example.valueString = "zh-cn"
+* language ^example.valueString = "zh-CN"
 * text ^short = "Patient Resource之内容摘要以供人阅读"
 * text ^definition = "人可读的叙述，包含resource的摘要，可用于向人表述resource的内容。叙述不需要对所有的结构化资料进行编码，但需要包含足够的细节使人在阅读叙述时理解「临床安全性」。resource定义有哪些内容应该在叙述中表示，以确保临床安全。"
 * extension ^comment = "任何应用程序、专案或标准使用扩充时，都不应该带有任何负面的联想。使用扩充是允许FHIR规范为每个人保留一个核心的简易性。"
@@ -614,7 +614,7 @@ Description: "病人（Patient) Profile说明本IG如何进一步定义FHIR的Pa
 * communication.language ^comment = "带有这种精确字母大小写的aa-BB结构是最广泛使用的地方性符号之一。但并不是所有的系统都对其进行编码，而是将其作为纯文字表述。因此，data type为CodeableConcept而不是code。"
 * communication.language ^requirements = "在多语言国家的大多数系统都会想要沟通语言。并非所有的系统实际上都需要区域方言。"
 * communication.language ^example.label = "Value"
-* communication.language ^example.valueString = "zh-cn"
+* communication.language ^example.valueString = "zh-CN"
 * communication.language ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"
 * communication.language ^binding.extension[=].valueCanonical = "http://hl7.org/fhir/ValueSet/all-languages"
 * communication.language ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"

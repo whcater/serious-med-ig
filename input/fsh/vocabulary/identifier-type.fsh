@@ -15,14 +15,14 @@ Description: """识别码类型编码系统"""
 * ^property[=].description = "更新方式"
 * ^property[=].type = #string
 * #GOI "Government Organization Identifier" "Government Organization Identifier number"
-* #GOI ^designation.language = #zh-cn
+* #GOI ^designation.language = #zh-CN
 * #GOI ^designation.value = "政府机构识别码"
 * #GOI ^property[0].code = #updateDate
 * #GOI ^property[=].valueString = "2024-10-17"
 * #GOI ^property[+].code = #event
 * #GOI ^property[=].valueString = "新增"
 * #UBN "Unified Business number" "Unified Business number"
-* #UBN ^designation.language = #zh-cn
+* #UBN ^designation.language = #zh-CN
 * #UBN ^designation.value = "公司或企业识别码"
 * #UBN ^property[0].code = #updateDate
 * #UBN ^property[=].valueString = "2024-10-17"
