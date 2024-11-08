@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "hl7fhirseriousmedcoreimplementationguide"] ; # 
   fhir:title [ fhir:v "HL7® Serious Med FHIR® Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-31T17:01:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-08T09:27:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "whcater" ] ;
@@ -553,6 +553,30 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/sm-address> ;
+         fhir:reference [ fhir:v "StructureDefinition/sm-address" ]
+       ] ;
+       fhir:name [ fhir:v "SmAddress" ] ;
+       fhir:description [ fhir:v "地址（Address) 若有详细地址信息需求，可依情况填选；若无需区分详细地址信息，可使用原生栏位`text`、`line`、`district`呈现。" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/sm-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/sm-location" ]
+       ] ;
+       fhir:name [ fhir:v "SmLocation" ] ;
+       fhir:description [ fhir:v "地点（Location)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -580,8 +604,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/sm-Practitioner> ;
-         fhir:reference [ fhir:v "StructureDefinition/sm-Practitioner" ]
+         fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/sm-practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/sm-practitioner" ]
        ] ;
        fhir:name [ fhir:v "SmPractitioner" ] ;
        fhir:description [ fhir:v "健康医护服务提供者基本信息" ] ;

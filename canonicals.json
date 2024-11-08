@@ -21,11 +21,18 @@
     "name" : "ExtPersonAge"
   },
   {
-    "id" : "sm-Practitioner",
+    "id" : "sm-address",
     "type" : "StructureDefinition",
-    "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-Practitioner",
+    "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-address",
     "version" : "1.0.0",
-    "name" : "SmPractitioner"
+    "name" : "SmAddress"
+  },
+  {
+    "id" : "sm-location",
+    "type" : "StructureDefinition",
+    "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-location",
+    "version" : "1.0.0",
+    "name" : "SmLocation"
   },
   {
     "id" : "sm-organization",
@@ -40,6 +47,13 @@
     "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-patient",
     "version" : "1.0.0",
     "name" : "SmPatient"
+  },
+  {
+    "id" : "sm-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-practitioner",
+    "version" : "1.0.0",
+    "name" : "SmPractitioner"
   },
   {
     "id" : "identifier-type",

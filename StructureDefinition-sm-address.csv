@@ -1,0 +1,58 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: ServD","Mapping: vCard Mapping"
+"Address","Address","","","",0,*,"","","","null {[]} {[]}
+","使用邮政规范表达的地址（相对于GPS或其他位置定义格式）","使用邮政规范表达的地址（相对于GPS或其他位置定义格式）。这种data type可用于传达投递邮件的位址，以及用于访问可能对邮件投递无效的位置，这世界定义了各种邮政地址格式。","注意：地址的目的是描述用于管理目的之邮政地址，而不是描述绝对的地理座标。邮政地址经常被用作实体位置的代表（亦可见[Location](http://hl7.org/fhir/R4/location.html#)resource）。","","","","","","","","",,,,,"",,,,"Address",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD","n/a","AD","Address"
+"Address.id","Address.id","","","",0,1,"","","","string {[]} {[]}
+","唯一可识别ID，以供资料项目间相互参照。","resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Address.extension","Address.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Address.use","Address.use","","","",0,1,"Y","Y","Y","code {[]} {[]}
+","home ｜ work ｜ temp ｜ old ｜ billing － 此地址的用途","此地址的用途","应用程序可假定一个地址是目前使用中，除非它明确说它是暂时的或旧的。","允许从清单中挑选适当的地址用途","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","应填入AddressUse值集中的其中一个代码","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.7","unique(./use)","./AddressPurpose"
+"Address.type","Address.type","","","",0,1,"Y","","Y","code {[]} {[]}
+","postal ｜ physical ｜ both","区分实际地址（你可以拜访的地址）和邮寄地址（如邮政信箱和转递地址），大多数地址都是这两种。","地址的定义指出「地址旨在描述邮政地址，而不是实体位置」。但许多应用程序追踪一个地址是否具有双重目的，既是一个可以拜访的地点，亦是一个有效的投递目的地，邮政地址经常被用作实体位置的代表（亦可见[Location](http://hl7.org/fhir/R4/location.html#)resource）。","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","应填入AddressType值集中的其中一个代码","http://hl7.org/fhir/ValueSet/address-type|4.0.1","",,,,"Address.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.18","unique(./use)","address type parameter"
+"Address.text","Address.text","","","",0,1,"","","Y","string {[]} {[]}
+","地址的文字表述","具体说明整个地址，因为它应该显示在邮政标签上，这可替代或与特定的部分一起提供。","可以同时提供文字表述和各部分的地址资料项目内容。更新地址的应用程序 **必须（SHALL）** 确保当文字表述和各部分的地址资料项目内容都存在时，文字表述不包括各部分的地址资料项目内容中没有的内容，意即两者内容会一致。","一个可呈现的、未编码的形式。","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street, Erewhon 9132""/>","","",,,,,"",,,,"Address.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6","./formatted","address label parameter"
+"Address.line","Address.line","","路
+街","",0,1,"Y","","Y","string {[]} {[]}
+","路/街","此部分包含门牌号码、公寓号码、街道名称、街道方向、邮政信箱号码、送货提示以及类似的地址信息。","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street""/>","","",,,,,"",,,,"Address.line",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)","AD.part[parttype = AL]","./StreetAddress (newline delimitted)","street"
+"Address.city","Address.city","","Municpality
+乡镇市区","",0,1,"Y","","Y","string {[]} {[]}
+","乡/镇/市/区","市、乡、镇、村或其他社区或配送中心的名称。","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.3","AD.part[parttype = CTY]","./Jurisdiction","locality"
+"Address.district","Address.district","","County
+市","",0,1,"Y","","Y","string {[]} {[]}
+","县/市","行政区域（县）的名称","区（district）有时被称为县（country），但在一些区域（regions），「县（country）」被用来代替市（直辖市），所以县名应该用市名来代替传达。","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.9","AD.part[parttype = CNT | CPA]"
+"Address.state","Address.state","","Province
+Territory","",0,1,"","","Y","string {[]} {[]}
+","国家的子单位（缩写也可以）","一个国家的子单位，在联邦组织的国家中拥有有限的主权。如果代码被普遍使用，可使用代码（例如：美国2个字母的州代码）。","","","","","","","","","",,,,,"",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.4","AD.part[parttype = STA]","./Region","region"
+"Address.postalCode","Address.postalCode","","Zip
+","",0,1,"Y","","Y","string {[]} {[]}
+","邮递区号","指定一个由邮政服务定义的区域之邮递区号","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.5","AD.part[parttype = ZIP]","./PostalIdentificationCode","code"
+"Address.postalCode.id","Address.postalCode.id","","","",0,1,"","","","string {[]} {[]}
+","xml：id（或JSON格式）。","resource中资料项目的唯一ID（用于内部参照）。这可以是任何不含空格的字串。","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"Address.postalCode.extension","Address.postalCode.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Address.postalCode.value","Address.postalCode.value","","","",0,1,"","","","string {[]} {[]}
+","邮递区号","实际值","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
+"Address.country","Address.country","","","",0,1,"Y","","Y","string {[]} {[]}
+","国家（例如：ISO 3166的2个或3个字母代码）。","国家—通常被理解为或普遍被接受的一个国家。","可用ISO 3166的3个字母代码来代替人类可读的国家名","","","","","","","","",,,,,"",,,,"Address.country",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.6","AD.part[parttype = CNT]","./Country","country"
+"Address.period","Address.period","","","",0,1,"","","Y","Period {[]} {[]}
+","此地址曾经／正在使用的时间区间","此地址曾经／正在使用的时间区间","","允许将地址依时间排放","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
+  <start value=""2010-03-23""/>
+  <end value=""2010-07-01""/>
+</valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.12 / XAD.13 + XAD.14","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"

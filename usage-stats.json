@@ -12,10 +12,10 @@
     }
   ],
   "profiles": {
-    "Practitioner": [
+    "Location": [
       {
-        "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-Practitioner",
-        "title": "SmPractitioner"
+        "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-location",
+        "title": "SmLocation"
       }
     ],
     "Organization": [
@@ -28,6 +28,12 @@
       {
         "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-patient",
         "title": "SmPatient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-practitioner",
+        "title": "SmPractitioner"
       }
     ]
   },
@@ -55,6 +61,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
       "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

@@ -11,7 +11,7 @@
   <name value="hl7fhirseriousmedcoreimplementationguide"/>
   <title value="HL7® Serious Med FHIR® Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-10-31T17:01:14+00:00"/>
+  <date value="2024-11-08T09:27:50+00:00"/>
   <publisher value="whcater"/>
   <contact>
     <name value="whcater"/>
@@ -478,6 +478,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sm-address"/>
+      </reference>
+      <name value="SmAddress"/>
+      <description value="地址（Address) 若有详细地址信息需求，可依情况填选；若无需区分详细地址信息，可使用原生栏位`text`、`line`、`district`呈现。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sm-location"/>
+      </reference>
+      <name value="SmLocation"/>
+      <description value="地点（Location)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -503,7 +525,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sm-Practitioner"/>
+        <reference value="StructureDefinition/sm-practitioner"/>
       </reference>
       <name value="SmPractitioner"/>
       <description value="健康医护服务提供者基本信息"/>

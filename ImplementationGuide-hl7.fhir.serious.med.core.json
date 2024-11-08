@@ -10,7 +10,7 @@
   "name" : "hl7fhirseriousmedcoreimplementationguide",
   "title" : "HL7® Serious Med FHIR® Core Implementation Guide",
   "status" : "draft",
-  "date" : "2024-10-31T17:01:14+00:00",
+  "date" : "2024-11-08T09:27:50+00:00",
   "publisher" : "whcater",
   "contact" : [{
     "name" : "whcater",
@@ -637,6 +637,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sm-address"
+      },
+      "name" : "SmAddress",
+      "description" : "地址（Address) 若有详细地址信息需求，可依情况填选；若无需区分详细地址信息，可使用原生栏位`text`、`line`、`district`呈现。",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sm-location"
+      },
+      "name" : "SmLocation",
+      "description" : "地点（Location)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -664,7 +688,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/sm-Practitioner"
+        "reference" : "StructureDefinition/sm-practitioner"
       },
       "name" : "SmPractitioner",
       "description" : "健康医护服务提供者基本信息",
