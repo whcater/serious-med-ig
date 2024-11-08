@@ -1,6 +1,6 @@
 Profile: SmPractitioner
 Parent: Practitioner
-Id: sm-Practitioner
+Id: sm-practitioner
 Title: "SmPractitioner"
 Description: "健康医护服务提供者基本信息"
 * . ^short = "对于所提供的健康医护或相关服务负有正式责任的人员"
@@ -89,7 +89,6 @@ Description: "健康医护服务提供者基本信息"
 * identifier[idCardNumber].type.coding.code = #NNxxx
 * identifier[idCardNumber].type.coding.code ^short = "系统定义的语法之符号"
 * identifier[idCardNumber].type.coding.code ^definition = "系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是编码系统定义的语法中的表达式（如后组合配对／后组合式）。"
-* identifier[idCardNumber].type.coding.code ^requirements = "需要参照系统中的一个特定代码" 
 * identifier[idCardNumber].type.coding.display MS
 * identifier[idCardNumber].type.coding.display ^short = "由编码系统定义的描述"
 * identifier[idCardNumber].type.coding.display ^definition = "遵循系统的规则以呈现代码含义的描述"
@@ -158,7 +157,6 @@ Description: "健康医护服务提供者基本信息"
 * identifier[passportNumber].type.coding.code = #PPN
 * identifier[passportNumber].type.coding.code ^short = "系统定义的语法之符号"
 * identifier[passportNumber].type.coding.code ^definition = "系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是编码系统定义的语法中的表达式（如后组合配对／后组合式）。"
-* identifier[passportNumber].type.coding.code ^requirements = "需要参照系统中的一个特定代码"
 * identifier[passportNumber].type.coding.display MS
 * identifier[passportNumber].type.coding.display ^short = "由编码系统定义的描述"
 * identifier[passportNumber].type.coding.display ^definition = "遵循系统的规则以呈现代码含义的描述"
@@ -188,8 +186,8 @@ Description: "健康医护服务提供者基本信息"
 * identifier[passportNumber].assigner ^short = "签发identifier的机构（可以只是文字表述）"
 * identifier[passportNumber].assigner ^definition = "签发／管理识别码的机构"
 * identifier[passportNumber].assigner ^comment = "Identifier.assigner可以省略.reference资料项目，只包含一个.display资料项目，反映指定机构的名称或其他文字表述信息。"
-* identifier[residentNumber] ^short = "适用居留证号码"
-* identifier[residentNumber] ^definition = "适用于居留证号码"
+* identifier[residentNumber] ^short = "适用居住证号码"
+* identifier[residentNumber] ^definition = "适用于居住证号码"
 * identifier[residentNumber] ^requirements = "通常此人员总是被指定一个特定的数值型的唯一识别码（identifier）"
 * identifier[residentNumber].use = #official
 * identifier[residentNumber].use MS
@@ -227,7 +225,6 @@ Description: "健康医护服务提供者基本信息"
 * identifier[residentNumber].type.coding.code = #PRC
 * identifier[residentNumber].type.coding.code ^short = "系统定义的语法之符号"
 * identifier[residentNumber].type.coding.code ^definition = "系统定义的语法之符号；符号可能是一个预先定义的代码，也可能是编码系统定义的语法中的表达式（如后组合配对／后组合式）。"
-* identifier[residentNumber].type.coding.code ^requirements = "需要参照系统中的一个特定代码"
 * identifier[residentNumber].type.coding.display MS
 * identifier[residentNumber].type.coding.display ^short = "由编码系统定义的描述"
 * identifier[residentNumber].type.coding.display ^definition = "遵循系统的规则以呈现代码含义的描述"
@@ -243,12 +240,12 @@ Description: "健康医护服务提供者基本信息"
 * identifier[residentNumber].type.text ^requirements = "专门术语中的代码并不总是能捕捉人类使用的细微差别的正确意义，或者根本就没有合适的代码；这些情况下，文字表述被用来捕捉来源的全部意义。"
 * identifier[residentNumber].system 1.. MS
 * identifier[residentNumber].system = "residentNumber"
-* identifier[residentNumber].system ^short = "身份识别码（identifier）的命名空间（namespace）\n例如：居留证号='residentNumber'。"
+* identifier[residentNumber].system ^short = "身份识别码（identifier）的命名空间（namespace）\n例如：居住证号='residentNumber'。"
 * identifier[residentNumber].system ^definition = "建立值的命名空间－即一个描述一组值的唯一URL"
 * identifier[residentNumber].system ^comment = "Identifier.system总是区分大小写"
 * identifier[residentNumber].system ^requirements = "有许多识别码的集合。为了进行两个识别码的对应，我们需要知道我们处理的是哪一组。系统指明了一个特定的唯一识别码集。"
 * identifier[residentNumber].value 1.. MS
-* identifier[residentNumber].value ^short = "唯一值。 例如：居留证号码为A912345678"
+* identifier[residentNumber].value ^short = "唯一值。 例如：居住证号码为A912345678"
 * identifier[residentNumber].value ^definition = "识别码中通常与使用者有关的部分，在编码系统作用域内是唯一的。"
 * identifier[residentNumber].value ^comment = "如果此值是一个完整的URI，那么此系统 **必须（SHALL）** 是urn:ietf:rfc:3986。此值的主要目的是为了可运算的对应。因此，为了比较的目的，它可能会被正规化（例如：去除不重要的空白、破折号等）。一个为人显示的格式化的值可以使用[Rendered Value](http://hl7.org/fhir/R4/extension-rendered-value.html)扩充来传达。除非对Identifier.system的了解使处理者确信不区分大小写的处理是安全的，否则Identifier.value应被视为区分大小写。"
 * identifier[residentNumber].period ^short = "此身份识别码（identifier）的使用效期"
@@ -379,7 +376,7 @@ Description: "健康医护服务提供者基本信息"
 * communication ^comment = "带有这种精确字母大小写的aa-BB结构是最广泛使用的地方性符号之一。但并不是所有的系统都对其进行编码，而是将其作为纯文字表述。因此，data type为CodeableConcept而不是code。"
 * communication ^requirements = "知道医护服务提供人员讲哪种语言有助于促进与病人的沟通"
 * communication ^example.label = "Value"
-* communication ^example.valueString = "zh-TW"
+* communication ^example.valueString = "zh-CN"
 * communication ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"
 * communication ^binding.extension[=].valueCanonical = "http://hl7.org/fhir/ValueSet/all-languages"
 * communication ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
