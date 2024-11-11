@@ -1,6 +1,15 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://whcater.github.io/serious-med-ig/ValueSet/condition-code-sct",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ConditionCodeSCT",
+      "title" : "ValueSet-SNOMED CT诊断代码值集",
+      "description" : "SNOMED CT诊断代码值集。",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "https://whcater.github.io/serious-med-ig/ValueSet/identifier-type",
       "version" : "1.0.0",
       "status" : "active",

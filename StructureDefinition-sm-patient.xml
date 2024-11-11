@@ -164,7 +164,7 @@ pat-cnt-2or3-char：如果有国家名，则必须（SHALL）从[ISO Country Alp
   <name value="SmPatient"/>
   <title value="SmPatient"/>
   <status value="draft"/>
-  <date value="2024-11-11T08:35:31+00:00"/>
+  <date value="2024-11-11T09:31:51+00:00"/>
   <publisher value="whcater"/>
   <contact>
     <name value="whcater"/>

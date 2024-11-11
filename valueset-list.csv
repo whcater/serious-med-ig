@@ -1,2 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://whcater.github.io/serious-med-ig/ValueSet/condition-code-sct,1.0.0,active,,ConditionCodeSCT,ValueSet-SNOMED CT诊断代码值集,"SNOMED CT诊断代码值集。",,"SCT"
 https://whcater.github.io/serious-med-ig/ValueSet/identifier-type,1.0.0,active,,IdentifierType,ValueSet-IdentifierType,"识别码类型值集",,"THO (V2),Internal"

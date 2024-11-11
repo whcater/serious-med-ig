@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "hl7.fhir.serious.med.core",
   "ig-ver" : "1.0.0",
-  "date" : "Mon, 11 Nov, 2024 08:35:31 +0000",
-  "dateISO8601" : "2024-11-11T08:35:31+00:00",
-  "errs" : 13,
-  "warnings" : 17,
+  "date" : "Mon, 11 Nov, 2024 09:31:51 +0000",
+  "dateISO8601" : "2024-11-11T09:31:51+00:00",
+  "errs" : 14,
+  "warnings" : 20,
   "hints" : 2,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1538118744
+  "maxMemory" : 1507946456
 }

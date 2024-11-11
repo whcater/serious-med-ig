@@ -28,6 +28,13 @@
     "name" : "SmAddress"
   },
   {
+    "id" : "sm-condition",
+    "type" : "StructureDefinition",
+    "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-condition",
+    "version" : "1.0.0",
+    "name" : "SmCondition"
+  },
+  {
     "id" : "sm-location",
     "type" : "StructureDefinition",
     "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-location",
@@ -61,6 +68,13 @@
     "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-practitioner-role",
     "version" : "1.0.0",
     "name" : "SmPractitionerRole"
+  },
+  {
+    "id" : "condition-code-sct",
+    "type" : "ValueSet",
+    "url" : "https://whcater.github.io/serious-med-ig/ValueSet/condition-code-sct",
+    "version" : "1.0.0",
+    "name" : "ConditionCodeSCT"
   },
   {
     "id" : "identifier-type",

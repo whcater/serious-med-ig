@@ -44,6 +44,20 @@
       "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
       "version" : "4.0.1",
       "status" : "active",
@@ -58,6 +72,104 @@
       "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
       "version" : "4.0.1",
       "status" : "active",
@@ -69,11 +181,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-sm-location.html" : "SmLocation",
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
       "StructureDefinition-sm-organization.html" : "SmOrganization",
-      "StructureDefinition-sm-patient.html" : "SmPatient",
-      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
+      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole",
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
+      "StructureDefinition-sm-location.html" : "SmLocation",
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -87,11 +199,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-sm-location.html" : "SmLocation",
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
       "StructureDefinition-sm-organization.html" : "SmOrganization",
-      "StructureDefinition-sm-patient.html" : "SmPatient",
-      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
+      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole",
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
+      "StructureDefinition-sm-location.html" : "SmLocation",
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -119,8 +231,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-sm-location.html" : "SmLocation",
-      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
+      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole",
+      "StructureDefinition-sm-location.html" : "SmLocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -148,8 +260,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
       "StructureDefinition-sm-organization.html" : "SmOrganization",
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
       "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
@@ -164,11 +276,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-sm-location.html" : "SmLocation",
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
       "StructureDefinition-sm-organization.html" : "SmOrganization",
-      "StructureDefinition-sm-patient.html" : "SmPatient",
-      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
+      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole",
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
+      "StructureDefinition-sm-location.html" : "SmLocation",
+      "StructureDefinition-sm-condition.html" : "SmCondition",
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -227,6 +340,20 @@
       "uses" : {
       },
       "StructureDefinition-sm-location.html" : "SmLocation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -309,6 +436,20 @@
       "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
+      "url" : "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "AbsentOrUnknownProblemsUvIps",
+      "title" : "Absent or Unknown Problems - IPS",
+      "description" : "Absent or Unknown Problems",
+      "systems" : [
+        "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
       "version" : "2.0.0",
       "status" : "active",
@@ -349,6 +490,18 @@
       "StructureDefinition-sm-location.html" : "SmLocation"
     },
     {
+      "url" : "https://whcater.github.io/serious-med-ig/ValueSet/condition-code-sct",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ConditionCodeSCT",
+      "title" : "ValueSet-SNOMED CT诊断代码值集",
+      "description" : "SNOMED CT诊断代码值集。",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-condition.html" : "SmCondition"
+    },
+    {
       "url" : "https://whcater.github.io/serious-med-ig/ValueSet/identifier-type",
       "version" : "1.0.0",
       "status" : "active",
@@ -361,8 +514,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
       "StructureDefinition-sm-organization.html" : "SmOrganization",
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
       "StructureDefinition-sm-patient.html" : "SmPatient"
     }
   ]

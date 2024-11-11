@@ -12,6 +12,12 @@
     }
   ],
   "profiles": {
+    "Condition": [
+      {
+        "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-condition",
+        "title": "SmCondition"
+      }
+    ],
     "Location": [
       {
         "url": "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-location",

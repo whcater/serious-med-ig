@@ -1,11 +1,13 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.serious.med.core.json	3810	-	0	0	0	0	0	0	6	93	0	0	5	0	0	0	0	1	0	0	92	97	0	0	0	4	0	1
-fsh-generated/resources/CodeSystem-v2-0203.json	1561	19	1	0	0	0	0	0	0	25	0	0	0	0	0	0	0	0	0	0	24	3204	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-ext-person-age.json	2059	18	1	0	0	0	0	12	0	61	0	0	1	0	0	0	0	0	0	0	78	910	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-sm-address.json	7057	14	0	0	0	0	0	75	0	37	0	0	0	0	0	0	0	1	0	0	180	706	0	0	0	5	0	1
-fsh-generated/resources/StructureDefinition-sm-location.json	21491	15	0	0	0	0	0	128	0	54	0	0	0	0	0	0	0	1	0	0	356	1034	0	0	0	13	0	1
-fsh-generated/resources/StructureDefinition-sm-organization.json	20628	20	0	0	0	0	0	36	0	47	0	0	0	0	0	0	0	0	0	0	388	718	0	0	0	12	0	1
-fsh-generated/resources/StructureDefinition-sm-patient.json	83489	29	1	0	0	0	0	164	1	196	0	0	1	0	0	0	0	3	0	0	1626	2960	0	0	0	57	0	4
-fsh-generated/resources/StructureDefinition-sm-practitioner-role.json	9035	19	0	0	0	0	0	121	0	32	0	0	0	0	0	0	0	0	0	0	362	348	0	0	0	10	0	0
-fsh-generated/resources/StructureDefinition-sm-practitioner.json	45636	25	0	0	0	0	0	56	0	99	0	0	0	0	0	0	0	2	0	0	846	1340	0	0	0	26	0	2
-fsh-generated/resources/ValueSet-identifier-type.json	758	17	0	0	0	0	0	0	0	82	0	0	0	0	0	0	0	0	0	0	18	5973	0	0	0	0	0	0
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.serious.med.core.json	4282	-	0	0	0	0	0	0	5	76	0	0	5	0	0	0	0	1	0	0	83	84	0	0	1	4	0	0
+fsh-generated/resources/CodeSystem-v2-0203.json	1561	23	1	0	0	1	0	0	1	18	0	0	1	0	0	0	0	0	0	0	17	3461	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-ext-person-age.json	2059	21	0	0	0	0	0	13	0	45	0	0	0	0	0	0	0	1	0	0	58	754	0	0	0	2	0	1
+fsh-generated/resources/StructureDefinition-sm-address.json	7057	21	1	0	0	0	0	80	0	30	0	0	0	0	0	0	0	0	0	0	145	540	0	0	0	5	0	0
+fsh-generated/resources/StructureDefinition-sm-condition.json	13851	21	0	0	0	0	0	305	0	118	0	0	1	0	0	0	0	2	0	0	344	901	0	0	0	11	0	1
+fsh-generated/resources/StructureDefinition-sm-location.json	21491	24	0	0	0	0	0	27	0	55	0	0	0	0	0	0	0	2	0	0	383	956	0	0	0	11	0	1
+fsh-generated/resources/StructureDefinition-sm-organization.json	20628	21	0	0	0	0	0	26	0	50	0	0	2	0	0	0	0	0	0	0	340	636	0	0	0	11	0	1
+fsh-generated/resources/StructureDefinition-sm-patient.json	83489	34	1	0	0	0	0	62	0	171	0	0	1	0	0	0	0	5	0	0	1527	2558	0	1	0	43	1	5
+fsh-generated/resources/StructureDefinition-sm-practitioner-role.json	9035	22	0	0	0	0	0	24	0	34	0	0	0	0	0	0	0	1	0	0	377	479	0	0	0	9	0	0
+fsh-generated/resources/StructureDefinition-sm-practitioner.json	45636	26	0	0	0	0	0	56	1	76	0	0	1	0	0	0	0	2	0	0	892	1419	0	0	0	27	0	2
+fsh-generated/resources/ValueSet-condition-code-sct.json	1142	19	0	0	0	0	0	0	0	392	0	0	0	0	0	0	0	0	0	0	19	8449	0	0	0	5	0	0
+fsh-generated/resources/ValueSet-identifier-type.json	758	8	1	0	0	0	0	0	0	26	0	0	1	0	0	0	0	0	0	0	15	237	0	0	0	0	0	0

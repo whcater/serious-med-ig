@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 77, errors = 13, warn = 17, info = 2-->
+<!-- broken links = 92, errors = 14, warn = 20, info = 2-->
 <head>
   <title>hl7fhirseriousmedcoreimplementationguide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for hl7fhirseriousmedcoreimplementationguide</h1>
- <p>Generated Mon Nov 11 08:36:17 UTC 2024, FHIR version 4.0.1 for hl7.fhir.serious.med.core#1.0.0 (canonical = <a href="https://whcater.github.io/serious-med-ig">https://whcater.github.io/serious-med-ig</a> (<a href="https://whcater.github.io/serious-med-ig/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Mon Nov 11 09:32:43 UTC 2024, FHIR version 4.0.1 for hl7.fhir.serious.med.core#1.0.0 (canonical = <a href="https://whcater.github.io/serious-med-ig">https://whcater.github.io/serious-med-ig</a> (<a href="https://whcater.github.io/serious-med-ig/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.7.1</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.serious.med.core, Canonical = https://whcater.github.io/serious-med-ig</td></tr>
@@ -59,15 +59,30 @@
  <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
  <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
  <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
- <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html"><span style="background-color: #ffcccc">4 issues</span></a></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
  (15 uses),     <a href="http://hl7.org/fhir/R4/extension-regex.html">regex</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
- (13 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (14 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-category.html">ConditionCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-mode.html">LocationMode</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
@@ -77,14 +92,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html">PatientRelationshipType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-practitioner-role.html">PractitionerRole</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
  (1 uses)
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (9 uses)
+ (11 uses)
   </li>
 </ul>
 </td></tr>
@@ -93,14 +107,14 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 13, warn = 17, info = 2, broken links = 77</td></tr>
+ <tr><td>Summary:</td><td> errors = 14, warn = 20, info = 2, broken links = 92</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>82</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>97</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_CodeSystem-v2-0203"><b>/home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/CodeSystem-v2-0203</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
@@ -113,6 +127,9 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-address"><b>/home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-sm-address</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-condition"><b>/home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-sm-condition</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-location"><b>/home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-sm-location</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -128,6 +145,9 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-practitioner-role"><b>/home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-sm-practitioner-role</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_ValueSet-condition-code-sct"><b>/home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/ValueSet-condition-code-sct</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_ValueSet-identifier-type"><b>/home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/ValueSet-identifier-type</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
@@ -217,6 +237,33 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="StructureDefinition-sm-address.profile.xml.html#l4098">output&#8203;/StructureDefinition-sm-address&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1152, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-sm-condition-definitions.html#l8318">output&#8203;/StructureDefinition-sm-condition-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 703, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-sm-condition-examples.html#l375">output&#8203;/StructureDefinition-sm-condition-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 267, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-sm-condition-mappings.html#l1160">output&#8203;/StructureDefinition-sm-condition-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 395, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-sm-condition-testing.html#l397">output&#8203;/StructureDefinition-sm-condition-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 274, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-sm-condition.html#l10366">output&#8203;/StructureDefinition-sm-condition&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2379, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-sm-condition.profile.history.html#l370">output&#8203;/StructureDefinition-sm-condition&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 256, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-sm-condition.profile.json.html#l5242">output&#8203;/StructureDefinition-sm-condition&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2761, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-sm-condition.profile.ttl.html#l9705">output&#8203;/StructureDefinition-sm-condition&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2091, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="StructureDefinition-sm-condition.profile.xml.html#l9732">output&#8203;/StructureDefinition-sm-condition&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2611, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
      <td><b><a href="StructureDefinition-sm-location-definitions.html#l9161">output&#8203;/StructureDefinition-sm-location-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 860, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -283,7 +330,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="StructureDefinition-sm-patient-testing.html#l397">output&#8203;/StructureDefinition-sm-patient-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 274, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-sm-patient.html#l34640">output&#8203;/StructureDefinition-sm-patient&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 7267, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="StructureDefinition-sm-patient.html#l34643">output&#8203;/StructureDefinition-sm-patient&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 7267, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b><a href="StructureDefinition-sm-patient.profile.history.html#l370">output&#8203;/StructureDefinition-sm-patient&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 256, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
@@ -319,7 +366,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="StructureDefinition-sm-practitioner-role-testing.html#l397">output&#8203;/StructureDefinition-sm-practitioner-role-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 274, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-sm-practitioner-role.html#l7776">output&#8203;/StructureDefinition-sm-practitioner-role&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2025, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="StructureDefinition-sm-practitioner-role.html#l7778">output&#8203;/StructureDefinition-sm-practitioner-role&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2025, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b><a href="StructureDefinition-sm-practitioner-role.profile.history.html#l370">output&#8203;/StructureDefinition-sm-practitioner-role&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 256, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
@@ -337,7 +384,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="StructureDefinition-sm-practitioner-testing.html#l397">output&#8203;/StructureDefinition-sm-practitioner-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 274, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="StructureDefinition-sm-practitioner.html#l20268">output&#8203;/StructureDefinition-sm-practitioner&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 4349, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="StructureDefinition-sm-practitioner.html#l20271">output&#8203;/StructureDefinition-sm-practitioner&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 4349, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b><a href="StructureDefinition-sm-practitioner.profile.history.html#l370">output&#8203;/StructureDefinition-sm-practitioner&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 256, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
@@ -350,6 +397,24 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b><a href="StructureDefinition-sm-practitioner.profile.xml.html#l23505">output&#8203;/StructureDefinition-sm-practitioner&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 5927, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="ValueSet-condition-code-sct-testing.html#l381">output&#8203;/ValueSet-condition-code-sct-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 251, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="ValueSet-condition-code-sct.change.history.html#l350">output&#8203;/ValueSet-condition-code-sct&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 220, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="ValueSet-condition-code-sct.html#l11577">output&#8203;/ValueSet-condition-code-sct&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 326, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="ValueSet-condition-code-sct.json.html#l492">output&#8203;/ValueSet-condition-code-sct&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 312, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="ValueSet-condition-code-sct.ttl.html#l570">output&#8203;/ValueSet-condition-code-sct&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 296, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="ValueSet-condition-code-sct.xml.html#l581">output&#8203;/ValueSet-condition-code-sct&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 299, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b><a href="ValueSet-identifier-type-testing.html#l381">output&#8203;/ValueSet-identifier-type-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 251, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
@@ -370,13 +435,13 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="ValueSet-identifier-type.xml.html#l521">output&#8203;/ValueSet-identifier-type&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 284, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="artifacts.html#l598">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 323, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="artifacts.html#l628">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 341, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b><a href="index.html#l371">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b><a href="toc.html#l416">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 176, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
+     <td><b><a href="toc.html#l432">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 176, column 28</a></b></td><td><b>warning</b></td><td><b>The link 'https://whcater.github.io/serious-med-ig/' for &quot;whcater&quot; is a canonical link and is therefore unsafe with regard to versions</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
@@ -420,7 +485,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide (l1/c14609)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
+     <td><b>ImplementationGuide (l1/c15141)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS &quot;null&quot;')</b></td>
@@ -459,9 +524,25 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-location"> </a>
-<h2><a href="StructureDefinition-sm-location.html">fsh-generated/resources/StructureDefinition-sm-location.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+<a name="_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-condition"> </a>
+<h2><a href="StructureDefinition-sm-condition.html">fsh-generated/resources/StructureDefinition-sm-condition.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.jurisdiction</b></td><td><b>error</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/whcater&#8203;.github&#8203;.io&#8203;/serious-med-ig&#8203;/StructureDefinition&#8203;/sm-condition')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-location"> </a>
+<h2><a href="StructureDefinition-sm-location.html">fsh-generated/resources/StructureDefinition-sm-location.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -476,8 +557,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-organization"> </a>
-<h2><a href="StructureDefinition-sm-organization.html">fsh-generated/resources/StructureDefinition-sm-organization.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-sm-organization.html">fsh-generated/resources/StructureDefinition-sm-organization.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -498,8 +579,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-patient"> </a>
-<h2><a href="StructureDefinition-sm-patient.html">fsh-generated/resources/StructureDefinition-sm-patient.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-sm-patient.html">fsh-generated/resources/StructureDefinition-sm-patient.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -520,8 +601,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-practitioner"> </a>
-<h2><a href="StructureDefinition-sm-practitioner.html">fsh-generated/resources/StructureDefinition-sm-practitioner.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-sm-practitioner.html">fsh-generated/resources/StructureDefinition-sm-practitioner.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -542,8 +623,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_StructureDefinition-sm-practitioner-role"> </a>
-<h2><a href="StructureDefinition-sm-practitioner-role.html">fsh-generated/resources/StructureDefinition-sm-practitioner-role.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-sm-practitioner-role.html">fsh-generated/resources/StructureDefinition-sm-practitioner-role.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -557,9 +638,25 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
+<a name="_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_ValueSet-condition-code-sct"> </a>
+<h2><a href="ValueSet-condition-code-sct.html">fsh-generated/resources/ValueSet-condition-code-sct.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2027)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.jurisdiction</b></td><td><b>warning</b></td><td title="RESOURCE_JURISDICTION_MISMATCH"><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS &quot;null&quot;')</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_home_runner_work_serious-med-ig_serious-med-ig_fsh-generated_resources_ValueSet-identifier-type"> </a>
-<h2><a href="ValueSet-identifier-type.html">fsh-generated/resources/ValueSet-identifier-type.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+<h2><a href="ValueSet-identifier-type.html">fsh-generated/resources/ValueSet-identifier-type.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -611,6 +708,9 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><a href="StructureDefinition-sm-address.html">fsh-generated/resources/StructureDefinition-sm-address.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-sm-condition.html">fsh-generated/resources/StructureDefinition-sm-condition.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-sm-location.html">fsh-generated/resources/StructureDefinition-sm-location.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
@@ -624,6 +724,9 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-sm-practitioner-role.html">fsh-generated/resources/StructureDefinition-sm-practitioner-role.json</a></td><td><b>The resource must declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS &quot;null&quot;')</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-condition-code-sct.html">fsh-generated/resources/ValueSet-condition-code-sct.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS &quot;null&quot;')</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="ValueSet-identifier-type.html">fsh-generated/resources/ValueSet-identifier-type.json</a></td><td><b>The resource should declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS &quot;null&quot;')</b></td>

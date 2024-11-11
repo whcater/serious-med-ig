@@ -10,7 +10,7 @@
   "name" : "hl7fhirseriousmedcoreimplementationguide",
   "title" : "HL7® Serious Med FHIR® Core Implementation Guide",
   "status" : "draft",
-  "date" : "2024-11-11T08:35:31+00:00",
+  "date" : "2024-11-11T09:31:51+00:00",
   "publisher" : "whcater",
   "contact" : [{
     "name" : "whcater",
@@ -652,6 +652,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/sm-condition"
+      },
+      "name" : "SmCondition",
+      "description" : "病情、问题或诊断",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/sm-location"
       },
       "name" : "SmLocation",
@@ -716,6 +728,18 @@
       },
       "name" : "ValueSet-IdentifierType",
       "description" : "识别码类型值集",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/condition-code-sct"
+      },
+      "name" : "ValueSet-SNOMED CT诊断代码值集",
+      "description" : "SNOMED CT诊断代码值集。",
       "exampleBoolean" : false
     }],
     "page" : {

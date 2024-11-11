@@ -11,7 +11,7 @@
   <name value="hl7fhirseriousmedcoreimplementationguide"/>
   <title value="HL7® Serious Med FHIR® Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-11-11T08:35:31+00:00"/>
+  <date value="2024-11-11T09:31:51+00:00"/>
   <publisher value="whcater"/>
   <contact>
     <name value="whcater"/>
@@ -492,6 +492,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sm-condition"/>
+      </reference>
+      <name value="SmCondition"/>
+      <description value="病情、问题或诊断"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/sm-location"/>
       </reference>
       <name value="SmLocation"/>
@@ -551,6 +562,17 @@
       </reference>
       <name value="ValueSet-IdentifierType"/>
       <description value="识别码类型值集"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/condition-code-sct"/>
+      </reference>
+      <name value="ValueSet-SNOMED CT诊断代码值集"/>
+      <description value="SNOMED CT诊断代码值集。"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

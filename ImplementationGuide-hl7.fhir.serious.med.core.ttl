@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "hl7fhirseriousmedcoreimplementationguide"] ; # 
   fhir:title [ fhir:v "HL7® Serious Med FHIR® Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-11-11T08:35:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-11T09:31:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "whcater" ] ;
@@ -568,6 +568,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/sm-condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/sm-condition" ]
+       ] ;
+       fhir:name [ fhir:v "SmCondition" ] ;
+       fhir:description [ fhir:v "病情、问题或诊断" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/sm-location> ;
          fhir:reference [ fhir:v "StructureDefinition/sm-location" ]
        ] ;
@@ -633,6 +645,18 @@
        ] ;
        fhir:name [ fhir:v "ValueSet-IdentifierType" ] ;
        fhir:description [ fhir:v "识别码类型值集" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://whcater.github.io/serious-med-ig/ValueSet/condition-code-sct> ;
+         fhir:reference [ fhir:v "ValueSet/condition-code-sct" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet-SNOMED CT诊断代码值集" ] ;
+       fhir:description [ fhir:v "SNOMED CT诊断代码值集。" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
