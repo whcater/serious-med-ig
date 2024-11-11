@@ -56,6 +56,13 @@
     "name" : "SmPractitioner"
   },
   {
+    "id" : "sm-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/sm-practitioner-role",
+    "version" : "1.0.0",
+    "name" : "SmPractitionerRole"
+  },
+  {
     "id" : "identifier-type",
     "type" : "ValueSet",
     "url" : "https://whcater.github.io/serious-med-ig/ValueSet/identifier-type",

@@ -40,8 +40,22 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatient",
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner"
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
+      "StructureDefinition-sm-patient.html" : "SmPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -55,10 +69,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-sm-organization.html" : "SmOrganization",
       "StructureDefinition-sm-location.html" : "SmLocation",
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
+      "StructureDefinition-sm-organization.html" : "SmOrganization",
       "StructureDefinition-sm-patient.html" : "SmPatient",
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner"
+      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -72,10 +87,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-sm-organization.html" : "SmOrganization",
       "StructureDefinition-sm-location.html" : "SmLocation",
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
+      "StructureDefinition-sm-organization.html" : "SmOrganization",
       "StructureDefinition-sm-patient.html" : "SmPatient",
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner"
+      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -103,7 +119,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-sm-location.html" : "SmLocation"
+      "StructureDefinition-sm-location.html" : "SmLocation",
+      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -131,9 +148,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
       "StructureDefinition-sm-organization.html" : "SmOrganization",
-      "StructureDefinition-sm-patient.html" : "SmPatient",
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner"
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -147,10 +164,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-sm-organization.html" : "SmOrganization",
       "StructureDefinition-sm-location.html" : "SmLocation",
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
+      "StructureDefinition-sm-organization.html" : "SmOrganization",
       "StructureDefinition-sm-patient.html" : "SmPatient",
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner"
+      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -239,8 +257,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-sm-patient.html" : "SmPatient",
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner"
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -255,6 +273,23 @@
       "uses" : {
       },
       "StructureDefinition-sm-organization.html" : "SmOrganization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.439"],
+      "sources" : ["2.16.840.1.113883.4.642.3.439"],
+      "uses" : {
+      },
+      "StructureDefinition-sm-practitioner-role.html" : "SmPractitionerRole"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
@@ -326,9 +361,9 @@
       ],
       "uses" : {
       },
+      "StructureDefinition-sm-practitioner.html" : "SmPractitioner",
       "StructureDefinition-sm-organization.html" : "SmOrganization",
-      "StructureDefinition-sm-patient.html" : "SmPatient",
-      "StructureDefinition-sm-practitioner.html" : "SmPractitioner"
+      "StructureDefinition-sm-patient.html" : "SmPatient"
     }
   ]
 }

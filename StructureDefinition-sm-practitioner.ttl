@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SmPractitioner"] ; # 
   fhir:title [ fhir:v "SmPractitioner"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-11-08T09:27:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-11T08:35:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "whcater" ] ;

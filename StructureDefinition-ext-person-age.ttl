@@ -15,7 +15,7 @@
   fhir:url [ fhir:v "https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "ExtPersonAge"] ; # 
-  fhir:title [ fhir:v "PersonAge"] ; # 
+  fhir:title [ fhir:v "ExtPersonAge"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:date [ fhir:v "2024-10-17"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 

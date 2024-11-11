@@ -1,10 +1,10 @@
 hl7fhirseriousmedcoreimplementationguide : Validation Results
 =========================================
 
-err = 12, warn = 16, info = 2
+err = 13, warn = 17, info = 2
 IG Publisher Version: 1.7.1
-Generated Fri Nov 08 09:28:36 UTC 2024. FHIR version 4.0.1 for hl7.fhir.serious.med.core#1.0.0 (canonical = https://whcater.github.io/serious-med-ig)
- Build Errors : 0 / 73 / 0
+Generated Mon Nov 11 08:36:17 UTC 2024. FHIR version 4.0.1 for hl7.fhir.serious.med.core#1.0.0 (canonical = https://whcater.github.io/serious-med-ig)
+ Build Errors : 0 / 82 / 0
  /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/CodeSystem-v2-0203 : 0 / 1 / 3
  /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/ImplementationGuide-hl7.fhir.serious.med.core : 0 / 2 / 1
  /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-ext-person-age : 1 / 1 / 1
@@ -13,6 +13,7 @@ Generated Fri Nov 08 09:28:36 UTC 2024. FHIR version 4.0.1 for hl7.fhir.serious.
  /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-sm-organization : 3 / 1 / 1
  /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-sm-patient : 3 / 1 / 1
  /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-sm-practitioner : 3 / 1 / 1
+ /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/StructureDefinition-sm-practitioner-role : 1 / 1 / 1
  /home/runner/work/serious-med-ig/serious-med-ig/fsh-generated/resources/ValueSet-identifier-type : 0 / 2 / 1
 </table>
 == n/a ==
@@ -70,6 +71,15 @@ WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinit
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-definitions.html#/html/body/div/div/div/p/a at Line 1643, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-examples.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-mappings.html#/html/body/div/div/div/p/a at Line 499, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-role-definitions.html#/html/body/div/div/div/p/a at Line 658, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-role-examples.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-role-mappings.html#/html/body/div/div/div/p/a at Line 343, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-role-testing.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-role.html#/html/body/div/div/div/p/a at Line 2025, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-role.profile.history.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-role.profile.json.html#/html/body/div/div/div/p/a at Line 2351, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-role.profile.ttl.html#/html/body/div/div/div/p/a at Line 1784, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-role.profile.xml.html#/html/body/div/div/div/p/a at Line 2158, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner-testing.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner.html#/html/body/div/div/div/p/a at Line 4349, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/StructureDefinition-sm-practitioner.profile.history.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
@@ -82,7 +92,7 @@ WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/ValueSet-identif
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/ValueSet-identifier-type.json.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/ValueSet-identifier-type.ttl.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/ValueSet-identifier-type.xml.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
-WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/artifacts.html#/html/body/div/div/div/p/a at Line 314, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/artifacts.html#/html/body/div/div/div/p/a at Line 323, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/index.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
 WARNING: /home/runner/work/serious-med-ig/serious-med-ig/output/toc.html#/html/body/div/div/div/p/a at Line 176, column 28: The link 'https://whcater.github.io/serious-med-ig/' for "whcater" is a canonical link and is therefore unsafe with regard to versions
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -120,6 +130,9 @@ ERROR: StructureDefinition/sm-practitioner: StructureDefinition.snapshot.element
 ERROR: StructureDefinition/sm-practitioner: StructureDefinition.differential.element[2].example[0]: ElementDefinition.example.label: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS "null"')
 WARNING: StructureDefinition.where(url = 'https://whcater.github.io/serious-med-ig/StructureDefinition/sm-practitioner'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-sm-practitioner-role.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS "null"')
+WARNING: StructureDefinition.where(url = 'https://whcater.github.io/serious-med-ig/StructureDefinition/sm-practitioner-role'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-identifier-type.json ==
 WARNING: ValueSet/identifier-type: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.serious.med.core, jurisdiction = urn:iso:std:iso:3166#SERIOUS instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#SERIOUS "null"')

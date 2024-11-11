@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "hl7fhirseriousmedcoreimplementationguide"] ; # 
   fhir:title [ fhir:v "HL7® Serious Med FHIR® Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-11-08T09:27:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-11T08:35:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "whcater"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "whcater" ] ;
@@ -547,7 +547,7 @@
          fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age> ;
          fhir:reference [ fhir:v "StructureDefinition/ext-person-age" ]
        ] ;
-       fhir:name [ fhir:v "PersonAge" ] ;
+       fhir:name [ fhir:v "ExtPersonAge" ] ;
        fhir:description [ fhir:v "年龄" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -609,6 +609,18 @@
        ] ;
        fhir:name [ fhir:v "SmPractitioner" ] ;
        fhir:description [ fhir:v "健康医护服务提供者基本信息" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://whcater.github.io/serious-med-ig/StructureDefinition/sm-practitioner-role> ;
+         fhir:reference [ fhir:v "StructureDefinition/sm-practitioner-role" ]
+       ] ;
+       fhir:name [ fhir:v "SmPractitionerRole" ] ;
+       fhir:description [ fhir:v "健康医护服务提供者角色" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

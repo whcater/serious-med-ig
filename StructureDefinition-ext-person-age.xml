@@ -13,7 +13,7 @@
   <url value="https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age"/>
   <version value="1.0.0"/>
   <name value="ExtPersonAge"/>
-  <title value="PersonAge"/>
+  <title value="ExtPersonAge"/>
   <status value="draft"/>
   <date value="2024-10-17"/>
   <publisher value="whcater"/>

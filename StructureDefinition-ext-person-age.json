@@ -8,7 +8,7 @@
   "url" : "https://whcater.github.io/serious-med-ig/StructureDefinition/ext-person-age",
   "version" : "1.0.0",
   "name" : "ExtPersonAge",
-  "title" : "PersonAge",
+  "title" : "ExtPersonAge",
   "status" : "draft",
   "date" : "2024-10-17",
   "publisher" : "whcater",
